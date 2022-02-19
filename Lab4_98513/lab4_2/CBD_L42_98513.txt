@@ -1,0 +1,167 @@
+// NMEC: 98513
+ 
+#1
+match (a)-[:DIRECTED]->(b)<-[:ACTED_IN]-(a)
+return a.name as nomeAutor, b.title as tituloFilme;
+
+#2
+match (ator)-[:ACTED_IN]->(filme)
+where filme.released > 2005
+with filme, collect(ator.name) as atores
+return filme.title as filmeTitulo, atores;
+
+#3
+match (a)-[r]->(b)
+with a, b, count(r) as numRelacao
+where numRelacao > 1
+return a, b;
+
+#4
+match (pessoa1)-[:REVIEWED]->(filme)<-[:REVIEWED]-(pessoa2)
+where id(pessoa1) < id(pessoa2)
+return pessoa1.name, filme.title, pessoa2.name;
+
+#5
+match (pessoa1)-[:ACTED_IN]->(filme)<-[:ACTED_IN]-(pessoa2)
+where id(pessoa1) < id(pessoa2)
+with pessoa1, pessoa2, count(*) as numFilmes
+where numFilmes > 1
+return pessoa1.name, pessoa2.name;
+
+#6
+match (ator)-[:ACTED_IN]->(filme)
+where filme.title = "Apollo 13"
+with filme, filme.released-ator.born as idadeInLancamento
+return avg(idadeInLancamento) as idadeMedia;
+
+#7
+match (ator)-[:ACTED_IN]->(filme)
+with filme, avg(filme.released-ator.born) as idadeMedia
+return filme.title as tituloFilme, round(idadeMedia, 2) as idadeMedia
+order by idadeMedia desc limit 10;
+
+//Links que consultei para a resolucao do exercicio:
+// https://community.neo4j.com/t/how-should-i-be-rounding-a-number-to-2-decimal-places/33176
+// https://neo4j.com/docs/getting-started/current/cypher-intro/results/
+
+#8
+match (ator)-[:ACTED_IN]->(filme)
+with filme, avg(filme.released-ator.born) as idadeMedia
+order by idadeMedia limit 1
+match (pessoa)-[:ACTED_IN]->(movie)
+where movie = filme
+return pessoa, movie
+
+#9
+MATCH p=shortestPath( (pessoa1:Person {name:"John Cusack"})-[*]-(pessoa2:Person {name:'Demi Moore'}) )
+RETURN p
+
+//Para a resolucao deste exercicio guiei-me pelo exemplo dado no tutorial fornecido no exemplo projeto,
+//dado aquando a instalacao do Neo4j.
+//Section "Solve":
+// http://localhost:11001/project-903b2e24-ea23-4a73-a2ec-ddc7da5352e3/about-movies.neo4j-browser-guide 
+
+#10
+MATCH p=shortestPath( (pessoa1:Person {name:"Keanu Reeves"})-[*]-(pessoa2:Person {name:'Tom Cruise'}) )
+RETURN length(p) as dimensao
+
+// https://neo4j.com/docs/developer-manual/current/cypher/functions/scalar/#functions-length
+
+#11
+MATCH p=shortestPath( (pessoa1:Person)-[*]-(pessoa2:Person) )
+WHERE pessoa1.name contains 'Jim' and pessoa2.name contains 'Kevin'
+return pessoa1.name, pessoa2.name, length(p) as dimensao
+order by dimensao limit 1;
+
+#12
+//Resultado final:
+MATCH p=shortestPath( (pessoa1:Person)-[*1..2]-(pessoa2:Person) )
+where pessoa2.name = 'Jim Cash' and pessoa1.name <> 'Jim Cash' and length(p) = 2
+return pessoa1.name as nomePessoa
+
+//1º tentativa:
+MATCH p=shortestPath( (pessoa1:Person)-[*]-(pessoa2:Person {name:'Jim Cash'}) )
+where length(p) = 2
+return pessoa1.name as nomePessoa
+
+//ERRO da 1º tentativa:
+//The shortest path algorithm does not work when the start and end nodes are the same. 
+
+//2º tentativa:
+MATCH p=shortestPath( (pessoa1:Person)-[*]-(pessoa2:Person) )
+where pessoa2.name = 'Jim Cash' and pessoa1.name <> 'Jim Cash' and length(p) = 2
+return pessoa1.name as nomePessoa
+
+//Segunda tentativa estava a demorar muito tempo a correr, devido ao grande numero de dados que tem que processar.
+
+//Entao decidi encurtar os caminhos possiveis dentro da funcao shortestPath, onde apenas irá ver os caminhos de tamanho 1 ou 2.
+//Aqui nao passei logo só os caminhos de tamanho 2, porque em neo4j:
+// "does not support a minimal length different from 0 or 1"
+
+//2º tentativa (Resultado final, descrito em cima):
+MATCH p=shortestPath( (pessoa1:Person)-[*1..2]-(pessoa2:Person) )
+where pessoa2.name = 'Jim Cash' and pessoa1.name <> 'Jim Cash' and length(p) = 2
+return pessoa1.name as nomePessoa
+
+#13
+MATCH p=shortestPath( (pessoa1:Person)-[*]-(pessoa2:Person) )
+WHERE pessoa1.name = 'Kevin Bacon' and pessoa2.name <> 'Kevin Bacon'
+return pessoa2.name, length(p) as dimensao
+order by dimensao desc limit 1;
+
+#14
+MATCH p=shortestPath( (pessoa1:Person)-[*]-(pessoa2:Person) )
+WHERE pessoa1.name <> pessoa2.name
+return pessoa1.name, pessoa2.name, length(p) as dimensao
+order by dimensao desc limit 1;
+
+#15
+MATCH p=shortestPath( (pessoa1:Person)-[*]-(pessoa2:Person) )
+where id(pessoa1) < id(pessoa2)
+with length(p) as dimensao
+return dimensao, count(*) as num
+
+//Coloquei a condicao " id(pessoa1) < id(pessoa2) ", de forma a nao contar caminhos repetidos
+
+#16
+MATCH p=shortestPath( (pessoa1:Person)-[:ACTED_IN*]-(pessoa2:Person) )
+WHERE pessoa1.name <> pessoa2.name
+with pessoa1, pessoa2, avg(length(p)) as avgDim
+return pessoa1.name, pessoa2.name, avgDim
+order by avgDim limit 10;
+
+#17 Qual é o filme com o melhor rating ?
+match (pessoa)-[rel:REVIEWED]->(filme)
+with filme.title as tituloFilme, avg(rel.rating) as avgRating
+return tituloFilme, max(avgRating) as avgRating
+limit 1;
+
+//Determinei o filme com a media rating melhor
+
+#18 Determina os atores que ainda nao trabalharam com o "John Cusack", mas já trabalharam com pessoas que trabalharam com o "John Cusack".
+match (pessoa1:Person {name:'John Cusack'})-[:ACTED_IN]->(filme1)<-[:ACTED_IN]-(pessoa2),
+(pessoa2)-[:ACTED_IN]->(filme2)<-[:ACTED_IN]-(pessoa3)
+where not (pessoa1)-[:ACTED_IN]->()<-[:ACTED_IN]-(pessoa3) and pessoa1 <> pessoa3
+return pessoa3.name as nomePessoa
+
+#19 Encontre os filmes dirigidos por "Lilly Wachowski" ou que têm pelo menos duas revisoes. Devolva os resultados ordenados pela tagline dos filmes.
+call {
+    match (pessoa:Person {name: "Lilly Wachowski"})-[:DIRECTED]->(filme)
+    return filme
+
+    union
+
+    match (filme:Movie)
+    where size((filme)<-[:REVIEWED]-()) > 1 
+    return filme
+}
+return filme.title as tituloFilme, filme.tagline as tagline
+order by tagline;
+
+//Link que consultei para a resolucao do exercicio:
+// https://neo4j.com/docs/cypher-manual/current/clauses/call-subquery/
+
+#20 Recomende 5 filmes para quem gosta do filme "Apollo 13", com base no numero de atores em comum.
+match (filme1:Movie {title:'Apollo 13'})<-[:ACTED_IN]-(ator)-[:ACTED_IN]->(filme2)
+return filme2.title as nomeFilme, count(ator) as numAtor
+order by numAtor desc limit 5;

@@ -1,0 +1,948 @@
+num,mark,model,generation_name,year,mileage,vol_engine,fuel,city,province,price
+0,opel,combo,gen-d-2011,2015,139568,1248,Diesel,Janki,Mazowieckie,35900
+1,opel,combo,gen-d-2011,2018,31991,1499,Diesel,Katowice,Śląskie,78501
+2,opel,combo,gen-d-2011,2015,278437,1598,Diesel,Brzeg,Opolskie,27000
+3,opel,combo,gen-d-2011,2016,47600,1248,Diesel,Korfantów,Opolskie,30800
+64,opel,vectra,gen-b-1995-2002,1998,240000,1799,LPG,Brodnica,Kujawsko-pomorskie,2900
+65,opel,vectra,gen-b-1995-2002,1999,310000,1799,Gasoline,Góra Kalwaria,Mazowieckie,2600
+66,opel,vectra,gen-b-1995-2002,2001,345000,1796,Gasoline,Maków Mazowiecki,Mazowieckie,6000
+93,opel,vectra,gen-c-2002-2008,2007,229000,1910,Diesel,Łagów,Świętokrzyskie,14900
+94,opel,vectra,gen-c-2002-2008,2008,253477,1910,Diesel,Szczyglice,Dolnośląskie,9999
+189,opel,adam,gen-g-2016-2017,2013,101514,1398,Gasoline,Warszawa,Mazowieckie,29900
+285,opel,agila,gen-b-2008,2009,149000,996,Gasoline,Warszawa,Mazowieckie,11500
+286,opel,agila,gen-b-2008,2011,100942,1242,Gasoline,Skarżysko-Kamienna,Świętokrzyskie,16300
+287,opel,agila,gen-b-2008,2009,57700,1242,Gasoline,Bydgoszcz,Kujawsko-pomorskie,13400
+288,opel,agila,gen-b-2008,2008,93000,996,Gasoline,Gryfino,Zachodniopomorskie,12800
+289,opel,agila,gen-b-2008,2009,146000,996,Gasoline,Bytom,Śląskie,13500
+8059,opel,zafira,gen-b-2005-2011,2007,204855,1910,Diesel,Tychy,Śląskie,13999
+8060,opel,zafira,gen-b-2005-2011,2007,278550,1910,Diesel,Nowa Słupia,Świętokrzyskie,14000
+8061,audi,a3,gen-8p-2003-2012,2010,169500,1390,Gasoline,Cieszyn,Śląskie,29900
+8062,audi,a3,gen-8p-2003-2012,2018,67990,1500,Gasoline,Kielce,Świętokrzyskie,129850
+8063,audi,a3,gen-8p-2003-2012,2008,222248,1896,Diesel,Częstochowa,Śląskie,22900
+8064,audi,a3,gen-8p-2003-2012,2010,243000,1968,Diesel,Zawiercie,Śląskie,27907
+8065,audi,a3,gen-8p-2003-2012,2009,259658,1598,Diesel,Nowy Dwór Gdański,Pomorskie,23900
+8066,audi,a3,gen-8p-2003-2012,2008,306000,1968,Diesel,Nowy Targ,Małopolskie,26000
+8067,audi,a3,gen-8p-2003-2012,2009,198050,1595,Gasoline,Olkusz,Małopolskie,24000
+14281,audi,a4,gen-b6-2000-2004,2001,296000,2976,LPG,Stary Sącz,Małopolskie,15900
+14282,audi,a4,gen-b6-2000-2004,2002,313000,1984,Gasoline,Żarki Wielkie,Lubuskie,11900
+14283,audi,a4,gen-b6-2000-2004,2002,249000,2976,LPG,Olsztyn,Warmińsko-mazurskie,12900
+14284,audi,a4,gen-b6-2000-2004,2002,174000,1781,Gasoline,Jasło,Podkarpackie,14900
+17623,audi,a5,gen-8t-2007-2016,2013,169000,2967,Diesel,Mogilno,Kujawsko-pomorskie,68600
+17624,audi,a5,gen-8t-2007-2016,2014,220000,1968,Diesel,Klwatka,Mazowieckie,67990
+18444,audi,a6,gen-c6-2004-2011,2004,324000,2967,Diesel,Szczytno,Warmińsko-mazurskie,15500
+18445,audi,a6,gen-c6-2004-2011,2007,260000,2698,Diesel,Ostrów Mazowiecka,Mazowieckie,26900
+18446,audi,a6,gen-c6-2004-2011,2009,147000,1984,Gasoline,Janki,Mazowieckie,35500
+21131,audi,a8,gen-d5-2017,2020,23266,2967,Diesel,Gdańsk,Pomorskie,379900
+24675,bmw,seria-1,gen-e87-2004-2013,2011,89000,1995,Gasoline,Leszno,Wielkopolskie,27777
+24676,bmw,seria-1,gen-e87-2004-2013,2006,203000,1995,Diesel,Legionowo,Mazowieckie,20499
+24677,bmw,seria-1,gen-e87-2004-2013,2011,188000,1995,Gasoline,Orneta,Warmińsko-mazurskie,26800
+24678,bmw,seria-1,gen-e87-2004-2013,2005,92548,1596,Gasoline,Kijno,Pomorskie,14900
+25897,bmw,seria-3,gen-e36-1990-1999,1999,300000,2494,Gasoline,Środa Wielkopolska,Wielkopolskie,30750
+25898,bmw,seria-3,gen-e36-1990-1999,1996,112000,2793,Gasoline,Jedlińsk,Mazowieckie,68900
+28694,bmw,seria-3,gen-g20-2019,2021,1,2993,Diesel,Warszawa,Mazowieckie,297600
+28695,bmw,seria-3,gen-g20-2019,2020,20500,1998,Gasoline,Gdańsk,Pomorskie,199900
+36103,volkswagen,golf,gen-ii-1983-1992,1991,110684,1781,Gasoline,Łubowo,Wielkopolskie,59900
+36104,volkswagen,golf,gen-ii-1983-1992,1986,580000,1588,Diesel,Wrocław,Dolnośląskie,6000
+36105,volkswagen,golf,gen-ii-1983-1992,1989,111000,1272,Gasoline,Wysoczka,Wielkopolskie,13200
+36106,volkswagen,golf,gen-ii-1983-1992,1991,193000,1272,Gasoline,Wejherowo,Pomorskie,16900
+36156,volkswagen,golf,gen-iii-1991-1998,1994,165000,1781,Gasoline,Żory,Śląskie,8900
+36157,volkswagen,golf,gen-iii-1991-1998,1995,145300,1781,Gasoline,Warszawa,Mazowieckie,15000
+36171,volkswagen,golf,gen-iv-1997-2006,2002,209000,1896,Diesel,Jastrzębie-Zdrój,Śląskie,8900
+39368,volkswagen,jetta,gen-a6-2010,2017,188000,1797,Gasoline,Kowalewo Pomorskie,Kujawsko-pomorskie,44500
+39369,volkswagen,jetta,gen-a6-2010,2016,109240,1968,Diesel,Lubin,Dolnośląskie,75800
+39370,volkswagen,jetta,gen-a6-2010,2015,214900,1968,Diesel,Zieleniewo,Zachodniopomorskie,39900
+39371,volkswagen,jetta,gen-a6-2010,2017,109330,1968,Diesel,Długołęka,Dolnośląskie,67901
+39944,volkswagen,passat,gen-b5-fl-2000-2005,2001,195000,1984,Gasoline,Wieliszew,Mazowieckie,9900
+39945,volkswagen,passat,gen-b5-fl-2000-2005,2003,257000,1984,Gasoline,Jarosław,Podkarpackie,10900
+46166,ford,c-max,gen-ii-2010-c-max,2011,187359,1560,Diesel,Szczecin,Zachodniopomorskie,31900
+46167,ford,c-max,gen-ii-2010-c-max,2015,128000,1560,Diesel,Zawiercie,Śląskie,39799
+46168,ford,c-max,gen-ii-2010-c-max,2014,107000,1997,Diesel,Chorzów,Śląskie,32900
+46169,ford,c-max,gen-ii-2010-c-max,2011,191383,1560,Diesel,Kostomłoty Pierwsze,Świętokrzyskie,17900
+46170,ford,c-max,gen-ii-2010-c-max,2012,136000,1560,Diesel,Jastrzębie-Zdrój,Śląskie,28600
+46171,ford,c-max,gen-ii-2010-c-max,2012,176000,1596,Gasoline,Cieszyn,Śląskie,32900
+46172,ford,c-max,gen-ii-2010-c-max,2018,61500,999,Gasoline,Zgierz,Łódzkie,55900
+46333,ford,c-max,gen-i-2003-2010-c-max,2008,234736,1798,Gasoline,Olsztyn,Warmińsko-mazurskie,14900
+46334,ford,c-max,gen-i-2003-2010-c-max,2003,206000,1800,Gasoline,Świętochłowice,Śląskie,8800
+47042,ford,fiesta,gen-mk6-2002-2008,2006,173000,1300,Gasoline,Płońsk,Mazowieckie,8900
+47043,ford,fiesta,gen-mk6-2002-2008,2006,129000,1299,Gasoline,Sopot,Pomorskie,9800
+48338,ford,focus,gen-mk2-2004-2011,2009,158000,1999,LPG,Pabianice,Łódzkie,22999
+48339,ford,focus,gen-mk2-2004-2011,2008,255000,1596,Gasoline,Tarnów,Małopolskie,13300
+48340,ford,focus,gen-mk2-2004-2011,2009,250000,1798,Gasoline,Świdnica,Dolnośląskie,15800
+48341,ford,focus,gen-mk2-2004-2011,2005,276391,1999,LPG,Poręba,Śląskie,11900
+48342,ford,focus,gen-mk2-2004-2011,2009,266000,1596,Gasoline,Wągrowiec,Wielkopolskie,15900
+48343,ford,focus,gen-mk2-2004-2011,2004,280000,1753,Diesel,Niepołomice,Małopolskie,4059
+51066,ford,ka,gen-ii-2008-ka,2009,152400,1242,Gasoline,Kraków,Małopolskie,15375
+51067,ford,ka,gen-ii-2008-ka,2011,111430,1242,Gasoline,Szamotuły,Wielkopolskie,12900
+51068,ford,ka,gen-ii-2008-ka,2013,118000,1242,Gasoline,Police,Zachodniopomorskie,12500
+51069,ford,ka,gen-ii-2008-ka,2015,27999,1242,Gasoline,Poznań,Wielkopolskie,26900
+51070,ford,ka,gen-ii-2008-ka,2014,117000,1242,Gasoline,Lubań,Dolnośląskie,12700
+51071,ford,ka,gen-ii-2008-ka,2018,3293,1198,Gasoline,Chorzów,Śląskie,49900
+51072,ford,ka,gen-ii-2008-ka,2017,49000,1242,Gasoline,Krotoszyn,Wielkopolskie,32400
+51073,ford,ka,gen-ii-2008-ka,2014,50400,1242,Gasoline,Knurów,Śląskie,22900
+51391,ford,kuga,gen-ii-2012-kuga,2014,148370,1997,Diesel,Elbląg,Warmińsko-mazurskie,66900
+51392,ford,kuga,gen-ii-2012-kuga,2015,169021,1997,Diesel,Miechucino,Pomorskie,61800
+51393,ford,kuga,gen-ii-2012-kuga,2018,120000,1997,Diesel,Kościerzyna,Pomorskie,99494
+51394,ford,kuga,gen-ii-2012-kuga,2014,215661,1997,Diesel,Płock,Mazowieckie,62900
+51395,ford,kuga,gen-ii-2012-kuga,2015,87329,1997,Diesel,Czermin,Podkarpackie,72000
+51396,ford,kuga,gen-ii-2012-kuga,2013,236000,1997,Diesel,Wągrowiec,Wielkopolskie,57900
+52104,ford,mondeo,gen-mk3-2000-2006,2005,266012,1998,Diesel,Gdańsk,Pomorskie,3900
+52105,ford,mondeo,gen-mk3-2000-2006,2003,148764,1999,Gasoline,Koszalin,Zachodniopomorskie,8500
+52106,ford,mondeo,gen-mk3-2000-2006,2003,582000,1998,Diesel,Rawa Mazowiecka,Łódzkie,4900
+52420,ford,mondeo,gen-mk4-2007-2014,2008,218000,1997,Diesel,Czersk,Pomorskie,15900
+52421,ford,mondeo,gen-mk4-2007-2014,2011,204513,1560,Diesel,Łask,Łódzkie,25900
+52422,ford,mondeo,gen-mk4-2007-2014,2011,236100,1997,Diesel,Polkowice,Dolnośląskie,29900
+52423,ford,mondeo,gen-mk4-2007-2014,2007,301000,1753,Diesel,Piastów,Mazowieckie,12900
+52424,ford,mondeo,gen-mk4-2007-2014,2010,192700,1997,Diesel,Gdańsk,Pomorskie,26445
+52425,ford,mondeo,gen-mk4-2007-2014,2007,200000,1596,Gasoline,Morzyczyn,Zachodniopomorskie,18999
+52426,ford,mondeo,gen-mk4-2007-2014,2010,330000,1997,Diesel,Trzcianka,Wielkopolskie,24900
+52427,ford,mondeo,gen-mk4-2007-2014,2011,520000,1997,Diesel,Niegowa,Śląskie,19500
+54789,ford,s-max,gen-i-2006-2015,2009,144000,2179,Diesel,Warszawa,Mazowieckie,32900
+54790,ford,s-max,gen-i-2006-2015,2007,171000,1999,Gasoline,Bodzentyn,Świętokrzyskie,19900
+54791,ford,s-max,gen-i-2006-2015,2010,319000,1997,Diesel,Częstochowa,Śląskie,42000
+54792,ford,s-max,gen-i-2006-2015,2010,264000,1997,Diesel,Białystok,Podlaskie,24900
+54793,ford,s-max,gen-i-2006-2015,2007,334000,1997,Diesel,Warszawa,Mazowieckie,16900
+54794,ford,s-max,gen-i-2006-2015,2009,186200,1997,Diesel,Łódź,Łódzkie,14900
+54795,ford,s-max,gen-i-2006-2015,2013,225382,1997,Diesel,Rumia,Pomorskie,39000
+56137,mercedes-benz,clk-klasa,gen-w209-2002,2003,277000,2685,Diesel,Nowa Ruda,Dolnośląskie,14850
+56138,mercedes-benz,clk-klasa,gen-w209-2002,2006,188000,2987,Diesel,Bielsko-Biała,Śląskie,27999
+56139,mercedes-benz,clk-klasa,gen-w209-2002,2004,157515,1796,Gasoline,Gniezno,Wielkopolskie,21900
+56140,mercedes-benz,clk-klasa,gen-w209-2002,2003,182000,1796,Gasoline,Szczecin,Zachodniopomorskie,14800
+56141,mercedes-benz,clk-klasa,gen-w209-2002,2006,159056,2996,Gasoline,Orzesze,Śląskie,39900
+56142,mercedes-benz,clk-klasa,gen-w209-2002,2003,329000,2685,Diesel,Gdańsk,Pomorskie,14900
+56143,mercedes-benz,clk-klasa,gen-w209-2002,2008,141000,1796,Gasoline,Nieporęt,Mazowieckie,36900
+56231,mercedes-benz,cls-klasa,gen-c218-2011,2015,169000,2987,Diesel,Szczecinek,Zachodniopomorskie,129000
+56232,mercedes-benz,cls-klasa,gen-c218-2011,2011,96248,2987,Diesel,Łęki,Małopolskie,80000
+57408,mercedes-benz,gle-klasa,gen-w167-2019,2020,27836,1950,Diesel,Łomianki,Mazowieckie,350000
+57409,mercedes-benz,gle-klasa,gen-w167-2019,2022,0,0,Hybrid,Wrocław,Dolnośląskie,472274
+57410,mercedes-benz,gle-klasa,gen-w167-2019,2019,77640,1950,Diesel,Tychy,Śląskie,324900
+61543,mercedes-benz,s-klasa,gen-w220-1998-2005,2002,82470,4966,Gasoline,Gliwice,Śląskie,43900
+61544,mercedes-benz,s-klasa,gen-w220-1998-2005,2000,49160,4966,Gasoline,Gliwice,Śląskie,49160
+61545,mercedes-benz,s-klasa,gen-w220-1998-2005,2004,75587,4966,Gasoline,Gliwice,Śląskie,49900
+61546,mercedes-benz,s-klasa,gen-w220-1998-2005,2001,238000,4966,Gasoline,Janki,Mazowieckie,34900
+62435,mercedes-benz,sl,gen-r230-2001-2013,2003,68500,4966,Gasoline,Kraków,Małopolskie,95000
+62436,mercedes-benz,sl,gen-r230-2001-2013,2003,124000,4966,Gasoline,Kraków,Małopolskie,89000
+62437,mercedes-benz,sl,gen-r230-2001-2013,2005,136773,4966,Gasoline,Kraków,Małopolskie,101900
+63480,renault,clio,gen-ii-1998-2012,1999,190000,1390,Gasoline,Szczecin,Zachodniopomorskie,3300
+63481,renault,clio,gen-ii-1998-2012,2006,225507,1461,Diesel,Białystok,Podlaskie,3936
+63482,renault,clio,gen-ii-1998-2012,2004,100000,1149,Gasoline,Nidzica,Warmińsko-mazurskie,4900
+63483,renault,clio,gen-ii-1998-2012,2002,181648,1149,Gasoline,Stefanów,Mazowieckie,5900
+64051,renault,clio,gen-iv-2012-clio,2012,103000,1149,Gasoline,Gdańsk,Pomorskie,29900
+64052,renault,clio,gen-iv-2012-clio,2015,91500,898,Gasoline,Warszawa,Mazowieckie,34800
+64053,renault,clio,gen-iv-2012-clio,2016,43134,1149,Gasoline,Piaseczno,Mazowieckie,42000
+64054,renault,clio,gen-iv-2012-clio,2018,21000,898,Gasoline,Lublin,Lubelskie,42900
+64869,renault,espace,gen-v-2015,2017,179238,1598,Diesel,Toruń,Kujawsko-pomorskie,79999
+64870,renault,espace,gen-v-2015,2016,138500,1598,Diesel,Konin,Wielkopolskie,69900
+64871,renault,espace,gen-v-2015,2016,219000,1598,Diesel,Domaszków,Dolnośląskie,49999
+64872,renault,espace,gen-v-2015,2018,176000,1997,Diesel,Białogard,Zachodniopomorskie,97990
+64873,renault,espace,gen-v-2015,2015,147000,1618,Gasoline,Gdynia,Pomorskie,99900
+64874,renault,espace,gen-v-2015,2016,107422,1598,Diesel,Sędziszów Małopolski,Podkarpackie,77500
+64875,renault,espace,gen-v-2015,2019,27259,1997,Diesel,Kraków,Małopolskie,184900
+66306,renault,laguna,gen-iii-2007,2008,171000,1995,Diesel,Turek,Wielkopolskie,16700
+66307,renault,laguna,gen-iii-2007,2010,146292,1461,Diesel,Zabrze,Śląskie,24000
+66308,renault,laguna,gen-iii-2007,2008,184000,1995,Diesel,Kłodzko,Dolnośląskie,18900
+66309,renault,laguna,gen-iii-2007,2011,170193,1997,Gasoline,Wierzbica-Osiedle,Lubelskie,29400
+66310,renault,laguna,gen-iii-2007,2007,237000,1995,Diesel,Ostrów Mazowiecka,Mazowieckie,16900
+66311,renault,laguna,gen-iii-2007,2010,186000,1461,Diesel,Leszczyny,Świętokrzyskie,15800
+66312,renault,laguna,gen-iii-2007,2007,182000,1997,Gasoline,Jastrzębie-Zdrój,Śląskie,18900
+66313,renault,laguna,gen-iii-2007,2009,145000,1995,Diesel,Pleszew,Wielkopolskie,19600
+66314,renault,laguna,gen-iii-2007,2010,79000,1598,Gasoline,Wągrowiec,Wielkopolskie,21700
+66607,renault,megane,gen-ii-2002-2008,2008,300000,1870,Diesel,Czarnków,Wielkopolskie,6900
+66608,renault,megane,gen-ii-2002-2008,2003,202082,1390,Gasoline,Pawłowo,Wielkopolskie,5999
+66609,renault,megane,gen-ii-2002-2008,2003,207840,1598,LPG,Tarnobrzeg,Podkarpackie,7600
+66610,renault,megane,gen-ii-2002-2008,2005,225000,1900,Diesel,Kłonna,Mazowieckie,8900
+66611,renault,megane,gen-ii-2002-2008,2003,106000,1598,Gasoline,Krzyszkowice,Małopolskie,8900
+66612,renault,megane,gen-ii-2002-2008,2006,211760,1598,Gasoline,Nysa,Opolskie,11900
+66613,renault,megane,gen-ii-2002-2008,2004,164880,1598,Gasoline,Katowice,Śląskie,8500
+66614,renault,megane,gen-ii-2002-2008,2007,312000,1598,Gasoline,Leszno,Wielkopolskie,8888
+66753,renault,megane,gen-iii-2008-2016,2010,146000,1461,Diesel,Karpacz,Dolnośląskie,23000
+66754,renault,megane,gen-iii-2008-2016,2014,42200,1200,Gasoline,Tarnów,Małopolskie,38500
+66755,renault,megane,gen-iii-2008-2016,2011,150000,1598,Gasoline,Kleszczów,Łódzkie,23900
+67663,renault,megane,gen-iv-2016,2019,90700,1461,Diesel,Mikołów,Śląskie,58900
+67664,renault,megane,gen-iv-2016,2020,26800,1461,Diesel,Bielsko-Biała,Śląskie,81600
+67665,renault,megane,gen-iv-2016,2016,236000,1197,Gasoline,Wyszków,Mazowieckie,43900
+67666,renault,megane,gen-iv-2016,2019,13000,1332,Gasoline,Krosno,Podkarpackie,67900
+68285,renault,scenic,gen-ii-2003-2009-scenic,2007,291000,1461,Diesel,Łask,Łódzkie,9200
+68286,renault,scenic,gen-ii-2003-2009-scenic,2004,230000,1870,Diesel,Rawicz,Wielkopolskie,7300
+68287,renault,scenic,gen-ii-2003-2009-scenic,2005,227611,1998,Gasoline,Mysłowice,Śląskie,8700
+68288,renault,scenic,gen-ii-2003-2009-scenic,2005,204150,1998,Gasoline,Inowrocław,Kujawsko-pomorskie,9000
+68289,renault,scenic,gen-ii-2003-2009-scenic,2003,230000,1998,LPG,Wrocław,Dolnośląskie,5900
+68290,renault,scenic,gen-ii-2003-2009-scenic,2007,326128,1870,Diesel,Junoszyno,Pomorskie,7500
+68549,renault,scenic,gen-iii-2009-2013,2013,179250,1598,Diesel,Ostrzeszów,Wielkopolskie,27900
+68550,renault,scenic,gen-iii-2009-2013,2009,148000,1870,Diesel,Lębork,Pomorskie,22900
+68551,renault,scenic,gen-iii-2009-2013,2011,282000,1461,Diesel,Rzeszów,Podkarpackie,17900
+68552,renault,scenic,gen-iii-2009-2013,2011,168700,1870,Diesel,Inowrocław,Kujawsko-pomorskie,21500
+68553,renault,scenic,gen-iii-2009-2013,2016,25000,1198,Gasoline,Bolesławiec,Dolnośląskie,43900
+68554,renault,scenic,gen-iii-2009-2013,2015,68933,1197,Gasoline,Wałbrzych,Dolnośląskie,44000
+68555,renault,scenic,gen-iii-2009-2013,2010,128000,1397,Gasoline,Pińczów,Świętokrzyskie,18900
+68556,renault,scenic,gen-iii-2009-2013,2011,177201,1461,Diesel,Warszawa,Mazowieckie,14999
+68557,renault,scenic,gen-iii-2009-2013,2010,105640,1997,Gasoline,Radom,Mazowieckie,24900
+68558,renault,scenic,gen-iii-2009-2013,2011,153765,1397,Gasoline,Proszowice,Małopolskie,26900
+68559,renault,scenic,gen-iii-2009-2013,2013,170000,1995,Diesel,Wągrowiec,Wielkopolskie,32900
+68560,renault,scenic,gen-iii-2009-2013,2014,122000,1197,Gasoline,Leszno,Wielkopolskie,29999
+68561,renault,scenic,gen-iii-2009-2013,2009,142817,1461,Diesel,Lublin,Lubelskie,18000
+68562,renault,scenic,gen-iii-2009-2013,2010,154550,1997,Gasoline,Nisko,Podkarpackie,23950
+68563,renault,scenic,gen-iii-2009-2013,2011,174000,1461,Diesel,Starogard Gdański,Pomorskie,22000
+70687,toyota,avensis,gen-ii-2003-2009,2004,294000,2362,Gasoline,Konstantynów Łódzki,Łódzkie,13900
+70688,toyota,avensis,gen-ii-2003-2009,2004,288000,1794,LPG,Hajnówka,Podlaskie,14500
+70689,toyota,avensis,gen-ii-2003-2009,2007,188000,1800,Gasoline,Płońsk,Mazowieckie,19700
+70690,toyota,avensis,gen-ii-2003-2009,2003,363406,1794,Gasoline,Łódź,Łódzkie,9000
+70691,toyota,avensis,gen-ii-2003-2009,2007,249897,1794,Gasoline,Kraków,Małopolskie,17990
+70692,toyota,avensis,gen-ii-2003-2009,2005,279000,2000,Gasoline,Kołobrzeg,Zachodniopomorskie,10900
+70693,toyota,avensis,gen-ii-2003-2009,2005,234000,1794,Gasoline,Płońsk,Mazowieckie,15900
+70694,toyota,avensis,gen-ii-2003-2009,2008,221000,1794,Gasoline,Gostynin,Mazowieckie,22900
+70695,toyota,avensis,gen-ii-2003-2009,2008,269256,1998,Diesel,Warszawa,Mazowieckie,15499
+70696,toyota,avensis,gen-ii-2003-2009,2006,212000,1794,Gasoline,Piła,Wielkopolskie,17900
+70697,toyota,avensis,gen-ii-2003-2009,2004,226551,1794,LPG,Siedlec,Dolnośląskie,10800
+70698,toyota,avensis,gen-ii-2003-2009,2006,214000,1998,Gasoline,Łomża,Podlaskie,14999
+70699,toyota,avensis,gen-ii-2003-2009,2006,223385,1794,Gasoline,Warszawa,Mazowieckie,17700
+70700,toyota,avensis,gen-ii-2003-2009,2005,250000,1998,Gasoline,Legnickie Pole,Dolnośląskie,12900
+70701,toyota,avensis,gen-ii-2003-2009,2003,245016,1794,Gasoline,Łódź,Łódzkie,8900
+70702,toyota,avensis,gen-ii-2003-2009,2005,308100,2231,Diesel,Opoczno,Łódzkie,12400
+70703,toyota,avensis,gen-ii-2003-2009,2004,173458,1995,Diesel,Zaścianki,Podlaskie,14900
+70704,toyota,avensis,gen-ii-2003-2009,2004,240000,1995,Diesel,Radom,Mazowieckie,13000
+70705,toyota,avensis,gen-ii-2003-2009,2005,398600,1995,Diesel,Kraków,Małopolskie,9250
+70779,toyota,avensis,gen-iii-2009,2016,93000,1798,Gasoline,Gdańsk,Pomorskie,79900
+70780,toyota,avensis,gen-iii-2009,2015,167000,1995,Diesel,Rumia,Pomorskie,59900
+70781,toyota,avensis,gen-iii-2009,2016,86874,1998,Diesel,Warszawa,Mazowieckie,61500
+70782,toyota,avensis,gen-iii-2009,2016,72531,1798,Gasoline,Piaseczno,Mazowieckie,72000
+70783,toyota,avensis,gen-iii-2009,2011,91500,1798,Gasoline,Warszawa,Mazowieckie,48900
+70784,toyota,avensis,gen-iii-2009,2013,210000,1798,Gasoline,Gózd,Mazowieckie,45900
+70785,toyota,avensis,gen-iii-2009,2011,197000,1798,Gasoline,Warszawa,Mazowieckie,32500
+70786,toyota,avensis,gen-iii-2009,2010,176000,1598,Gasoline,Gliwice,Śląskie,28500
+70787,toyota,avensis,gen-iii-2009,2011,202850,1798,Gasoline,Białystok,Podlaskie,41900
+70788,toyota,avensis,gen-iii-2009,2012,87697,1798,Gasoline,Warszawa,Mazowieckie,46500
+70789,toyota,avensis,gen-iii-2009,2012,99296,1798,Gasoline,Warszawa,Mazowieckie,49500
+70790,toyota,avensis,gen-iii-2009,2009,123528,1794,Gasoline,Kąty Opolskie,Opolskie,32999
+70791,toyota,avensis,gen-iii-2009,2009,231360,2231,Diesel,Ślizów,Dolnośląskie,24900
+70792,toyota,avensis,gen-iii-2009,2015,152416,1998,Diesel,Piaseczno,Mazowieckie,50000
+70793,toyota,avensis,gen-iii-2009,2011,187000,1598,Gasoline,Tarnowskie Góry,Śląskie,29900
+70794,toyota,avensis,gen-iii-2009,2014,29560,1798,Gasoline,Wyszków,Mazowieckie,52800
+71355,toyota,aygo,gen-i-2005-2014,2009,139000,998,Gasoline,Piła,Wielkopolskie,9700
+71356,toyota,aygo,gen-i-2005-2014,2007,183328,998,Gasoline,Mińsk Mazowiecki,Mazowieckie,11900
+71357,toyota,aygo,gen-i-2005-2014,2009,160000,998,Gasoline,Lidzbark Warmiński,Warmińsko-mazurskie,13600
+71358,toyota,aygo,gen-i-2005-2014,2009,171325,998,Gasoline,Komorniki,Wielkopolskie,12900
+71359,toyota,aygo,gen-i-2005-2014,2007,183236,998,Gasoline,Płock,Mazowieckie,11900
+71360,toyota,aygo,gen-i-2005-2014,2011,153000,998,Gasoline,Zawiercie,Śląskie,16300
+71361,toyota,aygo,gen-i-2005-2014,2009,108298,998,Gasoline,Częstochowa,Śląskie,16600
+71362,toyota,aygo,gen-i-2005-2014,2011,165000,998,Gasoline,Limanowa,Małopolskie,17500
+71363,toyota,aygo,gen-i-2005-2014,2014,77000,998,Gasoline,Wągrowiec,Wielkopolskie,23900
+71364,toyota,aygo,gen-i-2005-2014,2007,198189,998,Gasoline,Poznań,Wielkopolskie,8999
+71365,toyota,aygo,gen-i-2005-2014,2006,195000,1398,Diesel,Kwileń,Wielkopolskie,8400
+71366,toyota,aygo,gen-i-2005-2014,2006,260000,998,Gasoline,Jasień,Kujawsko-pomorskie,7300
+71367,toyota,aygo,gen-i-2005-2014,2008,138000,998,Gasoline,Dynów,Podkarpackie,13900
+71368,toyota,aygo,gen-i-2005-2014,2010,184000,998,Gasoline,Konin,Wielkopolskie,9400
+71369,toyota,aygo,gen-i-2005-2014,2008,173000,998,Gasoline,Chełm,Lubelskie,11500
+71370,toyota,aygo,gen-i-2005-2014,2014,25650,998,Gasoline,Siemianowice Śląskie,Śląskie,28900
+71371,toyota,aygo,gen-i-2005-2014,2005,137000,998,Gasoline,Psary,Śląskie,10600
+71372,toyota,aygo,gen-i-2005-2014,2007,121000,998,Gasoline,Drezdenko,Lubuskie,8999
+71373,toyota,aygo,gen-i-2005-2014,2009,240000,998,Gasoline,Łódź,Łódzkie,8999
+71374,toyota,aygo,gen-i-2005-2014,2013,119000,998,Gasoline,Łobez,Zachodniopomorskie,19800
+71375,toyota,aygo,gen-i-2005-2014,2008,136000,998,Gasoline,Cielądz,Łódzkie,13500
+71376,toyota,aygo,gen-i-2005-2014,2010,142029,998,LPG,Kutno,Łódzkie,16900
+71377,toyota,aygo,gen-i-2005-2014,2010,161100,998,Gasoline,Gdańsk,Pomorskie,16990
+71378,toyota,aygo,gen-i-2005-2014,2011,51000,998,Gasoline,Ryki,Lubelskie,14900
+71379,toyota,aygo,gen-i-2005-2014,2009,186000,998,Gasoline,Piekoszów,Świętokrzyskie,12900
+71380,toyota,aygo,gen-i-2005-2014,2008,128000,998,Gasoline,Kędzierzyn-Koźle,Opolskie,12100
+71381,toyota,aygo,gen-i-2005-2014,2013,102000,998,Gasoline,Marklowice Górne,Śląskie,16500
+71382,toyota,aygo,gen-i-2005-2014,2009,118000,998,Gasoline,Wtelno,Kujawsko-pomorskie,12800
+71533,toyota,aygo,gen-ii-2014-aygo,2017,37267,998,Gasoline,Warszawa,Mazowieckie,32999
+71534,toyota,aygo,gen-ii-2014-aygo,2018,18000,998,Gasoline,Warszawa,Mazowieckie,32999
+71535,toyota,aygo,gen-ii-2014-aygo,2018,51600,998,Gasoline,Zabrze,Śląskie,45900
+71536,toyota,aygo,gen-ii-2014-aygo,2019,8000,998,Gasoline,Nowe Miasto Lubawskie,Warmińsko-mazurskie,43500
+71537,toyota,aygo,gen-ii-2014-aygo,2015,82680,998,Gasoline,Lubin,Dolnośląskie,34900
+71538,toyota,aygo,gen-ii-2014-aygo,2017,51193,998,Gasoline,Dzierżążno,Pomorskie,31900
+71539,toyota,aygo,gen-ii-2014-aygo,2017,60436,998,Gasoline,Magdalenka,Mazowieckie,28000
+71540,toyota,aygo,gen-ii-2014-aygo,2019,49654,998,Gasoline,Rybnik,Śląskie,39899
+71541,toyota,aygo,gen-ii-2014-aygo,2019,53517,998,Gasoline,Modlnica,Małopolskie,42850
+71542,toyota,aygo,gen-ii-2014-aygo,2016,84713,998,Gasoline,Łódź,Łódzkie,33900
+71543,toyota,aygo,gen-ii-2014-aygo,2015,51850,998,Gasoline,Łódź,Łódzkie,33900
+71544,toyota,aygo,gen-ii-2014-aygo,2017,30330,998,Gasoline,Bielany Wrocławskie,Dolnośląskie,45900
+71545,toyota,aygo,gen-ii-2014-aygo,2018,17425,998,Gasoline,Kalisz,Wielkopolskie,44900
+71546,toyota,aygo,gen-ii-2014-aygo,2017,113450,998,Gasoline,Koszalin,Zachodniopomorskie,34900
+71547,toyota,aygo,gen-ii-2014-aygo,2019,43909,999,LPG,Bydgoszcz,Kujawsko-pomorskie,37900
+71548,toyota,aygo,gen-ii-2014-aygo,2018,40546,998,Gasoline,Szczecin,Zachodniopomorskie,39900
+71549,toyota,aygo,gen-ii-2014-aygo,2014,57523,998,Gasoline,Toruń,Kujawsko-pomorskie,29900
+71550,toyota,aygo,gen-ii-2014-aygo,2015,99809,998,Gasoline,Sady,Wielkopolskie,35000
+71551,toyota,aygo,gen-ii-2014-aygo,2018,17425,998,Gasoline,Kalisz,Wielkopolskie,44900
+71552,toyota,aygo,gen-ii-2014-aygo,2018,27007,998,Gasoline,Biała Podlaska,Lubelskie,44900
+71553,toyota,aygo,gen-ii-2014-aygo,2015,110000,998,Gasoline,Tuchola,Kujawsko-pomorskie,27999
+71554,toyota,aygo,gen-ii-2014-aygo,2018,44500,998,Gasoline,Stalowa Wola,Podkarpackie,46900
+71555,toyota,aygo,gen-ii-2014-aygo,2017,34000,998,Gasoline,Toruń,Kujawsko-pomorskie,42999
+71556,toyota,aygo,gen-ii-2014-aygo,2017,133210,998,Gasoline,Siedlce,Mazowieckie,46900
+71557,toyota,aygo,gen-ii-2014-aygo,2016,80000,998,Gasoline,Jastrzębie-Zdrój,Śląskie,31900
+71558,toyota,aygo,gen-ii-2014-aygo,2015,90000,998,Gasoline,Ostrów Mazowiecka,Mazowieckie,31900
+71559,toyota,aygo,gen-ii-2014-aygo,2019,42000,998,LPG,Oświęcim,Małopolskie,42900
+71560,toyota,aygo,gen-ii-2014-aygo,2017,52149,998,Gasoline,Lublin,Lubelskie,34000
+71561,toyota,aygo,gen-ii-2014-aygo,2019,18358,998,Gasoline,Zabrze,Śląskie,39000
+71562,toyota,aygo,gen-ii-2014-aygo,2016,94071,998,Gasoline,Lublin,Lubelskie,31500
+71957,toyota,corolla,gen-seria-e12-2001-2007,2003,147000,1398,Gasoline,Myślibórz,Zachodniopomorskie,9400
+71958,toyota,corolla,gen-seria-e12-2001-2007,2003,220000,1398,Gasoline,Warszawa,Mazowieckie,9500
+71959,toyota,corolla,gen-seria-e12-2001-2007,2007,153251,1598,Gasoline,Częstochowa,Śląskie,18900
+71960,toyota,corolla,gen-seria-e12-2001-2007,2002,198009,1598,Gasoline,Dzierżoniów,Dolnośląskie,9800
+71961,toyota,corolla,gen-seria-e12-2001-2007,2004,317400,1995,Diesel,Lubsko,Lubuskie,7900
+71962,toyota,corolla,gen-seria-e12-2001-2007,2007,159960,1398,Gasoline,Zamość,Lubelskie,16500
+71963,toyota,corolla,gen-seria-e12-2001-2007,2007,199960,1598,Gasoline,Rybnik,Śląskie,14900
+71964,toyota,corolla,gen-seria-e12-2001-2007,2004,132000,1598,Gasoline,Drezdenko,Lubuskie,15000
+71965,toyota,corolla,gen-seria-e12-2001-2007,2005,98061,1364,Diesel,Jaworzno,Śląskie,19900
+71966,toyota,corolla,gen-seria-e12-2001-2007,2003,254962,1996,Diesel,Bibice,Małopolskie,9500
+71967,toyota,corolla,gen-seria-e12-2001-2007,2002,224000,1795,Gasoline,Piła,Wielkopolskie,25900
+71968,toyota,corolla,gen-seria-e12-2001-2007,2006,164737,1598,Gasoline,Kraków,Małopolskie,18500
+71969,toyota,corolla,gen-seria-e12-2001-2007,2004,185000,1598,Gasoline,Szczecin,Zachodniopomorskie,16900
+71970,toyota,corolla,gen-seria-e12-2001-2007,2004,185738,1598,Gasoline,Bydgoszcz,Kujawsko-pomorskie,13500
+71971,toyota,corolla,gen-seria-e12-2001-2007,2002,89900,1795,Gasoline,Marki,Mazowieckie,28900
+71972,toyota,corolla,gen-seria-e12-2001-2007,2006,182950,1598,LPG,Wrocław,Dolnośląskie,16900
+71973,toyota,corolla,gen-seria-e12-2001-2007,2004,175810,1398,Gasoline,Warszawa,Mazowieckie,13900
+71974,toyota,corolla,gen-seria-e12-2001-2007,2004,248000,1995,Diesel,Chełm Śląski,Śląskie,9500
+71975,toyota,corolla,gen-seria-e12-2001-2007,2004,238000,1995,Diesel,Opatówek,Wielkopolskie,9900
+71976,toyota,corolla,gen-seria-e12-2001-2007,2005,157000,1795,Gasoline,Józefosław,Mazowieckie,24500
+71977,toyota,corolla,gen-seria-e12-2001-2007,2002,284800,1795,LPG,Zielona Góra,Lubuskie,9999
+71978,toyota,corolla,gen-seria-e12-2001-2007,2005,199000,1795,Gasoline,Ostrów Mazowiecka,Mazowieckie,12900
+71979,toyota,corolla,gen-seria-e12-2001-2007,2003,193854,1598,Gasoline,Sępólno Krajeńskie,Kujawsko-pomorskie,7490
+71980,toyota,corolla,gen-seria-e12-2001-2007,2002,192770,1795,Gasoline,Kraków,Małopolskie,16900
+71981,toyota,corolla,gen-seria-e12-2001-2007,2003,215000,1598,Gasoline,Warszawa,Mazowieckie,7500
+71982,toyota,corolla,gen-seria-e12-2001-2007,2002,172000,1400,Gasoline,Zamość,Lubelskie,7900
+71983,toyota,corolla,gen-seria-e12-2001-2007,2002,146000,1398,Gasoline,Szczecin,Zachodniopomorskie,6900
+71984,toyota,corolla,gen-seria-e12-2001-2007,2006,103000,1995,Diesel,Leszno,Wielkopolskie,12222
+71985,toyota,corolla,gen-seria-e12-2001-2007,2006,229112,1364,Diesel,Bytom,Śląskie,18900
+71986,toyota,corolla,gen-seria-e12-2001-2007,2005,343000,1398,LPG,Wołomin,Mazowieckie,8000
+71987,toyota,corolla,gen-seria-e12-2001-2007,2006,198000,1598,Gasoline,Racibórz,Śląskie,14300
+71988,toyota,corolla,gen-seria-e12-2001-2007,2002,271000,1995,Diesel,Łąg,Pomorskie,7700
+72900,toyota,land-cruiser,gen-iv-2002-2009,2007,338000,2982,Diesel,Andrychów,Małopolskie,90000
+72901,toyota,land-cruiser,gen-iv-2002-2009,2003,320000,2982,Diesel,Wolin,Zachodniopomorskie,42500
+72902,toyota,land-cruiser,gen-iv-2002-2009,2003,432100,2982,Diesel,Orchowo,Wielkopolskie,39900
+72903,toyota,land-cruiser,gen-vi-2010,2014,30235,2982,Diesel,Piaseczno,Mazowieckie,180000
+72904,toyota,land-cruiser,gen-vi-2010,2021,227,2755,Diesel,Kraków,Małopolskie,561000
+72905,toyota,land-cruiser,gen-vi-2010,2021,25,3346,Diesel,Wieleń,Wielkopolskie,665000
+72906,toyota,land-cruiser,gen-vi-2010,2021,25,4500,Diesel,Wieleń,Wielkopolskie,285000
+72907,toyota,land-cruiser,gen-vi-2010,2018,20733,4500,Diesel,Piotrków Trybunalski,Łódzkie,249000
+72908,toyota,land-cruiser,gen-vi-2010,2022,50,3999,Gasoline,Kraków,Małopolskie,90000
+72909,toyota,land-cruiser,gen-vi-2010,2022,50,2755,Diesel,Kraków,Małopolskie,65000
+72910,toyota,land-cruiser,gen-vi-2010,2022,50,3499,Gasoline,Kraków,Małopolskie,149900
+72911,toyota,land-cruiser,gen-vi-2010,2018,59000,2755,Diesel,Szczecin,Zachodniopomorskie,265000
+72912,toyota,land-cruiser,gen-vi-2010,2017,43000,2755,Diesel,Grzybów,Mazowieckie,165900
+72913,toyota,land-cruiser,gen-vi-2010,2014,94000,2982,Diesel,Białystok,Podlaskie,199900
+72914,toyota,land-cruiser,gen-vi-2010,2017,60000,2755,Diesel,Warszawa,Mazowieckie,135000
+72915,toyota,land-cruiser,gen-vi-2010,2010,70647,2982,Diesel,Włocławek,Kujawsko-pomorskie,159900
+72916,toyota,land-cruiser,gen-vi-2010,2018,71000,2755,Diesel,Rewa,Pomorskie,195000
+72917,toyota,land-cruiser,gen-vi-2010,2015,134000,2982,Diesel,Kraków,Małopolskie,153750
+72918,toyota,land-cruiser,gen-vi-2010,2010,88250,4664,Gasoline,Łódź,Łódzkie,149900
+72919,toyota,land-cruiser,gen-vi-2010,2021,25,4000,Gasoline,Wieleń,Wielkopolskie,255000
+72920,toyota,land-cruiser,gen-vi-2010,2015,125000,4461,Diesel,Węgrzce,Małopolskie,309000
+72921,toyota,land-cruiser,gen-vi-2010,2015,48000,2755,Diesel,Skoki,Wielkopolskie,199900
+72922,toyota,land-cruiser,gen-vi-2010,2014,98000,4608,Gasoline,Radom,Mazowieckie,200000
+72923,toyota,land-cruiser,gen-vi-2010,2016,89570,2755,Diesel,Kobyłka,Mazowieckie,160900
+72924,toyota,land-cruiser,gen-vi-2010,2022,50,3300,Diesel,Kraków,Małopolskie,150000
+72925,toyota,land-cruiser,gen-vi-2010,2015,49400,2755,Diesel,Kraków,Małopolskie,184900
+72926,toyota,land-cruiser,gen-vi-2010,2016,110000,4608,LPG,Grudziądz,Kujawsko-pomorskie,309900
+72927,toyota,land-cruiser,gen-vi-2010,2021,25,4500,Diesel,Wieleń,Wielkopolskie,259000
+72928,toyota,land-cruiser,gen-vi-2010,2021,25,4500,Diesel,Wieleń,Wielkopolskie,269000
+72929,toyota,land-cruiser,gen-vi-2010,2021,25,4000,Gasoline,Wieleń,Wielkopolskie,259000
+72930,toyota,land-cruiser,gen-vi-2010,2014,157000,2982,Diesel,Radom,Mazowieckie,147900
+72931,toyota,land-cruiser,gen-vi-2010,2012,297000,2982,Diesel,Franklinów,Wielkopolskie,47900
+72932,toyota,land-cruiser,gen-vi-2010,2010,89430,2982,Diesel,Grójec,Mazowieckie,129900
+72933,toyota,land-cruiser,gen-vi-2010,2022,50,3999,Gasoline,Kraków,Małopolskie,105000
+72934,toyota,land-cruiser,gen-vi-2010,2014,199970,2982,Diesel,Rumia,Pomorskie,159900
+72935,toyota,prius,gen-ii-2003-2009-prius,2008,240000,1497,Hybrid,Raszyn,Mazowieckie,28500
+72936,toyota,prius,gen-ii-2003-2009-prius,2009,282534,1497,Hybrid,Legionowo,Mazowieckie,25900
+72957,toyota,prius,gen-ii-2003-2009-prius,2008,229000,1497,Hybrid,Warszawa,Mazowieckie,27300
+72958,toyota,prius,gen-ii-2003-2009-prius,2008,236000,1497,Hybrid,Wrocław,Dolnośląskie,25900
+72959,toyota,prius,gen-ii-2003-2009-prius,2007,105000,1497,Hybrid,Warszawa,Mazowieckie,29900
+72960,toyota,prius,gen-ii-2003-2009-prius,2008,230000,1497,Hybrid,Raszyn,Mazowieckie,26500
+72961,toyota,prius,gen-ii-2003-2009-prius,2007,230000,1497,Hybrid,Elbląg,Warmińsko-mazurskie,27500
+72962,toyota,prius,gen-ii-2003-2009-prius,2004,251000,1497,Hybrid,Wrocław,Dolnośląskie,21400
+72963,toyota,prius,gen-ii-2003-2009-prius,2008,265000,1497,Hybrid,Warszawa,Mazowieckie,26900
+72964,toyota,prius,gen-ii-2003-2009-prius,2004,299999,1497,Hybrid,Warszawa,Mazowieckie,20900
+72965,toyota,prius,gen-ii-2003-2009-prius,2007,230000,1497,Hybrid,Pasłęk,Warmińsko-mazurskie,27999
+72966,toyota,prius,gen-ii-2003-2009-prius,2008,98000,1497,Hybrid,Olsztyn,Warmińsko-mazurskie,99999
+72967,toyota,prius,gen-iii-2009-2015,2011,230000,1798,Hybrid,Raszyn,Mazowieckie,39900
+72968,toyota,prius,gen-iii-2009-2015,2010,266000,1798,Hybrid,Pruszków,Mazowieckie,31500
+72969,toyota,prius,gen-iii-2009-2015,2012,196000,1798,Hybrid,Zduńska Wola,Łódzkie,41500
+72970,toyota,prius,gen-iii-2009-2015,2012,192079,1798,Hybrid,Lublin,Lubelskie,49800
+72971,toyota,prius,gen-iii-2009-2015,2009,171570,1798,Hybrid,Lublin,Lubelskie,38500
+72972,toyota,prius,gen-iii-2009-2015,2013,187874,1800,Hybrid,Lublin,Lubelskie,50900
+72973,toyota,prius,gen-iii-2009-2015,2012,220421,1798,Hybrid,Lublin,Lubelskie,48900
+72974,toyota,prius,gen-iii-2009-2015,2013,187800,1798,Hybrid,Lublin,Lubelskie,51800
+72975,toyota,prius,gen-iii-2009-2015,2010,188875,1798,Hybrid,Lublin,Lubelskie,58900
+72976,toyota,prius,gen-iii-2009-2015,2012,165515,1798,Hybrid,Lublin,Lubelskie,51500
+72977,toyota,prius,gen-iii-2009-2015,2013,183281,1800,Hybrid,Lublin,Lubelskie,58600
+73031,toyota,rav4,gen-ii-2000-2005,2004,331708,1995,Diesel,Wilkowyja,Mazowieckie,15000
+73032,toyota,rav4,gen-ii-2000-2005,2005,217950,1995,Diesel,Kąty Opolskie,Opolskie,22499
+73033,toyota,rav4,gen-ii-2000-2005,2004,275000,1998,Gasoline,Grodzisk Mazowiecki,Mazowieckie,32999
+73034,toyota,rav4,gen-ii-2000-2005,2005,142419,1998,Gasoline,Rzeszów,Podkarpackie,28999
+73035,toyota,rav4,gen-ii-2000-2005,2005,244131,1998,Gasoline,Czarny Kierz,Warmińsko-mazurskie,19900
+73036,toyota,rav4,gen-ii-2000-2005,2001,235000,1998,LPG,Pisarzowice,Śląskie,18900
+73037,toyota,rav4,gen-ii-2000-2005,2002,320000,1995,Diesel,Małuszów,Dolnośląskie,13900
+73038,toyota,rav4,gen-ii-2000-2005,2002,310000,1998,LPG,Zagórów,Wielkopolskie,18800
+73039,toyota,rav4,gen-ii-2000-2005,2004,186321,1998,Gasoline,Tarnowskie Góry,Śląskie,26900
+73040,toyota,rav4,gen-ii-2000-2005,2002,297000,1995,Diesel,Anielew,Mazowieckie,13550
+73207,toyota,rav4,gen-iii-2006-2012-rav4,2009,114500,2231,Diesel,Kielce,Świętokrzyskie,39000
+73208,toyota,rav4,gen-iii-2006-2012-rav4,2009,140828,1998,LPG,Pisarzowice,Dolnośląskie,41900
+73209,toyota,rav4,gen-iii-2006-2012-rav4,2011,236000,1987,Gasoline,Białe Błota,Kujawsko-pomorskie,49000
+73210,toyota,rav4,gen-iii-2006-2012-rav4,2008,239000,1998,LPG,Połaniec,Świętokrzyskie,32000
+73211,toyota,rav4,gen-iii-2006-2012-rav4,2007,230534,2231,Diesel,Starowa Góra,Łódzkie,26889
+73212,toyota,rav4,gen-iii-2006-2012-rav4,2012,144000,1987,Gasoline,Kaszów,Małopolskie,52900
+73213,toyota,rav4,gen-iii-2006-2012-rav4,2008,195000,2231,Diesel,Morawica,Świętokrzyskie,29900
+73214,toyota,rav4,gen-iii-2006-2012-rav4,2009,162481,1998,Gasoline,Elbląg,Warmińsko-mazurskie,43900
+73215,toyota,rav4,gen-iii-2006-2012-rav4,2010,179028,2231,Diesel,Zielona Góra,Lubuskie,37000
+73216,toyota,rav4,gen-iii-2006-2012-rav4,2009,234470,1987,Gasoline,Ostrowiec Świętokrzyski,Świętokrzyskie,35900
+73217,toyota,rav4,gen-iii-2006-2012-rav4,2007,284000,2231,Diesel,Częstochowa,Śląskie,26500
+73218,toyota,rav4,gen-iii-2006-2012-rav4,2012,130892,2231,Diesel,Lublin,Lubelskie,48000
+73219,toyota,rav4,gen-iii-2006-2012-rav4,2006,186839,1987,Gasoline,Piaseczno,Mazowieckie,28000
+73220,toyota,rav4,gen-iii-2006-2012-rav4,2007,289000,2231,Diesel,Myszków,Śląskie,22500
+73221,toyota,rav4,gen-iii-2006-2012-rav4,2008,212000,2231,Diesel,Nidzica,Warmińsko-mazurskie,28900
+73222,toyota,rav4,gen-iii-2006-2012-rav4,2007,190299,1987,Gasoline,Bielany Wrocławskie,Dolnośląskie,28002
+73223,toyota,rav4,gen-iii-2006-2012-rav4,2009,130000,2231,Diesel,Paczków,Opolskie,34900
+73224,toyota,rav4,gen-iii-2006-2012-rav4,2008,231000,2231,Diesel,Szczecin,Zachodniopomorskie,27000
+73225,toyota,rav4,gen-iii-2006-2012-rav4,2006,250000,1995,Diesel,Mrągowo,Warmińsko-mazurskie,18000
+73226,toyota,rav4,gen-iii-2006-2012-rav4,2007,270000,2231,Diesel,Rymanów-Zdrój,Podkarpackie,28400
+73227,toyota,rav4,gen-iii-2006-2012-rav4,2010,129000,1987,Gasoline,Zambrów,Podlaskie,55500
+73228,toyota,rav4,gen-iii-2006-2012-rav4,2009,216201,1998,Gasoline,Elbląg,Warmińsko-mazurskie,39900
+73229,toyota,rav4,gen-iii-2006-2012-rav4,2009,180000,2231,Diesel,Kraków,Małopolskie,32002
+73230,toyota,rav4,gen-iii-2006-2012-rav4,2011,218261,1987,Gasoline,Garwolin,Mazowieckie,54900
+73231,toyota,rav4,gen-iii-2006-2012-rav4,2009,183207,1987,Gasoline,Przemyśl,Podkarpackie,42000
+73232,toyota,rav4,gen-iii-2006-2012-rav4,2010,174000,2494,Gasoline,Nowa Sól,Lubuskie,42900
+73233,toyota,rav4,gen-iii-2006-2012-rav4,2009,178560,2231,Diesel,Ględy,Warmińsko-mazurskie,36000
+73234,toyota,rav4,gen-iii-2006-2012-rav4,2006,124118,2231,Diesel,Ostrołęka,Mazowieckie,29900
+73235,toyota,rav4,gen-iii-2006-2012-rav4,2009,146000,1998,Gasoline,Białystok,Podlaskie,41900
+73236,toyota,rav4,gen-iii-2006-2012-rav4,2008,204500,2231,Diesel,Płock,Mazowieckie,33800
+73237,toyota,rav4,gen-iii-2006-2012-rav4,2011,171000,2231,Diesel,Zgierz,Łódzkie,47900
+73238,toyota,rav4,gen-iii-2006-2012-rav4,2008,191000,1998,Gasoline,Kocmyrzów,Małopolskie,37500
+73239,toyota,rav4,gen-iii-2006-2012-rav4,2006,249654,2231,Diesel,Rzeszów,Podkarpackie,24900
+73240,toyota,rav4,gen-iii-2006-2012-rav4,2011,128000,1997,Gasoline,Łodygowice,Śląskie,49900
+73241,toyota,rav4,gen-iii-2006-2012-rav4,2010,138035,1987,Gasoline,Szczecin,Zachodniopomorskie,45999
+73242,toyota,rav4,gen-iii-2006-2012-rav4,2008,257470,2231,Diesel,Ostrowiec Świętokrzyski,Świętokrzyskie,28900
+73243,toyota,rav4,gen-iii-2006-2012-rav4,2012,200000,2231,Diesel,Gniezno,Wielkopolskie,43900
+73244,toyota,rav4,gen-iii-2006-2012-rav4,2010,168608,1987,LPG,Katowice,Śląskie,52000
+75556,skoda,fabia,gen-iii-2014,2016,152640,999,Gasoline,Szczecin,Zachodniopomorskie,44900
+75557,skoda,fabia,gen-iii-2014,2017,161600,1197,Gasoline,Gdańsk,Pomorskie,46900
+75558,skoda,fabia,gen-iii-2014,2018,72500,999,Gasoline,Tomaszów Mazowiecki,Łódzkie,44900
+75599,skoda,fabia,gen-iii-2014,2017,54000,999,Gasoline,Warszawa,Mazowieckie,49900
+75600,skoda,fabia,gen-iii-2014,2019,13658,999,Gasoline,Modlniczka,Małopolskie,57799
+75601,skoda,fabia,gen-iii-2014,2018,52700,999,Gasoline,Warszawa,Mazowieckie,49900
+75602,skoda,fabia,gen-iii-2014,2016,144991,1197,Gasoline,Katowice,Śląskie,34900
+75603,skoda,fabia,gen-iii-2014,2020,44789,999,LPG,Łódź,Łódzkie,43900
+75604,skoda,fabia,gen-iii-2014,2020,7476,999,Gasoline,Dobroń,Łódzkie,62900
+75605,skoda,fabia,gen-iii-2014,2019,53000,999,Gasoline,Rydułtowy,Śląskie,40900
+75606,skoda,fabia,gen-iii-2014,2017,113715,1197,Gasoline,Warszawa,Mazowieckie,43799
+75607,skoda,fabia,gen-iii-2014,2017,120840,999,LPG,Gdańsk,Pomorskie,44900
+75608,skoda,fabia,gen-iii-2014,2018,175678,1422,Diesel,Słupsk,Pomorskie,34440
+76265,skoda,fabia,gen-i-1999-2008,2021,5,999,Gasoline,Kraków,Małopolskie,73800
+76266,skoda,fabia,gen-i-1999-2008,2003,214000,1398,Gasoline,Mieczewo,Wielkopolskie,5500
+76267,skoda,fabia,gen-i-1999-2008,2021,5,999,Gasoline,Kraków,Małopolskie,63800
+76268,skoda,fabia,gen-i-1999-2008,2021,5,999,Gasoline,Kraków,Małopolskie,61800
+76269,skoda,fabia,gen-i-1999-2008,2007,146900,1198,Gasoline,Jarosław,Podkarpackie,10500
+76270,skoda,fabia,gen-i-1999-2008,2007,212000,1422,Diesel,Baranowo,Wielkopolskie,6600
+76271,skoda,fabia,gen-i-1999-2008,2006,190000,1198,Gasoline,Gniezno,Wielkopolskie,6900
+76272,skoda,fabia,gen-i-1999-2008,2003,144405,1198,Gasoline,Kraków,Małopolskie,5100
+76273,skoda,fabia,gen-i-1999-2008,2004,168000,1390,Gasoline,Lębork,Pomorskie,8890
+76274,skoda,fabia,gen-i-1999-2008,2003,170998,1390,Gasoline,Sławno,Zachodniopomorskie,5999
+76275,skoda,fabia,gen-i-1999-2008,2006,196800,1390,Gasoline,Zamość,Lubelskie,9999
+76276,skoda,fabia,gen-i-1999-2008,2006,57748,1390,Gasoline,Lipno,Kujawsko-pomorskie,14800
+76277,skoda,fabia,gen-i-1999-2008,2000,447000,1896,Diesel,Gdańsk,Pomorskie,4900
+76278,skoda,fabia,gen-i-1999-2008,2004,131554,1198,Gasoline,Łódź,Łódzkie,7900
+76279,skoda,fabia,gen-i-1999-2008,2005,209300,1198,Gasoline,Lębork,Pomorskie,7500
+76280,skoda,fabia,gen-i-1999-2008,2003,250000,1400,Gasoline,Kisielice,Warmińsko-mazurskie,6299
+76281,skoda,fabia,gen-i-1999-2008,2004,164000,1200,Gasoline,Tomaszów Mazowiecki,Łódzkie,7900
+76282,skoda,fabia,gen-i-1999-2008,2005,107318,1198,Gasoline,Zabrze,Śląskie,9500
+76283,skoda,fabia,gen-i-1999-2008,2006,224938,1390,Gasoline,Gdańsk,Pomorskie,7999
+76284,skoda,fabia,gen-i-1999-2008,2006,96307,1198,Gasoline,Katowice,Śląskie,11000
+76945,skoda,octavia,gen-i-1996-2011,2004,260000,1595,Gasoline,Jarosław,Podkarpackie,11999
+76951,skoda,octavia,gen-i-1996-2011,2004,211839,1896,Diesel,Konin,Wielkopolskie,10000
+76952,skoda,octavia,gen-i-1996-2011,2004,226000,1595,Gasoline,Radom,Mazowieckie,14500
+76953,skoda,octavia,gen-i-1996-2011,1999,340000,1781,Gasoline,Rzeszów,Podkarpackie,9250
+76954,skoda,octavia,gen-i-1996-2011,2001,273000,1896,Diesel,Jarosław,Podkarpackie,8999
+76966,skoda,octavia,gen-i-1996-2011,2003,325000,1896,Diesel,Bydgoszcz,Kujawsko-pomorskie,6900
+76967,skoda,octavia,gen-ii-2004-2013,2012,185000,1968,Diesel,Gdańsk,Pomorskie,24000
+76968,skoda,octavia,gen-ii-2004-2013,2011,140000,1798,Gasoline,Chełmce,Kujawsko-pomorskie,23950
+76969,skoda,octavia,gen-ii-2004-2013,2012,269900,1390,Gasoline,Pruszcz Gdański,Pomorskie,17900
+76970,skoda,octavia,gen-ii-2004-2013,2007,200000,1595,Gasoline,Witkowo,Wielkopolskie,17950
+76971,skoda,octavia,gen-ii-2004-2013,2011,229500,1598,Diesel,Tarnowskie Góry,Śląskie,22500
+76972,skoda,octavia,gen-ii-2004-2013,2010,279000,1598,Diesel,Nysa,Opolskie,21900
+76973,skoda,octavia,gen-ii-2004-2013,2013,235061,1598,Diesel,Brzesko,Małopolskie,22600
+76974,skoda,octavia,gen-ii-2004-2013,2010,163236,1798,Gasoline,Piaseczno,Mazowieckie,24000
+76975,skoda,octavia,gen-ii-2004-2013,2007,279000,1968,Diesel,Płock,Mazowieckie,18900
+76976,skoda,octavia,gen-ii-2004-2013,2012,181000,1798,Gasoline,Żywocice,Opolskie,30750
+76977,skoda,octavia,gen-ii-2004-2013,2007,207605,1968,Diesel,Kamieńsk,Łódzkie,20000
+76978,skoda,octavia,gen-ii-2004-2013,2009,226451,1598,Diesel,Sierakowice,Pomorskie,20700
+76979,skoda,octavia,gen-ii-2004-2013,2005,262000,1968,Diesel,Poznań,Wielkopolskie,10500
+76980,skoda,octavia,gen-ii-2004-2013,2010,380000,1598,Diesel,Gdynia,Pomorskie,18300
+76981,skoda,octavia,gen-ii-2004-2013,2008,169140,1984,Gasoline,Lublin,Lubelskie,17500
+76982,skoda,octavia,gen-ii-2004-2013,2010,256779,1896,Diesel,Bulowice,Małopolskie,23300
+76983,skoda,octavia,gen-ii-2004-2013,2009,326000,1896,Diesel,Gdańsk,Pomorskie,17300
+76984,skoda,octavia,gen-ii-2004-2013,2012,339000,1968,Diesel,Warszawa,Mazowieckie,18900
+76985,skoda,octavia,gen-ii-2004-2013,2009,142117,1798,Gasoline,Janów Lubelski,Lubelskie,21900
+76986,skoda,octavia,gen-ii-2004-2013,2006,187000,1595,Gasoline,Chojnice,Pomorskie,19900
+76987,skoda,octavia,gen-ii-2004-2013,2012,188000,1598,Diesel,Kraków,Małopolskie,26200
+77542,skoda,octavia,gen-iii-2013,2016,66450,1395,Gasoline,Kraków,Małopolskie,56000
+77543,skoda,octavia,gen-iii-2013,2018,150000,999,Gasoline,Świebodzice,Dolnośląskie,35500
+77544,skoda,octavia,gen-iii-2013,2017,154780,1968,Diesel,Bielany Wrocławskie,Dolnośląskie,73900
+77545,skoda,octavia,gen-iii-2013,2018,68913,1395,Gasoline,Warszawa,Mazowieckie,80900
+77546,skoda,octavia,gen-iii-2013,2018,167252,1968,Diesel,Suchy Las,Wielkopolskie,66500
+77547,skoda,octavia,gen-iii-2013,2016,121532,1798,Gasoline,Warszawa,Mazowieckie,60900
+77548,skoda,octavia,gen-iii-2013,2018,162500,1498,LPG,Bytom,Śląskie,55900
+77549,skoda,octavia,gen-iii-2013,2018,125000,1598,Diesel,Sokołów,Mazowieckie,59900
+77550,skoda,octavia,gen-iii-2013,2015,113697,1395,Gasoline,Warszawa,Mazowieckie,55500
+77551,skoda,octavia,gen-iii-2013,2017,29980,1395,Gasoline,Warszawa,Mazowieckie,74900
+77552,skoda,octavia,gen-iii-2013,2018,39573,1498,Gasoline,Warszawa,Mazowieckie,90900
+77553,skoda,octavia,gen-iii-2013,2014,139100,1395,Gasoline,Warszawa,Mazowieckie,46900
+77554,skoda,octavia,gen-iii-2013,2015,51387,1395,Gasoline,Warszawa,Mazowieckie,55500
+77555,skoda,octavia,gen-iii-2013,2018,39530,1498,Gasoline,Lublin,Lubelskie,85900
+77556,skoda,octavia,gen-iii-2013,2013,153329,1798,Gasoline,Rusiec,Mazowieckie,51900
+77557,skoda,octavia,gen-iii-2013,2013,109064,1197,Gasoline,Warszawa,Mazowieckie,39900
+77558,skoda,octavia,gen-iii-2013,2017,35100,1984,Gasoline,Lubin,Dolnośląskie,119900
+77559,skoda,octavia,gen-iii-2013,2016,94800,1798,Gasoline,Wrocław,Dolnośląskie,69900
+77560,skoda,octavia,gen-iii-2013,2017,180000,1598,Diesel,Płock,Mazowieckie,59900
+77561,skoda,octavia,gen-iii-2013,2018,34500,1395,Gasoline,Bielsko-Biała,Śląskie,81900
+77562,skoda,octavia,gen-iii-2013,2016,175000,1395,Gasoline,Wałbrzych,Dolnośląskie,44800
+77563,skoda,octavia,gen-iii-2013,2018,126800,1498,Gasoline,Bytom,Śląskie,69900
+77564,skoda,octavia,gen-iii-2013,2014,214700,1798,Gasoline,Olsztyn,Warmińsko-mazurskie,49900
+77565,skoda,octavia,gen-iii-2013,2018,152700,1498,Gasoline,Ropczyce,Podkarpackie,59900
+77566,skoda,octavia,gen-iii-2013,2018,54510,1395,Gasoline,Wrocław,Dolnośląskie,74999
+77567,skoda,octavia,gen-iii-2013,2021,1,1984,Gasoline,Chorzów,Śląskie,164550
+77568,skoda,octavia,gen-iii-2013,2019,103000,1598,Diesel,Łazy,Mazowieckie,83999
+77569,skoda,octavia,gen-iii-2013,2017,133000,1598,Diesel,Sosnowiec,Śląskie,58900
+77570,skoda,octavia,gen-iii-2013,2017,132000,1968,Diesel,Gliwice,Śląskie,69900
+77571,skoda,octavia,gen-iii-2013,2013,260400,1598,Diesel,Rzeszów,Podkarpackie,30627
+78820,skoda,octavia,gen-iv-2019-octavia,2022,1,1984,Gasoline,Katowice,Śląskie,159050
+78821,skoda,octavia,gen-iv-2019-octavia,2020,30997,1498,Gasoline,Kędzierzyn-Koźle,Opolskie,112000
+78822,skoda,octavia,gen-iv-2019-octavia,2021,5,1498,Gasoline,Kraków,Małopolskie,124550
+78823,skoda,octavia,gen-iv-2019-octavia,2021,7,1498,Gasoline,Siedlce,Mazowieckie,112400
+78824,skoda,octavia,gen-iv-2019-octavia,2020,26097,1984,Gasoline,Zabrze,Śląskie,184900
+78825,skoda,octavia,gen-iv-2019-octavia,2021,7,1498,Gasoline,Siedlce,Mazowieckie,125400
+78826,skoda,octavia,gen-iv-2019-octavia,2022,10,1498,Gasoline,Wrocław,Dolnośląskie,151550
+78827,skoda,octavia,gen-iv-2019-octavia,2021,5,1968,Diesel,Łódź,Łódzkie,117900
+78828,skoda,octavia,gen-iv-2019-octavia,2021,5,1498,Gasoline,Łódź,Łódzkie,126700
+78829,skoda,octavia,gen-iv-2019-octavia,2022,10,1984,Gasoline,Wrocław,Dolnośląskie,154500
+78830,skoda,octavia,gen-iv-2019-octavia,2021,1,1498,Gasoline,Wieliczka,Małopolskie,119990
+78831,skoda,octavia,gen-iv-2019-octavia,2021,6205,1968,Diesel,Międzyrzec Podlaski,Lubelskie,117342
+78832,skoda,octavia,gen-iv-2019-octavia,2020,9900,1498,Gasoline,Kępno,Wielkopolskie,106887
+78833,skoda,octavia,gen-iv-2019-octavia,2021,1,1498,Gasoline,Warszawa,Mazowieckie,150750
+78834,skoda,octavia,gen-iv-2019-octavia,2021,12000,1498,Gasoline,Turek,Wielkopolskie,95900
+78835,skoda,octavia,gen-iv-2019-octavia,2021,14530,1498,Gasoline,Falenty,Mazowieckie,124990
+78836,skoda,octavia,gen-iv-2019-octavia,2021,16150,1498,Gasoline,Falenty,Mazowieckie,124990
+78837,skoda,octavia,gen-iv-2019-octavia,2021,17980,1498,Gasoline,Falenty,Mazowieckie,124990
+78838,skoda,octavia,gen-iv-2019-octavia,2021,15600,1498,Gasoline,Falenty,Mazowieckie,124990
+78839,skoda,octavia,gen-iv-2019-octavia,2020,12200,1395,Hybrid,Wrocław,Dolnośląskie,159900
+78840,skoda,octavia,gen-iv-2019-octavia,2020,13640,999,Gasoline,Tarnowskie Góry,Śląskie,98900
+78841,skoda,octavia,gen-iv-2019-octavia,2021,5,1498,Gasoline,Toruń,Kujawsko-pomorskie,149850
+78842,skoda,octavia,gen-iv-2019-octavia,2021,1,2000,Gasoline,Dobroń,Łódzkie,126950
+78843,skoda,octavia,gen-iv-2019-octavia,2021,1,1498,Gasoline,Chorzów,Śląskie,139700
+78844,skoda,octavia,gen-iv-2019-octavia,2020,25000,1498,Gasoline,Lubin,Dolnośląskie,97000
+78845,skoda,octavia,gen-iv-2019-octavia,2020,29953,1498,Gasoline,Opole,Opolskie,110900
+78846,skoda,octavia,gen-iv-2019-octavia,2021,13,1968,Diesel,Łęczyca,Łódzkie,149300
+79543,skoda,superb,gen-ii-2008,2010,269000,1896,Diesel,Warszawa,Mazowieckie,30000
+79544,skoda,superb,gen-ii-2008,2013,185454,1968,Diesel,Piaseczno,Mazowieckie,41500
+79545,skoda,superb,gen-ii-2008,2011,215258,1968,Diesel,Tarnów,Małopolskie,30700
+79546,skoda,superb,gen-ii-2008,2014,190000,1968,Diesel,Ostrów Mazowiecka,Mazowieckie,52900
+79547,skoda,superb,gen-ii-2008,2014,77592,1798,Gasoline,Łódź,Łódzkie,52000
+79548,skoda,superb,gen-ii-2008,2010,170000,1968,Diesel,Garwolin,Mazowieckie,38990
+79549,skoda,superb,gen-ii-2008,2014,179399,1598,Diesel,Płock,Mazowieckie,45900
+79550,skoda,superb,gen-ii-2008,2013,197031,1798,Gasoline,Piaseczno,Mazowieckie,51500
+79551,skoda,superb,gen-ii-2008,2014,141620,1968,Diesel,Piaseczno,Mazowieckie,52000
+79552,skoda,superb,gen-ii-2008,2010,215000,1968,Diesel,Kalisz,Wielkopolskie,36500
+79553,skoda,superb,gen-ii-2008,2014,287000,1968,Diesel,Zielona Góra,Lubuskie,55900
+79554,skoda,superb,gen-ii-2008,2011,168971,1968,Diesel,Sobczyce,Dolnośląskie,39500
+79555,skoda,superb,gen-ii-2008,2011,280000,2000,Diesel,Gdynia,Pomorskie,33000
+79556,skoda,superb,gen-ii-2008,2014,223000,1968,Diesel,Płock,Mazowieckie,48900
+79557,skoda,superb,gen-ii-2008,2012,236000,1598,Diesel,Płock,Mazowieckie,29900
+79558,skoda,superb,gen-ii-2008,2012,181000,1598,Diesel,Częstochowa,Śląskie,31900
+79559,skoda,superb,gen-ii-2008,2010,188000,1798,Gasoline,Mierzyn,Zachodniopomorskie,28900
+79560,skoda,superb,gen-ii-2008,2013,179000,1968,Diesel,Zawiercie,Śląskie,54700
+79561,skoda,superb,gen-ii-2008,2013,179818,1968,Diesel,Krasne,Podkarpackie,49900
+79562,skoda,superb,gen-ii-2008,2009,312000,1968,Diesel,Hrubieszów,Lubelskie,28000
+79563,skoda,superb,gen-ii-2008,2013,197194,1968,Diesel,Bielany Wrocławskie,Dolnośląskie,49000
+79564,skoda,superb,gen-ii-2008,2011,302000,1968,Diesel,Ełk,Warmińsko-mazurskie,35900
+79565,skoda,superb,gen-ii-2008,2009,250000,1968,Diesel,Ostrowiec Świętokrzyski,Świętokrzyskie,29900
+79566,skoda,superb,gen-ii-2008,2011,219000,1390,Gasoline,Inowrocław,Kujawsko-pomorskie,29000
+79567,skoda,superb,gen-ii-2008,2013,249000,1598,Diesel,Gdańsk,Pomorskie,35900
+79568,skoda,superb,gen-ii-2008,2014,185850,1968,Diesel,Dzierżoniów,Dolnośląskie,49999
+79569,skoda,superb,gen-ii-2008,2013,198000,1968,Diesel,Radom,Mazowieckie,45900
+79570,skoda,superb,gen-ii-2008,2010,139000,1798,Gasoline,Żory,Śląskie,31900
+79571,skoda,superb,gen-ii-2008,2010,238000,1798,Gasoline,Płock,Mazowieckie,30900
+79572,skoda,superb,gen-ii-2008,2009,189000,1896,Diesel,Gubin,Lubuskie,27900
+79573,skoda,superb,gen-ii-2008,2011,165896,1798,LPG,Piaseczno,Mazowieckie,32002
+79574,skoda,superb,gen-ii-2008,2014,162090,1968,Diesel,Rybnik,Śląskie,40900
+79920,skoda,superb,gen-iii-2015,2017,157451,1968,Diesel,Lubin,Dolnośląskie,95900
+79921,skoda,superb,gen-iii-2015,2016,119846,1984,Gasoline,Bielany Wrocławskie,Dolnośląskie,98000
+79922,skoda,superb,gen-iii-2015,2018,68089,1984,Gasoline,Zabrze,Śląskie,109900
+79923,skoda,superb,gen-iii-2015,2018,109210,1968,Diesel,Kościerzyna,Pomorskie,92127
+79924,skoda,superb,gen-iii-2015,2022,1,1498,Gasoline,Chorzów,Śląskie,149950
+79925,skoda,superb,gen-iii-2015,2020,10831,1498,Gasoline,Katowice,Śląskie,113000
+79926,skoda,superb,gen-iii-2015,2018,138000,1395,LPG,Zielona Góra,Lubuskie,72300
+79927,skoda,superb,gen-iii-2015,2017,64972,1800,Gasoline,Warszawa,Mazowieckie,84900
+79928,skoda,superb,gen-iii-2015,2016,168702,1968,Diesel,Piaseczno,Mazowieckie,69000
+79929,skoda,superb,gen-iii-2015,2019,68013,1500,Gasoline,Opole,Opolskie,111500
+79930,skoda,superb,gen-iii-2015,2018,176033,1598,Diesel,Proszowice,Małopolskie,74000
+79931,skoda,superb,gen-iii-2015,2021,10,1968,Diesel,Wrocław,Dolnośląskie,176350
+79932,skoda,superb,gen-iii-2015,2018,160155,1798,Gasoline,Dębno,Zachodniopomorskie,77490
+79933,skoda,superb,gen-iii-2015,2018,148345,1598,Diesel,Kobylanka,Zachodniopomorskie,67900
+79934,skoda,superb,gen-iii-2015,2017,130571,1968,Diesel,Poznań,Wielkopolskie,106900
+79935,skoda,superb,gen-iii-2015,2016,182799,1968,Diesel,Elbląg,Warmińsko-mazurskie,78900
+79936,skoda,superb,gen-iii-2015,2017,138181,1968,Diesel,Rybnik,Śląskie,89899
+79937,skoda,superb,gen-iii-2015,2016,123333,1968,Diesel,Zgorzelec,Dolnośląskie,90275
+79938,skoda,superb,gen-iii-2015,2020,9870,1395,Hybrid,Tarnowskie Góry,Śląskie,192999
+79939,skoda,superb,gen-iii-2015,2016,119846,1984,Gasoline,Lublin,Lubelskie,98000
+79940,skoda,superb,gen-iii-2015,2017,194000,1395,Gasoline,Blachownia,Śląskie,55500
+79941,skoda,superb,gen-iii-2015,2017,178000,1968,Diesel,Warszawa,Mazowieckie,92800
+79942,skoda,superb,gen-iii-2015,2017,99900,1968,Diesel,Mieroszów,Dolnośląskie,129000
+79943,skoda,superb,gen-iii-2015,2018,168000,1968,Diesel,Mosina,Wielkopolskie,76667
+79944,skoda,superb,gen-iii-2015,2018,185000,1968,Diesel,Łękawica,Małopolskie,70700
+79945,skoda,superb,gen-iii-2015,2019,101495,1968,Diesel,Bielsko-Biała,Śląskie,134900
+79946,skoda,superb,gen-iii-2015,2015,186000,1968,Diesel,Rybnik,Śląskie,79900
+79947,skoda,superb,gen-iii-2015,2017,161187,1968,Diesel,Łomianki,Mazowieckie,89700
+79948,skoda,superb,gen-iii-2015,2017,179000,1968,Diesel,Świętoszówka,Śląskie,77700
+79949,skoda,superb,gen-iii-2015,2015,327400,1968,Diesel,Miszewko,Pomorskie,74900
+79950,skoda,superb,gen-iii-2015,2020,5500,1984,Gasoline,Chociwek,Łódzkie,170000
+79951,skoda,superb,gen-iii-2015,2018,189000,1598,Diesel,Krągola,Wielkopolskie,64900
+82084,citroen,berlingo,gen-ii-2008-berlingo,2010,130700,1598,Gasoline,Swarzędz,Wielkopolskie,25800
+82085,citroen,berlingo,gen-ii-2008-berlingo,2009,159000,1587,Gasoline,Nowy Sącz,Małopolskie,25900
+82086,citroen,berlingo,gen-ii-2008-berlingo,2016,73645,1560,Diesel,Rzeszów,Podkarpackie,45500
+82087,citroen,berlingo,gen-ii-2008-berlingo,2010,199000,1598,LPG,Kosewo,Mazowieckie,21900
+82088,citroen,berlingo,gen-ii-2008-berlingo,2009,185000,1587,LPG,Bochnia,Małopolskie,16900
+82089,citroen,berlingo,gen-ii-2008-berlingo,2012,320000,1600,Diesel,Świdnica,Dolnośląskie,17900
+82090,citroen,berlingo,gen-ii-2008-berlingo,2008,164000,1587,Gasoline,Bytom,Śląskie,22500
+82091,citroen,berlingo,gen-ii-2008-berlingo,2009,220000,1560,Diesel,Pabianice,Łódzkie,24900
+82092,citroen,berlingo,gen-ii-2008-berlingo,2017,169300,1560,Diesel,Tychy,Śląskie,49900
+82093,citroen,berlingo,gen-ii-2008-berlingo,2009,196000,1587,Gasoline,Nowy Sącz,Małopolskie,22999
+82094,citroen,berlingo,gen-ii-2008-berlingo,2011,224000,1598,Gasoline,Łuków,Lubelskie,21900
+82095,citroen,berlingo,gen-ii-2008-berlingo,2008,241700,1587,LPG,Krzyszkowice,Małopolskie,20500
+82096,citroen,berlingo,gen-ii-2008-berlingo,2009,207000,1560,Diesel,Proszowice,Małopolskie,20500
+82097,citroen,berlingo,gen-ii-2008-berlingo,2009,231000,1600,Gasoline,Sade Budy,Mazowieckie,21800
+82098,citroen,berlingo,gen-ii-2008-berlingo,2010,251000,1560,Diesel,Warszawa,Mazowieckie,24900
+82099,citroen,berlingo,gen-ii-2008-berlingo,2016,159632,1560,Diesel,Bochnia,Małopolskie,41500
+82100,citroen,berlingo,gen-ii-2008-berlingo,2013,122000,1560,Diesel,Mikołów,Śląskie,32900
+82101,citroen,berlingo,gen-ii-2008-berlingo,2013,157813,1598,Gasoline,Modlniczka,Małopolskie,31500
+82102,citroen,berlingo,gen-ii-2008-berlingo,2011,222000,1560,Diesel,Jaworznia,Świętokrzyskie,24900
+82103,citroen,berlingo,gen-ii-2008-berlingo,2013,119300,1560,Diesel,Dolaszewo,Wielkopolskie,31900
+82104,citroen,berlingo,gen-ii-2008-berlingo,2012,158000,1598,Gasoline,Rypin,Kujawsko-pomorskie,30900
+82105,citroen,berlingo,gen-ii-2008-berlingo,2008,230000,1587,Gasoline,Rawa Mazowiecka,Łódzkie,19900
+82106,citroen,berlingo,gen-ii-2008-berlingo,2009,105000,1587,Gasoline,Szczytniki nad Kaczawą,Dolnośląskie,17900
+82107,citroen,berlingo,gen-ii-2008-berlingo,2017,194866,1560,Diesel,Przysucha,Mazowieckie,37500
+82108,citroen,berlingo,gen-ii-2008-berlingo,2012,142515,1560,Diesel,Wilchta,Mazowieckie,27500
+82109,citroen,berlingo,gen-ii-2008-berlingo,2018,88000,1560,Diesel,Elbląg,Warmińsko-mazurskie,57900
+82110,citroen,berlingo,gen-ii-2008-berlingo,2012,145775,1560,Diesel,Leszno,Wielkopolskie,26500
+82111,citroen,berlingo,gen-ii-2008-berlingo,2010,387654,1560,Diesel,Biała Podlaska,Lubelskie,9900
+82112,citroen,berlingo,gen-ii-2008-berlingo,2008,234000,1560,Diesel,Włocławek,Kujawsko-pomorskie,24500
+82217,citroen,berlingo,gen-i-1996-2010,2009,255404,1560,Diesel,Płock,Mazowieckie,12800
+82218,citroen,berlingo,gen-i-1996-2010,2010,159000,1587,Gasoline,Elbląg,Warmińsko-mazurskie,21900
+82219,citroen,berlingo,gen-i-1996-2010,2003,234483,1360,Gasoline,Kraków,Małopolskie,5850
+82220,citroen,berlingo,gen-i-1996-2010,2007,198000,1560,Diesel,Rzeszów,Podkarpackie,11500
+82221,citroen,berlingo,gen-i-1996-2010,2003,200000,1587,Gasoline,Margonin,Wielkopolskie,11700
+82222,citroen,berlingo,gen-i-1996-2010,2007,200000,1560,Diesel,Pniewy,Wielkopolskie,7950
+82223,citroen,berlingo,gen-i-1996-2010,2005,158000,1360,Gasoline,Pniewy,Wielkopolskie,7350
+82224,citroen,berlingo,gen-i-1996-2010,2001,239003,1587,Gasoline,Kutno,Łódzkie,6900
+82225,citroen,berlingo,gen-i-1996-2010,2007,323000,1560,Diesel,Wrocław,Dolnośląskie,10900
+82226,citroen,berlingo,gen-i-1996-2010,2006,252800,1587,Gasoline,Lipno,Kujawsko-pomorskie,11999
+82227,citroen,berlingo,gen-i-1996-2010,2007,197000,1560,Diesel,Wągrowiec,Wielkopolskie,11900
+82228,citroen,berlingo,gen-i-1996-2010,2006,158000,1587,Gasoline,Mogilno,Kujawsko-pomorskie,15999
+82229,citroen,berlingo,gen-i-1996-2010,2001,278416,1360,Gasoline,Kąkolewnica,Lubelskie,6990
+82230,citroen,berlingo,gen-i-1996-2010,2007,206721,1560,Diesel,Gdynia,Pomorskie,15500
+82231,citroen,berlingo,gen-i-1996-2010,2000,274732,1360,Gasoline,Pszczyna,Śląskie,2000
+82232,citroen,berlingo,gen-i-1996-2010,2007,223000,1587,Gasoline,Głubczyce,Opolskie,13900
+82233,citroen,berlingo,gen-i-1996-2010,2005,223000,1587,Gasoline,Raszyn,Mazowieckie,9900
+82234,citroen,berlingo,gen-i-1996-2010,2004,188000,1997,Diesel,Świecie,Kujawsko-pomorskie,9000
+83161,citroen,c4-picasso,gen-i-2006-2013-c4-picasso,2007,172000,1749,Gasoline,Sosnowiec,Śląskie,18900
+83162,citroen,c4-picasso,gen-i-2006-2013-c4-picasso,2006,232680,1749,Gasoline,Kraków,Małopolskie,17900
+83163,citroen,c4-picasso,gen-i-2006-2013-c4-picasso,2008,178120,1749,Gasoline,Kutno,Łódzkie,15900
+83164,citroen,c4-picasso,gen-i-2006-2013-c4-picasso,2007,156814,1749,Gasoline,Bieruń,Śląskie,15900
+83165,citroen,c4-picasso,gen-i-2006-2013-c4-picasso,2010,251300,1560,Diesel,Bochnia,Małopolskie,15000
+83166,citroen,c4-picasso,gen-i-2006-2013-c4-picasso,2010,185190,1560,Diesel,Gromadno,Wielkopolskie,16100
+83167,citroen,c4-picasso,gen-i-2006-2013-c4-picasso,2007,193852,1997,Gasoline,Kutno,Łódzkie,18900
+83168,citroen,c4-picasso,gen-i-2006-2013-c4-picasso,2007,209333,1749,Gasoline,Chełmno,Kujawsko-pomorskie,15900
+83169,citroen,c4-picasso,gen-i-2006-2013-c4-picasso,2011,175000,1560,Diesel,Dębica,Podkarpackie,20900
+83170,citroen,c4-picasso,gen-i-2006-2013-c4-picasso,2017,77000,1560,Diesel,Wałbrzych,Dolnośląskie,59900
+83171,citroen,c4-picasso,gen-i-2006-2013-c4-picasso,2011,153000,1560,Diesel,Marki,Mazowieckie,20900
+83172,citroen,c4-picasso,gen-i-2006-2013-c4-picasso,2008,188484,1997,Gasoline,Celiny,Świętokrzyskie,13900
+83173,citroen,c4-picasso,gen-i-2006-2013-c4-picasso,2008,279000,1997,Gasoline,Piekary Śląskie,Śląskie,14900
+83174,citroen,c4-picasso,gen-i-2006-2013-c4-picasso,2008,179000,1598,Gasoline,Żarów,Dolnośląskie,15500
+83175,citroen,c4-picasso,gen-i-2006-2013-c4-picasso,2011,168000,1560,Diesel,Spytkowice,Małopolskie,16500
+83176,citroen,c4-picasso,gen-i-2006-2013-c4-picasso,2007,175000,1997,Diesel,Opole,Opolskie,9900
+83177,citroen,c4-picasso,gen-i-2006-2013-c4-picasso,2008,161000,1997,Gasoline,Gniezno,Wielkopolskie,18900
+83178,citroen,c4-picasso,gen-i-2006-2013-c4-picasso,2010,340000,1600,Diesel,Kutno,Łódzkie,18900
+83179,citroen,c4-picasso,gen-i-2006-2013-c4-picasso,2009,146386,1598,Gasoline,Lubanie,Kujawsko-pomorskie,17800
+83180,citroen,c4-picasso,gen-i-2006-2013-c4-picasso,2009,120000,1598,Gasoline,Łuków,Lubelskie,17200
+83181,citroen,c4-picasso,gen-i-2006-2013-c4-picasso,2008,155000,1560,Diesel,Kołobrzeg,Zachodniopomorskie,14300
+83182,citroen,c4-picasso,gen-i-2006-2013-c4-picasso,2011,156350,1560,Diesel,Ręczno,Łódzkie,25555
+83183,citroen,c4-picasso,gen-i-2006-2013-c4-picasso,2007,165000,1749,Gasoline,Wejherowo,Pomorskie,13900
+83184,citroen,c4-picasso,gen-i-2006-2013-c4-picasso,2010,206000,1598,Gasoline,Dzierzgoń,Pomorskie,20600
+83185,citroen,c4-picasso,gen-i-2006-2013-c4-picasso,2013,121000,1598,Gasoline,Pełczyce,Zachodniopomorskie,29900
+83186,citroen,c4-picasso,gen-i-2006-2013-c4-picasso,2008,223000,1997,Diesel,Olecko,Warmińsko-mazurskie,15900
+83187,citroen,c4-picasso,gen-i-2006-2013-c4-picasso,2012,134000,1560,Diesel,Zawiercie,Śląskie,22000
+83188,citroen,c4-picasso,gen-i-2006-2013-c4-picasso,2007,257500,1560,Diesel,Chorzów,Śląskie,11990
+83189,citroen,c4-picasso,gen-i-2006-2013-c4-picasso,2012,93076,1598,Gasoline,Piaseczno,Mazowieckie,24500
+83190,citroen,c4-picasso,gen-i-2006-2013-c4-picasso,2008,218000,1749,LPG,Żarki,Śląskie,15500
+83191,citroen,c4-picasso,gen-i-2006-2013-c4-picasso,2007,199211,1749,LPG,Kutno,Łódzkie,15900
+83192,citroen,c4-picasso,gen-i-2006-2013-c4-picasso,2009,255511,1598,LPG,Mierzęcice,Śląskie,16500
+83193,citroen,c4-picasso,gen-i-2006-2013-c4-picasso,2011,164000,1560,Diesel,Borzęta,Małopolskie,19800
+83194,citroen,c4-picasso,gen-i-2006-2013-c4-picasso,2008,259000,1997,LPG,Przytoczno,Lubelskie,14500
+83195,citroen,c4-picasso,gen-i-2006-2013-c4-picasso,2009,228286,1598,Gasoline,Nowy Staw,Pomorskie,19900
+83196,citroen,c4-picasso,gen-i-2006-2013-c4-picasso,2011,179250,1598,Gasoline,Płock,Mazowieckie,18900
+83197,citroen,c4-picasso,gen-i-2006-2013-c4-picasso,2010,118000,1560,Diesel,Gniezno,Wielkopolskie,19900
+83364,citroen,c4-picasso,gen-i-2006-2013-c4-picasso,2013,161598,1560,Diesel,Kraków,Małopolskie,29900
+83365,citroen,c4-picasso,gen-i-2006-2013-c4-picasso,2008,262000,1997,Diesel,Otrębusy,Mazowieckie,13900
+83366,citroen,c4-picasso,gen-i-2006-2013-c4-picasso,2007,224821,1997,Gasoline,Łódź,Łódzkie,18500
+83367,citroen,c4-picasso,gen-ii-2013-c4-picasso,2014,168700,1560,Diesel,Sosnowiec,Śląskie,29900
+83368,citroen,c4-picasso,gen-ii-2013-c4-picasso,2014,183500,1560,Diesel,Kraków,Małopolskie,32900
+83369,citroen,c4-picasso,gen-ii-2013-c4-picasso,2015,98366,1560,Diesel,Piaseczno,Mazowieckie,51000
+83370,citroen,c4-picasso,gen-ii-2013-c4-picasso,2015,55310,1199,Gasoline,Janki,Mazowieckie,57900
+83371,citroen,c4-picasso,gen-ii-2013-c4-picasso,2016,173000,1560,Diesel,Wągrowiec,Wielkopolskie,39900
+83372,citroen,c4-picasso,gen-ii-2013-c4-picasso,2014,104900,1560,Diesel,Lublin,Lubelskie,46900
+83373,citroen,c4-picasso,gen-ii-2013-c4-picasso,2016,100420,1560,Diesel,Warszawa,Mazowieckie,51900
+83374,citroen,c4-picasso,gen-ii-2013-c4-picasso,2014,225200,1997,Diesel,Lublin,Lubelskie,39500
+83375,citroen,c4-picasso,gen-ii-2013-c4-picasso,2015,163000,1560,Diesel,Pawłowice,Śląskie,39900
+83376,citroen,c4-picasso,gen-ii-2013-c4-picasso,2016,113357,1199,Gasoline,Zabrze,Śląskie,57000
+83377,citroen,c4-picasso,gen-ii-2013-c4-picasso,2013,139550,1560,Diesel,Poznań,Wielkopolskie,39900
+83378,citroen,c4-picasso,gen-ii-2013-c4-picasso,2016,195200,1560,Diesel,Lublin,Lubelskie,36900
+83379,citroen,c4-picasso,gen-ii-2013-c4-picasso,2013,145143,1560,Diesel,Płońsk,Mazowieckie,45700
+83380,citroen,c4-picasso,gen-ii-2013-c4-picasso,2013,209000,1560,Diesel,Częstochowa,Śląskie,34900
+83381,citroen,c4-picasso,gen-ii-2013-c4-picasso,2014,188655,1997,Diesel,Ruda Śląska,Śląskie,45000
+83382,citroen,c4-picasso,gen-ii-2013-c4-picasso,2016,152613,1560,Diesel,Zabrze,Śląskie,45000
+83383,citroen,c4-picasso,gen-ii-2013-c4-picasso,2014,162000,1997,Diesel,Wadowice Górne,Podkarpackie,45000
+83384,citroen,c4-picasso,gen-ii-2013-c4-picasso,2018,95772,1199,Gasoline,Chorzów,Śląskie,55900
+83385,citroen,c4-picasso,gen-ii-2013-c4-picasso,2016,199980,1560,Diesel,Suchy Las,Wielkopolskie,39900
+83386,citroen,c4-picasso,gen-ii-2013-c4-picasso,2014,153787,1560,Diesel,Ostróda,Warmińsko-mazurskie,36500
+83387,citroen,c4-picasso,gen-ii-2013-c4-picasso,2016,173000,1560,Diesel,Legnica,Dolnośląskie,38900
+83388,citroen,c4-picasso,gen-ii-2013-c4-picasso,2014,142632,1997,Diesel,Bielany Wrocławskie,Dolnośląskie,47000
+83389,citroen,c4-picasso,gen-ii-2013-c4-picasso,2015,158960,1560,Diesel,Sosnowiec,Śląskie,39900
+83390,citroen,c4-picasso,gen-ii-2013-c4-picasso,2013,197000,1598,Gasoline,Jelcz-Laskowice,Dolnośląskie,33500
+83391,citroen,c4-picasso,gen-ii-2013-c4-picasso,2013,215000,1560,Diesel,Ostrzeszów,Wielkopolskie,28900
+83392,citroen,c4-picasso,gen-ii-2013-c4-picasso,2014,167000,1560,Diesel,Rzeszów,Podkarpackie,37990
+83393,citroen,c4-picasso,gen-ii-2013-c4-picasso,2014,222800,1560,Diesel,Gniezno,Wielkopolskie,35900
+83394,citroen,c4-picasso,gen-ii-2013-c4-picasso,2016,162300,1560,Diesel,Ostrów Wielkopolski,Wielkopolskie,44900
+83395,citroen,c4-picasso,gen-ii-2013-c4-picasso,2017,155000,1997,Diesel,Wałbrzych,Dolnośląskie,72900
+83396,citroen,c4-picasso,gen-ii-2013-c4-picasso,2015,93611,1560,Diesel,Bielany Wrocławskie,Dolnośląskie,48000
+83397,citroen,c4-picasso,gen-ii-2013-c4-picasso,2013,92229,1560,Diesel,Bielany Wrocławskie,Dolnośląskie,43500
+83398,citroen,c4-picasso,gen-ii-2013-c4-picasso,2016,152613,1560,Diesel,Katowice,Śląskie,45000
+83399,citroen,c4-picasso,gen-ii-2013-c4-picasso,2019,121000,1997,Diesel,Włocławek,Kujawsko-pomorskie,58900
+83691,citroen,c5,gen-iii-2008,2010,238000,1997,Diesel,Bielawa,Dolnośląskie,18400
+83692,citroen,c5,gen-iii-2008,2009,205000,1997,Diesel,Drawsko Pomorskie,Zachodniopomorskie,24900
+83693,citroen,c5,gen-iii-2008,2013,275000,1997,Diesel,Włocławek,Kujawsko-pomorskie,35000
+83694,citroen,c5,gen-iii-2008,2015,194000,1997,Diesel,Konin,Wielkopolskie,46900
+83695,citroen,c5,gen-iii-2008,2014,194000,1997,Diesel,Płock,Mazowieckie,37900
+83696,citroen,c5,gen-iii-2008,2012,222222,1997,Diesel,Olkusz,Małopolskie,26900
+83697,citroen,c5,gen-iii-2008,2011,247000,1997,Diesel,Ostrów Mazowiecka,Mazowieckie,29900
+83698,citroen,c5,gen-iii-2008,2008,173000,1997,Gasoline,Drawsko Pomorskie,Zachodniopomorskie,21900
+83699,citroen,c5,gen-iii-2008,2012,199300,1560,Diesel,Kielce,Świętokrzyskie,23900
+83700,citroen,c5,gen-iii-2008,2011,160000,1997,Diesel,Zabrze,Śląskie,32900
+83701,citroen,c5,gen-iii-2008,2009,121600,1997,Gasoline,Sosnowiec,Śląskie,26900
+83702,citroen,c5,gen-iii-2008,2016,167000,1997,Diesel,Szczecin,Zachodniopomorskie,42900
+83703,citroen,c5,gen-iii-2008,2012,260000,1997,Diesel,Olkusz,Małopolskie,29900
+83704,citroen,c5,gen-iii-2008,2009,157122,1997,Gasoline,Suwałki,Podlaskie,23900
+83705,citroen,c5,gen-iii-2008,2008,174000,1997,Gasoline,Wręczyca Wielka,Śląskie,22900
+83706,citroen,c5,gen-iii-2008,2009,217689,1997,Diesel,Płock,Mazowieckie,25900
+83707,citroen,c5,gen-iii-2008,2010,210312,1997,Diesel,Płock,Mazowieckie,28900
+83708,citroen,c5,gen-iii-2008,2016,192000,1998,Diesel,Gniezno,Wielkopolskie,44900
+83709,citroen,c5,gen-iii-2008,2009,125000,1598,Gasoline,Chorzów,Śląskie,18400
+83710,citroen,c5,gen-iii-2008,2008,150000,1997,Diesel,Bochnia,Małopolskie,23900
+83711,citroen,c5,gen-iii-2008,2012,220000,1997,Diesel,Jabłonowo,Mazowieckie,35998
+83712,citroen,c5,gen-iii-2008,2008,203000,1997,Gasoline,Jabłonowo,Mazowieckie,27996
+83713,citroen,c5,gen-iii-2008,2009,208000,2946,Gasoline,Jabłonowo,Mazowieckie,34988
+83714,citroen,c5,gen-iii-2008,2015,160177,1997,Diesel,Zabrze,Śląskie,37000
+83715,citroen,c5,gen-iii-2008,2015,184000,1997,Diesel,Góra Kalwaria,Mazowieckie,41999
+83716,citroen,c5,gen-iii-2008,2011,270000,1997,Diesel,Zabrze,Śląskie,23900
+83717,citroen,c5,gen-iii-2008,2008,159196,1997,LPG,Zabrze,Śląskie,23000
+83718,citroen,c5,gen-iii-2008,2011,199000,1997,Diesel,Dąbrowa Górnicza,Śląskie,30900
+83719,citroen,c5,gen-iii-2008,2014,260000,1997,Diesel,Zagórzyce Dworskie,Małopolskie,28100
+83720,citroen,c5,gen-iii-2008,2008,229000,1997,Gasoline,Dąbrowa Górnicza,Śląskie,22800
+83721,citroen,c5,gen-iii-2008,2013,235000,1598,Gasoline,Szczawin Kościelny,Mazowieckie,28000
+83722,citroen,c5,gen-iii-2008,2011,174000,1997,Diesel,Dąbrowa Górnicza,Śląskie,29900
+83723,citroen,c5,gen-iii-2008,2012,192000,2000,Diesel,Gniezno,Wielkopolskie,29900
+83724,citroen,c5,gen-iii-2008,2009,209000,1997,Diesel,Lublin,Lubelskie,22900
+83725,citroen,c5,gen-iii-2008,2012,102174,1997,Diesel,Janki,Mazowieckie,42900
+83726,citroen,c5,gen-iii-2008,2015,211000,1997,Diesel,Konstantynów Łódzki,Łódzkie,39900
+83727,citroen,c5,gen-iii-2008,2008,230000,1997,Diesel,Swarzędz,Wielkopolskie,19900
+83728,citroen,c5,gen-iii-2008,2010,150561,1600,Gasoline,Chmielnik,Świętokrzyskie,22700
+83729,citroen,c5,gen-iii-2008,2011,182060,1997,Diesel,Sosnowiec,Śląskie,26900
+115331,volvo,v60,gen-i-2011-2018,2017,76000,1969,Diesel,Łęczyca,Łódzkie,89900
+115332,volvo,v60,gen-i-2011-2018,2016,53324,1969,Diesel,Wrocław,Dolnośląskie,85200
+115333,volvo,v60,gen-i-2011-2018,2018,71285,2000,Diesel,Wrocław,Dolnośląskie,123900
+115334,volvo,v60,gen-i-2011-2018,2018,71285,2000,Diesel,Wrocław,Dolnośląskie,119900
+115335,volvo,v60,gen-i-2011-2018,2016,161000,2497,Gasoline,Lublin,Lubelskie,79900
+115336,volvo,v60,gen-i-2011-2018,2013,235000,1560,Diesel,Kutno,Łódzkie,36900
+115337,volvo,v60,gen-i-2011-2018,2017,176059,1969,Diesel,Warszawa,Mazowieckie,63799
+115338,volvo,v60,gen-i-2011-2018,2018,189971,1969,Diesel,Toruń,Kujawsko-pomorskie,97777
+115339,volvo,v60,gen-i-2011-2018,2016,82412,1969,Diesel,Warszawa,Mazowieckie,85799
+115340,volvo,v60,gen-i-2011-2018,2017,231000,2000,Diesel,Suchy Las,Wielkopolskie,58900
+115341,volvo,v60,gen-i-2011-2018,2016,109600,1969,Gasoline,Szczecin,Zachodniopomorskie,134900
+115342,volvo,v60,gen-i-2011-2018,2015,234500,1969,Diesel,Brzoza,Kujawsko-pomorskie,44500
+115343,volvo,v60,gen-i-2011-2018,2016,108279,1969,Diesel,Wrocław,Dolnośląskie,72300
+115344,volvo,v60,gen-i-2011-2018,2012,262000,2400,Diesel,Gostynin,Mazowieckie,46900
+115345,volvo,v60,gen-i-2011-2018,2014,156000,1560,Diesel,Gołąb,Lubelskie,43900
+115346,volvo,v60,gen-i-2011-2018,2011,139959,1560,Diesel,Koluszki,Łódzkie,34000
+115347,volvo,v60,gen-i-2011-2018,2016,120000,1969,Diesel,Wągrowiec,Wielkopolskie,53900
+115348,volvo,v60,gen-i-2011-2018,2013,194000,1560,Diesel,Poniatowa,Lubelskie,39900
+115349,volvo,v60,gen-i-2011-2018,2016,182892,1969,Diesel,Stargard Szczeciński,Zachodniopomorskie,51900
+115350,volvo,v60,gen-i-2011-2018,2011,193000,1984,Diesel,Opoczno,Łódzkie,41900
+115351,volvo,v60,gen-i-2011-2018,2017,128000,1969,Diesel,Śmigiel,Wielkopolskie,61900
+115352,volvo,v60,gen-i-2011-2018,2012,192000,2400,Diesel,Słupca,Wielkopolskie,47900
+115353,volvo,v60,gen-i-2011-2018,2011,158000,1984,Diesel,Żyrardów,Mazowieckie,37500
+115354,volvo,v60,gen-i-2011-2018,2016,185000,1969,Diesel,Płock,Mazowieckie,67900
+115355,volvo,v60,gen-i-2011-2018,2011,219000,1984,Diesel,Zambrów,Podlaskie,45999
+115356,volvo,v60,gen-i-2011-2018,2017,99999,2400,Hybrid,Katowice,Śląskie,129900
+115357,volvo,v60,gen-i-2011-2018,2015,199000,1969,Diesel,Mońki,Podlaskie,48700
+115358,volvo,v60,gen-i-2011-2018,2021,5,1998,Diesel,Warszawa,Mazowieckie,149999
+115359,volvo,v60,gen-i-2011-2018,2015,178972,1969,Diesel,Morzyczyn,Zachodniopomorskie,66900
+115360,volvo,v60,gen-i-2011-2018,2012,218000,1560,Diesel,Libertów,Małopolskie,29900
+115361,volvo,v60,gen-i-2011-2018,2015,248611,1969,Diesel,Płock,Mazowieckie,42900
+116111,volvo,xc-60,gen-i-2008-2017,2017,33769,1969,Diesel,Piaseczno,Mazowieckie,110000
+116112,volvo,xc-60,gen-i-2008-2017,2010,317000,1984,Diesel,Mielec,Podkarpackie,39900
+116113,volvo,xc-60,gen-i-2008-2017,2017,104000,2400,Diesel,Blachownia,Śląskie,120000
+116114,volvo,xc-60,gen-i-2008-2017,2013,205000,2400,Diesel,Wrocław,Dolnośląskie,76900
+116115,volvo,xc-60,gen-i-2008-2017,2011,145872,1984,Diesel,Piaseczno,Mazowieckie,64000
+116116,volvo,xc-60,gen-i-2008-2017,2012,194000,1984,Diesel,Ojcowizna,Mazowieckie,57900
+116117,volvo,xc-60,gen-i-2008-2017,2013,139100,1984,Diesel,Chełm Śląski,Śląskie,74800
+116118,volvo,xc-60,gen-i-2008-2017,2016,216546,1969,Diesel,Piaseczno,Mazowieckie,73000
+116119,volvo,xc-60,gen-i-2008-2017,2016,187000,1969,Diesel,Słupsk,Pomorskie,84900
+116120,volvo,xc-60,gen-i-2008-2017,2011,224323,1984,Diesel,Lublin,Lubelskie,55000
+116121,volvo,xc-60,gen-i-2008-2017,2013,96000,1984,Diesel,Szczecin,Zachodniopomorskie,69900
+116122,volvo,xc-60,gen-i-2008-2017,2015,129000,1969,Gasoline,Wilkanowo,Lubuskie,79999
+116123,volvo,xc-60,gen-i-2008-2017,2016,88000,1969,Diesel,Wieluń,Łódzkie,100000
+116124,volvo,xc-60,gen-i-2008-2017,2010,267500,2400,Diesel,Rogaszyce,Wielkopolskie,47500
+116125,volvo,xc-60,gen-i-2008-2017,2015,107295,1969,Diesel,Łódź,Łódzkie,85000
+116126,volvo,xc-60,gen-i-2008-2017,2011,269477,1984,Diesel,Płock,Mazowieckie,58900
+116127,volvo,xc-60,gen-i-2008-2017,2016,116000,1969,Diesel,Gniezno,Wielkopolskie,77800
+116128,volvo,xc-60,gen-i-2008-2017,2014,78948,1968,Diesel,Warszawa,Mazowieckie,87500
+116129,volvo,xc-60,gen-i-2008-2017,2017,173246,1969,Diesel,Złotów,Wielkopolskie,85999
+116130,volvo,xc-60,gen-i-2008-2017,2011,340000,3192,LPG,Czeczewo,Pomorskie,39111
+116131,volvo,xc-60,gen-i-2008-2017,2016,176000,1969,Diesel,Płock,Mazowieckie,85900
+116132,volvo,xc-60,gen-i-2008-2017,2015,184000,1969,Diesel,Pradła,Śląskie,83700
+116133,volvo,xc-60,gen-i-2008-2017,2012,268543,1984,Diesel,Ostrowiec Świętokrzyski,Świętokrzyskie,46900
+116134,volvo,xc-60,gen-i-2008-2017,2012,213000,1984,Diesel,Żyrardów,Mazowieckie,52800
+116135,volvo,xc-60,gen-i-2008-2017,2015,179000,1984,Diesel,Mysłowice,Śląskie,77900
+116136,volvo,xc-60,gen-i-2008-2017,2012,190469,1984,Diesel,Janów Lubelski,Lubelskie,59900
+116137,volvo,xc-60,gen-i-2008-2017,2011,201000,1984,Diesel,Płock,Mazowieckie,55200
+116138,volvo,xc-60,gen-i-2008-2017,2011,218000,1984,Diesel,Brzozów,Podkarpackie,49900
+116139,volvo,xc-60,gen-i-2008-2017,2009,305000,2953,Gasoline,Nowy Tomyśl,Wielkopolskie,48500
+116140,volvo,xc-60,gen-i-2008-2017,2015,94000,2400,Diesel,Warszawa,Mazowieckie,109900
+116141,volvo,xc-60,gen-i-2008-2017,2014,138659,2400,Diesel,Bełchatów,Łódzkie,85000
+116142,volvo,xc-60,gen-i-2008-2017,2017,144000,1969,Diesel,Mroków,Mazowieckie,120800
+116143,volvo,xc-60,gen-i-2008-2017,2012,145874,2400,Diesel,Kalisz,Wielkopolskie,58900
+116144,volvo,xc-60,gen-i-2008-2017,2013,247371,1984,Diesel,Gdańsk,Pomorskie,63837
+116145,volvo,xc-60,gen-i-2008-2017,2016,250000,1969,Diesel,Ostrów Mazowiecka,Mazowieckie,79900
+116146,volvo,xc-60,gen-i-2008-2017,2016,196725,1969,Diesel,Kalisz,Wielkopolskie,77000
+116147,volvo,xc-60,gen-i-2008-2017,2016,121000,2400,Diesel,Sade Budy,Mazowieckie,98800
+116148,volvo,xc-60,gen-i-2008-2017,2014,130000,2953,Gasoline,Lisów,Lubelskie,73900
+116149,volvo,xc-60,gen-i-2008-2017,2014,244000,2953,Gasoline,Obrowiec,Opolskie,82000
+116150,volvo,xc-60,gen-i-2008-2017,2016,117000,1969,Diesel,Wyszków,Mazowieckie,95500
+116151,volvo,xc-60,gen-i-2008-2017,2013,221000,1984,Diesel,Słomniki,Małopolskie,58850
+116152,volvo,xc-60,gen-i-2008-2017,2013,130000,2953,Gasoline,Białystok,Podlaskie,72000
+116153,volvo,xc-60,gen-i-2008-2017,2017,98400,1969,Diesel,Lębork,Pomorskie,120000
+116154,volvo,xc-60,gen-i-2008-2017,2013,223000,1984,Diesel,Ponikiew Duża,Mazowieckie,69999
+116155,volvo,xc-60,gen-i-2008-2017,2017,108000,1969,Diesel,Białogard,Zachodniopomorskie,117990
+116156,volvo,xc-60,gen-i-2008-2017,2015,184000,2953,Gasoline,Lubartów,Lubelskie,74900
+116157,volvo,xc-60,gen-i-2008-2017,2016,150000,1969,Diesel,Błonie,Mazowieckie,79900
+116158,volvo,xc-60,gen-i-2008-2017,2016,113000,2400,Diesel,Pruszków,Mazowieckie,119900
+116159,volvo,xc-60,gen-i-2008-2017,2014,134000,2953,LPG,Lublin,Lubelskie,74900
+116160,volvo,xc-60,gen-i-2008-2017,2013,177000,3192,Gasoline,Ostrołęka,Mazowieckie,57900
+116161,volvo,xc-60,gen-i-2008-2017,2011,359000,2400,Diesel,Wodzisław Śląski,Śląskie,38900
+116704,volvo,xc-60,gen-ii-2017,2019,93000,1969,Diesel,Warszawa,Mazowieckie,189900
+116705,volvo,xc-60,gen-ii-2017,2018,73663,2000,Diesel,Poznań,Wielkopolskie,199000
+116706,volvo,xc-60,gen-ii-2017,2019,100000,1969,Diesel,Kościerzyna,Pomorskie,165914
+116707,volvo,xc-60,gen-ii-2017,2019,105856,1969,Diesel,Złotów,Wielkopolskie,171000
+116708,volvo,xc-60,gen-ii-2017,2018,76958,1969,Diesel,Toruń,Kujawsko-pomorskie,204900
+116709,volvo,xc-60,gen-ii-2017,2018,96645,1969,Diesel,Toruń,Kujawsko-pomorskie,204900
+116710,volvo,xc-60,gen-ii-2017,2021,6690,1969,Hybrid,Baranowo,Wielkopolskie,264900
+116711,volvo,xc-60,gen-ii-2017,2021,1,1969,Gasoline,Kraków,Małopolskie,214030
+116712,volvo,xc-60,gen-ii-2017,2018,75000,1969,Diesel,Wągrowiec,Wielkopolskie,179580
+116713,volvo,xc-60,gen-ii-2017,2021,1,1969,Gasoline,Kraków,Małopolskie,240000
+116714,volvo,xc-60,gen-ii-2017,2017,50000,1969,Diesel,Lublin,Lubelskie,180000
+116715,volvo,xc-60,gen-ii-2017,2018,42798,1969,Gasoline,Poznań,Wielkopolskie,219900
+116716,volvo,xc-60,gen-ii-2017,2017,104509,1969,Diesel,Katowice,Śląskie,149000
+116717,volvo,xc-60,gen-ii-2017,2017,134305,1969,Diesel,Poznań,Wielkopolskie,180900
+116718,volvo,xc-60,gen-ii-2017,2021,1,1969,Gasoline,Kraków,Małopolskie,248800
+116719,volvo,xc-60,gen-ii-2017,2021,11780,1969,Gasoline,Parczew,Lubelskie,119540
+116720,volvo,xc-60,gen-ii-2017,2020,18631,1969,Hybrid,Baranowo,Wielkopolskie,269900
+116721,volvo,xc-60,gen-ii-2017,2022,5,1969,Gasoline,Warszawa,Mazowieckie,161420
+116722,volvo,xc-60,gen-ii-2017,2020,24496,1969,Hybrid,Poznań,Wielkopolskie,297900
+116723,volvo,xc-60,gen-ii-2017,2017,170000,1969,Diesel,Morzyczyn,Zachodniopomorskie,131900
+116724,volvo,xc-60,gen-ii-2017,2017,104000,1969,Diesel,Lublin,Lubelskie,169900
+116725,volvo,xc-60,gen-ii-2017,2016,162000,2400,Diesel,Lublin,Lubelskie,109000
+116726,volvo,xc-60,gen-ii-2017,2017,150627,1969,Diesel,Lesznowola,Mazowieckie,173800
+116727,volvo,xc-60,gen-ii-2017,2018,93239,1969,Diesel,Rybnik,Śląskie,165899
+116728,volvo,xc-60,gen-ii-2017,2019,85000,1969,Hybrid,Czerwionka-Leszczyny,Śląskie,224900
+116729,volvo,xc-60,gen-ii-2017,2019,34300,1969,Gasoline,Gorzów Wielkopolski,Lubuskie,178900
+116730,volvo,xc-60,gen-ii-2017,2019,45021,1969,Diesel,Złotów,Wielkopolskie,177900
+116731,volvo,xc-60,gen-ii-2017,2019,44778,1969,Hybrid,Poznań,Wielkopolskie,204900
+116732,volvo,xc-60,gen-ii-2017,2017,120000,1969,Diesel,Leszno,Wielkopolskie,165900
+116733,volvo,xc-60,gen-ii-2017,2019,30909,1969,Gasoline,Prudnik,Opolskie,189500
+116734,volvo,xc-60,gen-ii-2017,2020,26355,1969,Hybrid,Kalisz,Wielkopolskie,298000
+116735,volvo,xc-60,gen-ii-2017,2020,22082,1969,Hybrid,Kalisz,Wielkopolskie,299900
+116736,volvo,xc-60,gen-ii-2017,2020,32600,1969,Hybrid,Gliwice,Śląskie,265900
+116737,volvo,xc-60,gen-ii-2017,2017,229000,2400,Diesel,Sokołów Podlaski,Mazowieckie,108000
+116738,volvo,xc-60,gen-ii-2017,2019,83410,1969,Diesel,Lipówki,Mazowieckie,149898
+116739,volvo,xc-60,gen-ii-2017,2018,83319,1969,Diesel,Kalisz,Wielkopolskie,148338
+116740,volvo,xc-60,gen-ii-2017,2019,40269,1969,Diesel,Częstochowa,Śląskie,209900
+116741,volvo,xc-60,gen-ii-2017,2018,29000,1969,Gasoline,Częstochowa,Śląskie,205900
+116742,volvo,xc-60,gen-ii-2017,2019,111400,1969,Diesel,Złotów,Wielkopolskie,172900
+116743,volvo,xc-60,gen-ii-2017,2019,111400,1969,Diesel,Złotów,Wielkopolskie,172900
+116744,volvo,xc-60,gen-ii-2017,2019,119625,1969,Diesel,Złotów,Wielkopolskie,164000
+116745,volvo,xc-60,gen-ii-2017,2019,118542,1969,Diesel,Złotów,Wielkopolskie,162900
+116746,volvo,xc-60,gen-ii-2017,2021,1,1969,Gasoline,Poznań,Wielkopolskie,187300
+116747,volvo,xc-60,gen-ii-2017,2020,45820,1969,Gasoline,Toruń,Kujawsko-pomorskie,214900
+116748,volvo,xc-60,gen-ii-2017,2020,14200,1969,Hybrid,Poznań,Wielkopolskie,294900
+116749,volvo,xc-60,gen-ii-2017,2019,77636,2000,Diesel,Warszawa,Mazowieckie,177900
+116750,volvo,xc-60,gen-ii-2017,2021,13359,1969,Hybrid,Kalisz,Wielkopolskie,197900
+116751,volvo,xc-60,gen-ii-2017,2021,15000,1969,Hybrid,Częstochowa,Śląskie,259900
+116752,volvo,xc-60,gen-ii-2017,2018,74648,2000,Gasoline,Warszawa,Mazowieckie,169900
+116753,volvo,xc-60,gen-ii-2017,2018,109000,1969,Diesel,Katowice,Śląskie,169900
+116754,volvo,xc-60,gen-ii-2017,2018,75460,1969,Diesel,Katowice,Śląskie,140000
+116755,volvo,xc-60,gen-ii-2017,2018,149000,1969,Diesel,Radom,Mazowieckie,137900
+116756,volvo,xc-60,gen-ii-2017,2020,24800,1969,Diesel,Częstochowa,Śląskie,249900
+116757,volvo,xc-60,gen-ii-2017,2017,123894,2000,Diesel,Mysłowice,Śląskie,144500
+116758,volvo,xc-60,gen-ii-2017,2021,10,1969,Gasoline,Olsztyn,Warmińsko-mazurskie,277550
+116759,volvo,xc-60,gen-ii-2017,2018,76000,1969,Diesel,Kąty,Mazowieckie,167800
+116760,volvo,xc-60,gen-ii-2017,2018,104000,1969,Diesel,Lublin,Lubelskie,145900
+116761,volvo,xc-60,gen-ii-2017,2021,5,1969,Diesel,Gdynia,Pomorskie,248100
+116762,volvo,xc-60,gen-ii-2017,2021,15000,1969,Hybrid,Kalisz,Wielkopolskie,324900
+116763,volvo,xc-60,gen-ii-2017,2018,68000,1969,Diesel,Katowice,Śląskie,189899
+116764,volvo,xc-60,gen-ii-2017,2021,5,1969,Gasoline,Gdynia,Pomorskie,198200
+116765,volvo,xc-60,gen-ii-2017,2018,100600,1969,Diesel,Chorzów,Śląskie,177777
+116766,volvo,xc-60,gen-ii-2017,2020,35000,1969,Hybrid,Kraków,Małopolskie,289900
+116767,volvo,xc-60,gen-ii-2017,2021,10,1969,Hybrid,Kalisz,Wielkopolskie,348542
+116768,volvo,xc-60,gen-ii-2017,2022,1,1969,Gasoline,Chorzów,Śląskie,219600
+116769,volvo,xc-60,gen-ii-2017,2018,101725,1969,Gasoline,Warszawa,Mazowieckie,229900
+116770,volvo,xc-60,gen-ii-2017,2018,115408,1969,Gasoline,Gaj,Małopolskie,189900
+116771,volvo,xc-60,gen-ii-2017,2020,25955,1969,Gasoline,Gaj,Małopolskie,234900
+116772,volvo,xc-60,gen-ii-2017,2020,10823,1969,Hybrid,Kalisz,Wielkopolskie,299900
+116773,volvo,xc-60,gen-ii-2017,2018,161000,1969,Diesel,Chechło Pierwsze,Łódzkie,157000
+116774,volvo,xc-60,gen-ii-2017,2017,110257,1969,Gasoline,Lesznowola,Mazowieckie,185800
+116775,volvo,xc-60,gen-ii-2017,2018,140000,1969,Diesel,Wodzisław Śląski,Śląskie,147500
+116776,volvo,xc-60,gen-ii-2017,2016,94000,1969,Diesel,Czerwionka-Leszczyny,Śląskie,114900
+116777,volvo,xc-60,gen-ii-2017,2019,97564,1969,Diesel,Złotów,Wielkopolskie,163000
+116778,volvo,xc-60,gen-ii-2017,2019,98564,1969,Diesel,Złotów,Wielkopolskie,163000
+116779,volvo,xc-60,gen-ii-2017,2021,7000,1969,Gasoline,Poznań,Wielkopolskie,239900
+116780,volvo,xc-60,gen-ii-2017,2020,21500,1969,Diesel,Olsztyn,Warmińsko-mazurskie,245000
+116781,volvo,xc-60,gen-ii-2017,2018,87154,1969,Diesel,Łódź,Łódzkie,188500
+116782,volvo,xc-60,gen-ii-2017,2017,59650,1969,Diesel,Bydgoszcz,Kujawsko-pomorskie,185900
+116783,volvo,xc-60,gen-ii-2017,2020,8500,1969,Gasoline,Ksawerów,Łódzkie,185000
+116784,volvo,xc-60,gen-ii-2017,2018,151000,1969,Diesel,Pobiedziska,Wielkopolskie,126500
+116785,volvo,xc-60,gen-ii-2017,2018,73099,1969,Gasoline,Piaseczno,Mazowieckie,179300
+116786,volvo,xc-60,gen-ii-2017,2019,110854,1969,Diesel,Złotów,Wielkopolskie,168900
+116787,volvo,xc-60,gen-ii-2017,2018,151000,1969,Diesel,Chechło Pierwsze,Łódzkie,149000
+116788,volvo,xc-60,gen-ii-2017,2020,13500,1969,Diesel,Glinojeck,Mazowieckie,197000
+116789,volvo,xc-60,gen-ii-2017,2019,48000,1969,Diesel,Tarnów,Małopolskie,199260
+116790,volvo,xc-60,gen-ii-2017,2019,110000,1969,Diesel,Pabianice,Łódzkie,129999
+116791,volvo,xc-60,gen-ii-2017,2019,44799,1969,Hybrid,Chorzów,Śląskie,165000
+117149,volvo,xc-90,gen-ii-2014-xc-90,2019,143000,1969,Diesel,Złotów,Wielkopolskie,183999
+117150,volvo,xc-90,gen-ii-2014-xc-90,2019,118000,1969,Diesel,Złotów,Wielkopolskie,189999
+117151,volvo,xc-90,gen-ii-2014-xc-90,2019,108000,1969,Diesel,Złotów,Wielkopolskie,197999
+117152,volvo,xc-90,gen-ii-2014-xc-90,2017,179050,1969,Diesel,Mińsk Mazowiecki,Mazowieckie,179900
+117153,volvo,xc-90,gen-ii-2014-xc-90,2022,1,1969,Hybrid,Chorzów,Śląskie,369600
+117154,volvo,xc-90,gen-ii-2014-xc-90,2015,117000,1969,Diesel,Skawa,Małopolskie,149999
+117155,volvo,xc-90,gen-ii-2014-xc-90,2018,72000,1969,Diesel,Kraków,Małopolskie,244900
+117156,volvo,xc-90,gen-ii-2014-xc-90,2016,64100,1969,Gasoline,Kleczew,Wielkopolskie,155000
+117157,volvo,xc-90,gen-ii-2014-xc-90,2021,1,2000,Diesel,Warszawa,Mazowieckie,242800
+117158,volvo,xc-90,gen-ii-2014-xc-90,2018,96600,1969,Diesel,Jednorożec,Mazowieckie,175000
+117159,volvo,xc-90,gen-ii-2014-xc-90,2021,21433,1969,Diesel,Białystok,Podlaskie,299900
+117160,volvo,xc-90,gen-ii-2014-xc-90,2018,110000,1969,Diesel,Tczew,Pomorskie,199900
+117161,volvo,xc-90,gen-ii-2014-xc-90,2018,78900,1969,Diesel,Kraków,Małopolskie,249900
+117162,volvo,xc-90,gen-ii-2014-xc-90,2017,117000,1969,Gasoline,Wieliczka,Małopolskie,204900
+117163,volvo,xc-90,gen-ii-2014-xc-90,2018,95000,1969,Diesel,Kraków,Małopolskie,249900
+117164,volvo,xc-90,gen-ii-2014-xc-90,2022,5,1969,Hybrid,Bielany Wrocławskie,Dolnośląskie,341000
+117165,volvo,xc-90,gen-ii-2014-xc-90,2018,34000,1969,Diesel,Sopot,Pomorskie,220000
+117166,volvo,xc-90,gen-ii-2014-xc-90,2018,44400,1969,Diesel,Sopot,Pomorskie,213900
+117167,volvo,xc-90,gen-ii-2014-xc-90,2020,11000,1969,Gasoline,Zawiercie,Śląskie,215000
+117168,volvo,xc-90,gen-ii-2014-xc-90,2020,20700,1969,Gasoline,Warszawa,Mazowieckie,232000
+117169,volvo,xc-90,gen-ii-2014-xc-90,2017,151661,1969,Diesel,Klaudyn,Mazowieckie,125000
+117170,volvo,xc-90,gen-ii-2014-xc-90,2020,12730,1969,Hybrid,Gliwice,Śląskie,319900
+117171,volvo,xc-90,gen-ii-2014-xc-90,2015,145000,1969,Diesel,Szczecin,Zachodniopomorskie,169900

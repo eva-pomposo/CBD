@@ -1,0 +1,172 @@
+CREATE KEYSPACE cbd_3_2 WITH replication = {'class': 'SimpleStrategy', 'replication_factor': 3};
+
+USE cbd_3_2;
+
+CREATE TABLE User(
+    username text PRIMARY KEY,
+    name text,
+    email text,
+    registration_time_stamp timestamp,
+    );
+
+CREATE TABLE Video_author( 
+    id int,
+    author_username text,
+    name text,
+    description text,
+    tags set<text>,
+    upload_time_stamp timestamp,
+    followers_usernames set<text>,
+    PRIMARY KEY(author_username, upload_time_stamp, id)
+    );
+
+CREATE TABLE Video_idVideo( 
+    id int,
+    author_username text,
+    name text,
+    description text,
+    tags set<text>,
+    upload_time_stamp timestamp,
+    followers_usernames set<text>,
+    PRIMARY KEY(id, author_username, upload_time_stamp)
+    );
+
+CREATE TABLE Tag_Video(
+    id int,
+    name text,
+    video_id int,
+    PRIMARY KEY(name, id, video_id)
+    );
+
+CREATE TABLE Comment_User(
+    id int,
+    comment text,
+    video_id int, 
+    moment_time timestamp,
+    author_username text,
+    PRIMARY KEY(author_username, moment_time, id)
+) WITH CLUSTERING ORDER BY (moment_time DESC);
+
+CREATE TABLE Comment_Video(
+    id int,
+    comment text,
+    video_id int, 
+    moment_time timestamp,
+    author_username text,
+    PRIMARY KEY(video_id,moment_time ,id)
+) WITH CLUSTERING ORDER BY (moment_time DESC);
+
+CREATE TABLE Event_Video(
+    id int,
+    video_id int,
+    author_username text,
+    type text,
+    time_record timestamp,
+    momentTime_occurs_inTheVideo int, 
+    PRIMARY KEY(video_id, author_username,  id)
+);
+
+CREATE TABLE Rating(
+    id int,
+    video_id int,
+    rating int,
+    PRIMARY KEY (video_id, id)
+);
+
+INSERT INTO User (username, name, email, registration_time_stamp) VALUES ('evapomposo', 'Eva', 'evapomposo@ua.pt', toTimestamp(now()));
+INSERT INTO User (username, name, email, registration_time_stamp) VALUES ('marianarosa', 'Mariana', 'marianarosa@ua.pt', toTimestamp(now()));
+INSERT INTO User (username, name, email, registration_time_stamp) VALUES ('pedrosobral', 'Pedro', 'pedrosobral@ua.pt', toTimestamp(now()));
+INSERT INTO User (username, name, email, registration_time_stamp) VALUES ('danif', 'Dani', 'danif@ua.pt', toTimestamp(now()));
+INSERT INTO User (username, name, email, registration_time_stamp) VALUES ('andrefreixo', 'Andre', 'andrefreixo@ua.pt', toTimestamp(now()));
+INSERT INTO User (username, name, email, registration_time_stamp) VALUES ('filipefreixo', 'Filipe', 'filipefreixo@ua.pt', toTimestamp(now()));
+INSERT INTO User (username, name, email, registration_time_stamp) VALUES ('martaf', 'Marta', 'martaf@ua.pt', toTimestamp(now()));
+INSERT INTO User (username, name, email, registration_time_stamp) VALUES ('ana', 'Ana', 'ana@ua.pt', toTimestamp(now()));
+INSERT INTO User (username, name, email, registration_time_stamp) VALUES ('vera', 'Vera', 'vera@ua.pt', toTimestamp(now()));
+INSERT INTO User (username, name, email, registration_time_stamp) VALUES ('filipa', 'Filipa', 'filipa@ua.pt', toTimestamp(now()));
+
+INSERT INTO Video_author (id, name, author_username, description, tags, followers_usernames, upload_time_stamp) VALUES (1, 'React in 5 minutes', 'evapomposo', 'Tutorial de react.', {'Programming'}, {'evapomposo', 'pedrosobral'}, toTimestamp(now()));
+INSERT INTO Video_author (id, name, author_username, description, tags, followers_usernames, upload_time_stamp) VALUES (2, 'VLOG! | Rotina universitária, tirei o aparelho, trajar, ...', 'marianarosa', 'Ao longo do 2º semestre do 2º ano filmei alguns clipes que nunca cheguei a editar. ', {'Vlog', 'University'}, {'evapomposo', 'ana'}, toTimestamp(now()));
+INSERT INTO Video_author (id, name, author_username, description, tags, followers_usernames, upload_time_stamp) VALUES (3, 'Trailler The office', 'pedrosobral', 'Trailler da melhor serie de sempre', {'TVShow', 'Comedy'}, {'danif'}, toTimestamp(now()));
+INSERT INTO Video_author (id, name, author_username, description, tags, followers_usernames, upload_time_stamp) VALUES (4, 'The Less I know the Better', 'danif', 'Musica top, vem ouvir1', {'Music', 'Pop'}, {'andrefreixo', 'filipefreixo', 'pedrosobral'}, toTimestamp(now()));
+INSERT INTO Video_author (id, name, author_username, description, tags, followers_usernames, upload_time_stamp) VALUES (5, 'I Feel Like Im Drowning', 'andrefreixo', 'Musica para ouvir em mommentos tristes', {'Music', '2000'}, {'martaf', 'ana', 'evapomposo'}, toTimestamp(now()));
+INSERT INTO Video_author (id, name, author_username, description, tags, followers_usernames, upload_time_stamp) VALUES (6, 'Angular Course', 'filipefreixo', 'Chegou a hora de seres o pro em angular :)', {'Programming', 'Angular'}, {'pedrosobral'}, toTimestamp(now()));
+INSERT INTO Video_author (id, name, author_username, description, tags, followers_usernames, upload_time_stamp) VALUES (7, 'Maquilhagem para sair à noite', 'martaf', 'Maquilhagem rápida, fácil e bonita', {'Makeup', 'Moda', 'Transformaçao visual'}, {'evapomposo', 'ana', 'marianarosa'}, toTimestamp(now()));
+INSERT INTO Video_author (id, name, author_username, description, tags, followers_usernames, upload_time_stamp) VALUES (8, 'TRY ON HAUL - Zara, H&M', 'evapomposo', 'As minhas compras para este inverno', {'Moda'}, {'filipa'}, toTimestamp(now()));
+INSERT INTO Video_author (id, name, author_username, description, tags, followers_usernames, upload_time_stamp) VALUES (9, 'Os continentais na ilha de São Miguel, Açores', 'marianarosa', 'Os meus amigos da universidade vieram passar uma semaninha comigo cá em São Miguel. ', {'Vlog', 'Vacation'}, {'filipa', 'vera'}, toTimestamp(now()));
+INSERT INTO Video_author (id, name, author_username, description, tags, followers_usernames, upload_time_stamp) VALUES (10, 'Trailler Romeu e Julieta', 'evapomposo', 'Prepara-te para o filme mais romantico de sempre.', {'TVShow', 'Romantic'}, {'danif', 'martaf'}, toTimestamp(now()));
+
+INSERT INTO Video_idVideo (id, name, author_username, description, tags, followers_usernames, upload_time_stamp) VALUES (1, 'React in 5 minutes', 'evapomposo', 'Tutorial de react.', {'Programming'}, {'evapomposo', 'pedrosobral'}, toTimestamp(now()));
+INSERT INTO Video_idVideo (id, name, author_username, description, tags, followers_usernames, upload_time_stamp) VALUES (2, 'VLOG! | Rotina universitária, tirei o aparelho, trajar, ...', 'marianarosa', 'Ao longo do 2º semestre do 2º ano filmei alguns clipes que nunca cheguei a editar. ', {'Vlog', 'University'}, {'evapomposo', 'ana'}, toTimestamp(now()));
+INSERT INTO Video_idVideo (id, name, author_username, description, tags, followers_usernames, upload_time_stamp) VALUES (3, 'Trailler The office', 'pedrosobral', 'Trailler da melhor serie de sempre', {'TVShow', 'Comedy'}, {'danif'}, toTimestamp(now()));
+INSERT INTO Video_idVideo (id, name, author_username, description, tags, followers_usernames, upload_time_stamp) VALUES (4, 'The Less I know the Better', 'danif', 'Musica top, vem ouvir1', {'Music', 'Pop'}, {'andrefreixo', 'filipefreixo', 'pedrosobral'}, toTimestamp(now()));
+INSERT INTO Video_idVideo (id, name, author_username, description, tags, followers_usernames, upload_time_stamp) VALUES (5, 'I Feel Like Im Drowning', 'andrefreixo', 'Musica para ouvir em mommentos tristes', {'Music', '2000'}, {'martaf', 'ana', 'evapomposo'}, toTimestamp(now()));
+INSERT INTO Video_idVideo (id, name, author_username, description, tags, followers_usernames, upload_time_stamp) VALUES (6, 'Angular Course', 'filipefreixo', 'Chegou a hora de seres o pro em angular :)', {'Programming', 'Angular'}, {'pedrosobral'}, toTimestamp(now()));
+INSERT INTO Video_idVideo (id, name, author_username, description, tags, followers_usernames, upload_time_stamp) VALUES (7, 'Maquilhagem para sair à noite', 'martaf', 'Maquilhagem rápida, fácil e bonita', {'Makeup', 'Moda', 'Transformaçao visual'}, {'evapomposo', 'ana', 'marianarosa'}, toTimestamp(now()));
+INSERT INTO Video_idVideo (id, name, author_username, description, tags, followers_usernames, upload_time_stamp) VALUES (8, 'TRY ON HAUL - Zara, H&M', 'evapomposo', 'As minhas compras para este inverno', {'Moda'}, {'filipa'}, toTimestamp(now()));
+INSERT INTO Video_idVideo (id, name, author_username, description, tags, followers_usernames, upload_time_stamp) VALUES (9, 'Os continentais na ilha de São Miguel, Açores', 'marianarosa', 'Os meus amigos da universidade vieram passar uma semaninha comigo cá em São Miguel. ', {'Vlog', 'Vacation'}, {'filipa', 'vera'}, toTimestamp(now()));
+INSERT INTO Video_idVideo (id, name, author_username, description, tags, followers_usernames, upload_time_stamp) VALUES (10, 'Trailler Romeu e Julieta', 'evapomposo', 'Prepara-te para o filme mais romantico de sempre.', {'TVShow', 'Romantic'}, {'danif', 'martaf'}, toTimestamp(now()));
+
+
+INSERT INTO Tag_Video (id, name, video_id) VALUES (1, 'Programming', 1);
+INSERT INTO Tag_Video (id, name, video_id) VALUES (2, 'Vlog', 2);
+INSERT INTO Tag_Video (id, name, video_id) VALUES (3, 'University', 2);
+INSERT INTO Tag_Video (id, name, video_id) VALUES (4, 'TVShow', 3);
+INSERT INTO Tag_Video (id, name, video_id) VALUES (5, 'Comedy', 3);
+INSERT INTO Tag_Video (id, name, video_id) VALUES (6, 'Music', 4);
+INSERT INTO Tag_Video (id, name, video_id) VALUES (7, 'Pop', 4);
+INSERT INTO Tag_Video (id, name, video_id) VALUES (8, 'Music', 5);
+INSERT INTO Tag_Video (id, name, video_id) VALUES (9, '2000', 5);
+INSERT INTO Tag_Video (id, name, video_id) VALUES (10, 'Programming', 6);
+INSERT INTO Tag_Video (id, name, video_id) VALUES (11, 'Angular', 6);
+INSERT INTO Tag_Video (id, name, video_id) VALUES (12, 'Makeup', 7);
+INSERT INTO Tag_Video (id, name, video_id) VALUES (13, 'Moda', 7);
+INSERT INTO Tag_Video (id, name, video_id) VALUES (14, 'Transformaçao visual', 7);
+INSERT INTO Tag_Video (id, name, video_id) VALUES (15, 'Moda', 8);
+INSERT INTO Tag_Video (id, name, video_id) VALUES (16, 'Vlog', 9);
+INSERT INTO Tag_Video (id, name, video_id) VALUES (17, 'Vacation', 9);
+INSERT INTO Tag_Video (id, name, video_id) VALUES (18, 'TVShow', 10);
+INSERT INTO Tag_Video (id, name, video_id) VALUES (19, 'Romantic', 10);
+
+INSERT INTO Comment_User (id, video_id, author_username, comment, moment_time) VALUES (1, 2, 'evapomposo', 'Ansiosa para ir para a universidade.', '2021-11-30');
+INSERT INTO Comment_User (id, video_id, author_username, comment, moment_time) VALUES (2, 3, 'ana', 'Realmente, a melhor serie de sempre.', '2021-11-30');
+INSERT INTO Comment_User (id, video_id, author_username, comment, moment_time) VALUES (3, 1, 'vera', 'Que tutorial fantastico. Obrigada!', '2021-12-01');
+INSERT INTO Comment_User (id, video_id, author_username, comment, moment_time) VALUES (4, 1, 'filipa', 'Nao percebi nada...', '2021-12-01');
+INSERT INTO Comment_User (id, video_id, author_username, comment, moment_time) VALUES (5, 5, 'danif', 'Musica Top!', '2021-12-02');
+INSERT INTO Comment_User (id, video_id, author_username, comment, moment_time) VALUES (6, 7, 'evapomposo', 'Isto é tudo menos fácil -_-', '2021-12-03');
+INSERT INTO Comment_User (id, video_id, author_username, comment, moment_time) VALUES (7, 4, 'filipefreixo', 'Nao entendo como as pessoas gostam desta musica', '2021-12-04');
+INSERT INTO Comment_User (id, video_id, author_username, comment, moment_time) VALUES (8, 1, 'marianarosa', 'ALEUIA! Um tutorial em condicoes.', '2021-12-04');
+INSERT INTO Comment_User (id, video_id, author_username, comment, moment_time) VALUES (9, 9, 'danif', 'Lindos!', '2021-12-04');
+INSERT INTO Comment_User (id, video_id, author_username, comment, moment_time) VALUES (10, 10, 'andrefreixo', 'Que lamechas', '2021-12-04');
+
+INSERT INTO Comment_Video (id, video_id, author_username, comment, moment_time) VALUES (1, 2, 'evapomposo', 'Ansiosa para ir para a universidade.', '2021-11-30');
+INSERT INTO Comment_Video (id, video_id, author_username, comment, moment_time) VALUES (2, 3, 'ana', 'Realmente, a melhor serie de sempre.', '2021-11-30');
+INSERT INTO Comment_Video (id, video_id, author_username, comment, moment_time) VALUES (3, 1, 'vera', 'Que tutorial fantastico. Obrigada!', '2021-12-01');
+INSERT INTO Comment_Video (id, video_id, author_username, comment, moment_time) VALUES (4, 1, 'filipa', 'Nao percebi nada...', '2021-12-01');
+INSERT INTO Comment_Video (id, video_id, author_username, comment, moment_time) VALUES (5, 5, 'danif', 'Musica Top!', '2021-12-02');
+INSERT INTO Comment_Video (id, video_id, author_username, comment, moment_time) VALUES (6, 7, 'evapomposo', 'Isto é tudo menos fácil -_-', '2021-12-03');
+INSERT INTO Comment_Video (id, video_id, author_username, comment, moment_time) VALUES (7, 4, 'filipefreixo', 'Nao entendo como as pessoas gostam desta musica', '2021-12-04');
+INSERT INTO Comment_Video (id, video_id, author_username, comment, moment_time) VALUES (8, 1, 'marianarosa', 'ALEUIA! Um tutorial em condicoes.', '2021-12-04');
+INSERT INTO Comment_Video (id, video_id, author_username, comment, moment_time) VALUES (9, 9, 'danif', 'Lindos!', '2021-12-04');
+INSERT INTO Comment_Video (id, video_id, author_username, comment, moment_time) VALUES (10, 10, 'andrefreixo', 'Que lamechas', '2021-12-04');
+
+INSERT INTO Event_Video (id, video_id, author_username, time_record, type, momentTime_occurs_inTheVideo) VALUES (1, 2, 'martaf', toTimestamp(now()), 'play', 37);
+INSERT INTO Event_Video (id, video_id, author_username, time_record, type, momentTime_occurs_inTheVideo) VALUES (2, 1, 'pedrosobral', toTimestamp(now()), 'pause', 45);
+INSERT INTO Event_Video (id, video_id, author_username, time_record, type, momentTime_occurs_inTheVideo) VALUES (3, 1, 'andrefreixo', toTimestamp(now()), 'stop', 568);
+INSERT INTO Event_Video (id, video_id, author_username, time_record, type, momentTime_occurs_inTheVideo) VALUES (4, 4, 'ana', toTimestamp(now()), 'play', 106);
+INSERT INTO Event_Video (id, video_id, author_username, time_record, type, momentTime_occurs_inTheVideo) VALUES (5, 9, 'danif', toTimestamp(now()), 'pause', 324);
+INSERT INTO Event_Video (id, video_id, author_username, time_record, type, momentTime_occurs_inTheVideo) VALUES (6, 5, 'marianarosa', toTimestamp(now()), 'stop', 78);
+INSERT INTO Event_Video (id, video_id, author_username, time_record, type, momentTime_occurs_inTheVideo) VALUES (7, 3, 'vera', toTimestamp(now()), 'play', 90);
+INSERT INTO Event_Video (id, video_id, author_username, time_record, type, momentTime_occurs_inTheVideo) VALUES (8, 7, 'filipa', toTimestamp(now()), 'pause', 15);
+INSERT INTO Event_Video (id, video_id, author_username, time_record, type, momentTime_occurs_inTheVideo) VALUES (9, 8, 'filipefreixo', toTimestamp(now()), 'stop', 88);
+INSERT INTO Event_Video (id, video_id, author_username, time_record, type, momentTime_occurs_inTheVideo) VALUES (10, 1, 'evapomposo', toTimestamp(now()), 'play', 51);
+
+INSERT INTO Rating (id, video_id, rating) VALUES (1, 1, 1);
+INSERT INTO Rating (id, video_id, rating) VALUES (2, 2, 2);
+INSERT INTO Rating (id, video_id, rating) VALUES (3, 3, 3);
+INSERT INTO Rating (id, video_id, rating) VALUES (4, 4, 4);
+INSERT INTO Rating (id, video_id, rating) VALUES (5, 5, 5);
+INSERT INTO Rating (id, video_id, rating) VALUES (6, 6, 1);
+INSERT INTO Rating (id, video_id, rating) VALUES (7, 7, 2);
+INSERT INTO Rating (id, video_id, rating) VALUES (8, 8, 3);
+INSERT INTO Rating (id, video_id, rating) VALUES (9, 9, 4);
+INSERT INTO Rating (id, video_id, rating) VALUES (10, 1, 5);

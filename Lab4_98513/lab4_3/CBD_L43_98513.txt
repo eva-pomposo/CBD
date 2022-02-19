@@ -1,0 +1,59 @@
+// NMEC: 98513
+
+// a)
+// Nesta base de dados existe as seguintes entidades:
+//     * User (com as propriedades: "real_name", "num", "svn_id", "organization" );
+//     * Project (com as propriedades: "name" ).
+
+// Existe somente a relacao "WORKS_ON", do género:
+//     * (m: User)-[:WORKS_ON]->(n:Project) 
+//     * esta relacao tem a propriedade "role"
+
+// b)
+// Comando utilizado para carregar o ficheiro:
+
+LOAD CSV WITH HEADERS FROM 'file:///git_selection.csv' AS row
+MERGE (user:User { num: toInteger(row.num), svn_id: row.svn_id, real_name: row.real_name, organization: row.organization})
+MERGE (proj:Project { name: row.project_name})
+MERGE (user)-[rel:WORKS_ON {role: row.role_on_project}]->(proj);
+
+// c)
+#1
+match (user:User)
+return user;
+
+#2
+match (user:User)
+return user.real_name as nameUser;
+
+#3
+match (proj:Project)
+where size((proj)<-[:WORKS_ON]-()) > 0 
+return proj
+
+#4
+match (user:User)-[:WORKS_ON]->(proj)
+return user.svn_id as idUser, count(proj) as totalProj
+
+#5
+match (user:User)-[:WORKS_ON]->(proj)
+return user.svn_id as idUser, count(proj) as totalProj
+order by totalProj desc;
+
+#6
+match (user:User)-[:WORKS_ON]->(proj)
+return proj.name as nameProj, count(user) as totalUser;
+
+#7
+match (user:User)-[rel:WORKS_ON]->(proj)
+return proj.name as nameProj, count(rel.role = "Committer") as totalUser;
+
+#8
+match (user1:User {svn_id: "atm"})-[:WORKS_ON]->(proj)<-[:WORKS_ON]-(user2)
+where id(user1) < id(user2)
+return user1.real_name as atmName, user2.real_name as user2Name, proj.name as projName;
+
+#9
+match (user1:User {svn_id: "atm"})-[rel1:WORKS_ON]->(proj)<-[rel2:WORKS_ON]-(user2)
+where rel1.role = "PMC" and rel2.role = "Committer" and id(user1) < id(user2)
+return user2.real_name as user2Name

@@ -1,0 +1,8 @@
+cqlsh -e "select JSON * from cbd_3_2.User" | awk 'NR>3 {print $0}' > User.json
+cqlsh -e "select JSON * from cbd_3_2.Video_author" | awk 'NR>3 {print $0}' > Video_author.json
+cqlsh -e "select JSON * from cbd_3_2.Video_idVideo" | awk 'NR>3 {print $0}' > Video_idVideo.json
+cqlsh -e "select JSON * from cbd_3_2.Tag_Video" | awk 'NR>3 {print $0}' > Tag_Video.json
+cqlsh -e "select JSON * from cbd_3_2.Comment_User" | awk 'NR>3 {print $0}' > Comment_User.json
+cqlsh -e "select JSON * from cbd_3_2.Comment_Video" | awk 'NR>3 {print $0}' > Comment_Video.json
+cqlsh -e "select JSON * from cbd_3_2.Event_Video" | awk 'NR>3 {print $0}' > Event_Video.json
+cqlsh -e "select JSON * from cbd_3_2.Rating" | awk 'NR>3 {print $0}' > Rating.json

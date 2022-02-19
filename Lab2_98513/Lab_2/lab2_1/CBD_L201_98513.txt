@@ -1,0 +1,284 @@
+> db
+test
+> use examples
+switched to db examples
+> db
+examples
+> db.collection.insertMany()
+2021-10-28T11:44:44.007+0100 E QUERY    [thread1] TypeError: documents is undefined :
+DBCollection.prototype.insertMany@src/mongo/shell/crud_api.js:295:5
+@(shell):1:1
+> db.movies.insertMany([
+...    {
+...       title: 'Titanic',
+...       year: 1997,
+...       genres: [ 'Drama', 'Romance' ],
+...       rated: 'PG-13',
+...       languages: [ 'English', 'French', 'German', 'Swedish', 'Italian', 'Russian' ],
+...       released: ISODate("1997-12-19T00:00:00.000Z"),
+...       awards: {
+...          wins: 127,
+...          nominations: 63,
+...          text: 'Won 11 Oscars. Another 116 wins & 63 nominations.'
+...       },
+...       cast: [ 'Leonardo DiCaprio', 'Kate Winslet', 'Billy Zane', 'Kathy Bates' ],
+...       directors: [ 'James Cameron' ]
+...    },
+...    {
+...       title: 'The Dark Knight',
+...       year: 2008,
+...       genres: [ 'Action', 'Crime', 'Drama' ],
+...       rated: 'PG-13',
+...       languages: [ 'English', 'Mandarin' ],
+...       released: ISODate("2008-07-18T00:00:00.000Z"),
+...       awards: {
+...          wins: 144,
+...          nominations: 106,
+...          text: 'Won 2 Oscars. Another 142 wins & 106 nominations.'
+...       },
+...       cast: [ 'Christian Bale', 'Heath Ledger', 'Aaron Eckhart', 'Michael Caine' ],
+...       directors: [ 'Christopher Nolan' ]
+...    },
+...    {
+...       title: 'Spirited Away',
+...       year: 2001,
+...       genres: [ 'Animation', 'Adventure', 'Family' ],
+...       rated: 'PG',
+...       languages: [ 'Japanese' ],
+...       released: ISODate("2003-03-28T00:00:00.000Z"),
+...       awards: {
+...          wins: 52,
+...          nominations: 22,
+...          text: 'Won 1 Oscar. Another 51 wins & 22 nominations.'
+...       },
+...       cast: [ 'Rumi Hiiragi', 'Miyu Irino', 'Mari Natsuki', 'Takashi Naitè' ],
+...       directors: [ 'Hayao Miyazaki' ]
+...    },
+...    {
+...       title: 'Casablanca',
+...       genres: [ 'Drama', 'Romance', 'War' ],
+...       rated: 'PG',
+...       cast: [ 'Humphrey Bogart', 'Ingrid Bergman', 'Paul Henreid', 'Claude Rains' ],
+...       languages: [ 'English', 'French', 'German', 'Italian' ],
+...       released: ISODate("1943-01-23T00:00:00.000Z"),
+...       directors: [ 'Michael Curtiz' ],
+...       awards: {
+...          wins: 9,
+...          nominations: 6,
+...          text: 'Won 3 Oscars. Another 6 wins & 6 nominations.'
+...       },
+...       lastupdated: '2015-09-04 00:22:54.600000000',
+...       year: 1942
+...    }
+... ])
+{
+	"acknowledged" : true,
+	"insertedIds" : [
+		ObjectId("617a7f4082640d39b4cc5999"),
+		ObjectId("617a7f4082640d39b4cc599a"),
+		ObjectId("617a7f4082640d39b4cc599b"),
+		ObjectId("617a7f4082640d39b4cc599c")
+	]
+}
+> db.movies.find( { } )
+{ "_id" : ObjectId("617a7f4082640d39b4cc5999"), "title" : "Titanic", "year" : 1997, "genres" : [ "Drama", "Romance" ], "rated" : "PG-13", "languages" : [ "English", "French", "German", "Swedish", "Italian", "Russian" ], "released" : ISODate("1997-12-19T00:00:00Z"), "awards" : { "wins" : 127, "nominations" : 63, "text" : "Won 11 Oscars. Another 116 wins & 63 nominations." }, "cast" : [ "Leonardo DiCaprio", "Kate Winslet", "Billy Zane", "Kathy Bates" ], "directors" : [ "James Cameron" ] }
+{ "_id" : ObjectId("617a7f4082640d39b4cc599a"), "title" : "The Dark Knight", "year" : 2008, "genres" : [ "Action", "Crime", "Drama" ], "rated" : "PG-13", "languages" : [ "English", "Mandarin" ], "released" : ISODate("2008-07-18T00:00:00Z"), "awards" : { "wins" : 144, "nominations" : 106, "text" : "Won 2 Oscars. Another 142 wins & 106 nominations." }, "cast" : [ "Christian Bale", "Heath Ledger", "Aaron Eckhart", "Michael Caine" ], "directors" : [ "Christopher Nolan" ] }
+{ "_id" : ObjectId("617a7f4082640d39b4cc599b"), "title" : "Spirited Away", "year" : 2001, "genres" : [ "Animation", "Adventure", "Family" ], "rated" : "PG", "languages" : [ "Japanese" ], "released" : ISODate("2003-03-28T00:00:00Z"), "awards" : { "wins" : 52, "nominations" : 22, "text" : "Won 1 Oscar. Another 51 wins & 22 nominations." }, "cast" : [ "Rumi Hiiragi", "Miyu Irino", "Mari Natsuki", "Takashi Naitè" ], "directors" : [ "Hayao Miyazaki" ] }
+{ "_id" : ObjectId("617a7f4082640d39b4cc599c"), "title" : "Casablanca", "genres" : [ "Drama", "Romance", "War" ], "rated" : "PG", "cast" : [ "Humphrey Bogart", "Ingrid Bergman", "Paul Henreid", "Claude Rains" ], "languages" : [ "English", "French", "German", "Italian" ], "released" : ISODate("1943-01-23T00:00:00Z"), "directors" : [ "Michael Curtiz" ], "awards" : { "wins" : 9, "nominations" : 6, "text" : "Won 3 Oscars. Another 6 wins & 6 nominations." }, "lastupdated" : "2015-09-04 00:22:54.600000000", "year" : 1942 }
+> db.movies.find( { "directors": "Christopher Nolan" } );
+{ "_id" : ObjectId("617a7f4082640d39b4cc599a"), "title" : "The Dark Knight", "year" : 2008, "genres" : [ "Action", "Crime", "Drama" ], "rated" : "PG-13", "languages" : [ "English", "Mandarin" ], "released" : ISODate("2008-07-18T00:00:00Z"), "awards" : { "wins" : 144, "nominations" : 106, "text" : "Won 2 Oscars. Another 142 wins & 106 nominations." }, "cast" : [ "Christian Bale", "Heath Ledger", "Aaron Eckhart", "Michael Caine" ], "directors" : [ "Christopher Nolan" ] }
+> db.movies.find( { "released": { $lt: ISODate("2000-01-01") } } );
+{ "_id" : ObjectId("617a7f4082640d39b4cc5999"), "title" : "Titanic", "year" : 1997, "genres" : [ "Drama", "Romance" ], "rated" : "PG-13", "languages" : [ "English", "French", "German", "Swedish", "Italian", "Russian" ], "released" : ISODate("1997-12-19T00:00:00Z"), "awards" : { "wins" : 127, "nominations" : 63, "text" : "Won 11 Oscars. Another 116 wins & 63 nominations." }, "cast" : [ "Leonardo DiCaprio", "Kate Winslet", "Billy Zane", "Kathy Bates" ], "directors" : [ "James Cameron" ] }
+{ "_id" : ObjectId("617a7f4082640d39b4cc599c"), "title" : "Casablanca", "genres" : [ "Drama", "Romance", "War" ], "rated" : "PG", "cast" : [ "Humphrey Bogart", "Ingrid Bergman", "Paul Henreid", "Claude Rains" ], "languages" : [ "English", "French", "German", "Italian" ], "released" : ISODate("1943-01-23T00:00:00Z"), "directors" : [ "Michael Curtiz" ], "awards" : { "wins" : 9, "nominations" : 6, "text" : "Won 3 Oscars. Another 6 wins & 6 nominations." }, "lastupdated" : "2015-09-04 00:22:54.600000000", "year" : 1942 }
+> db.movies.find( { "awards.wins": { $gt: 100 } } );
+{ "_id" : ObjectId("617a7f4082640d39b4cc5999"), "title" : "Titanic", "year" : 1997, "genres" : [ "Drama", "Romance" ], "rated" : "PG-13", "languages" : [ "English", "French", "German", "Swedish", "Italian", "Russian" ], "released" : ISODate("1997-12-19T00:00:00Z"), "awards" : { "wins" : 127, "nominations" : 63, "text" : "Won 11 Oscars. Another 116 wins & 63 nominations." }, "cast" : [ "Leonardo DiCaprio", "Kate Winslet", "Billy Zane", "Kathy Bates" ], "directors" : [ "James Cameron" ] }
+{ "_id" : ObjectId("617a7f4082640d39b4cc599a"), "title" : "The Dark Knight", "year" : 2008, "genres" : [ "Action", "Crime", "Drama" ], "rated" : "PG-13", "languages" : [ "English", "Mandarin" ], "released" : ISODate("2008-07-18T00:00:00Z"), "awards" : { "wins" : 144, "nominations" : 106, "text" : "Won 2 Oscars. Another 142 wins & 106 nominations." }, "cast" : [ "Christian Bale", "Heath Ledger", "Aaron Eckhart", "Michael Caine" ], "directors" : [ "Christopher Nolan" ] }
+> db.movies.find( { "languages": { $in: [ "Japanese", "Mandarin" ] } } )
+{ "_id" : ObjectId("617a7f4082640d39b4cc599a"), "title" : "The Dark Knight", "year" : 2008, "genres" : [ "Action", "Crime", "Drama" ], "rated" : "PG-13", "languages" : [ "English", "Mandarin" ], "released" : ISODate("2008-07-18T00:00:00Z"), "awards" : { "wins" : 144, "nominations" : 106, "text" : "Won 2 Oscars. Another 142 wins & 106 nominations." }, "cast" : [ "Christian Bale", "Heath Ledger", "Aaron Eckhart", "Michael Caine" ], "directors" : [ "Christopher Nolan" ] }
+{ "_id" : ObjectId("617a7f4082640d39b4cc599b"), "title" : "Spirited Away", "year" : 2001, "genres" : [ "Animation", "Adventure", "Family" ], "rated" : "PG", "languages" : [ "Japanese" ], "released" : ISODate("2003-03-28T00:00:00Z"), "awards" : { "wins" : 52, "nominations" : 22, "text" : "Won 1 Oscar. Another 51 wins & 22 nominations." }, "cast" : [ "Rumi Hiiragi", "Miyu Irino", "Mari Natsuki", "Takashi Naitè" ], "directors" : [ "Hayao Miyazaki" ] }
+> db.movies.find( { "languages": { $in: [ "Japanese", "Mandarin" ] } } )
+{ "_id" : ObjectId("617a7f4082640d39b4cc599a"), "title" : "The Dark Knight", "year" : 2008, "genres" : [ "Action", "Crime", "Drama" ], "rated" : "PG-13", "languages" : [ "English", "Mandarin" ], "released" : ISODate("2008-07-18T00:00:00Z"), "awards" : { "wins" : 144, "nominations" : 106, "text" : "Won 2 Oscars. Another 142 wins & 106 nominations." }, "cast" : [ "Christian Bale", "Heath Ledger", "Aaron Eckhart", "Michael Caine" ], "directors" : [ "Christopher Nolan" ] }
+{ "_id" : ObjectId("617a7f4082640d39b4cc599b"), "title" : "Spirited Away", "year" : 2001, "genres" : [ "Animation", "Adventure", "Family" ], "rated" : "PG", "languages" : [ "Japanese" ], "released" : ISODate("2003-03-28T00:00:00Z"), "awards" : { "wins" : 52, "nominations" : 22, "text" : "Won 1 Oscar. Another 51 wins & 22 nominations." }, "cast" : [ "Rumi Hiiragi", "Miyu Irino", "Mari Natsuki", "Takashi Naitè" ], "directors" : [ "Hayao Miyazaki" ] }
+> db.movies.find( { }, { "title": 1, "directors": 1, "year": 1 } );
+{ "_id" : ObjectId("617a7f4082640d39b4cc5999"), "title" : "Titanic", "year" : 1997, "directors" : [ "James Cameron" ] }
+{ "_id" : ObjectId("617a7f4082640d39b4cc599a"), "title" : "The Dark Knight", "year" : 2008, "directors" : [ "Christopher Nolan" ] }
+{ "_id" : ObjectId("617a7f4082640d39b4cc599b"), "title" : "Spirited Away", "year" : 2001, "directors" : [ "Hayao Miyazaki" ] }
+{ "_id" : ObjectId("617a7f4082640d39b4cc599c"), "title" : "Casablanca", "directors" : [ "Michael Curtiz" ], "year" : 1942 }
+> db.movies.find( { }, { "_id": 0, "title": 1, "genres": 1 } );
+{ "title" : "Titanic", "genres" : [ "Drama", "Romance" ] }
+{ "title" : "The Dark Knight", "genres" : [ "Action", "Crime", "Drama" ] }
+{ "title" : "Spirited Away", "genres" : [ "Animation", "Adventure", "Family" ] }
+{ "title" : "Casablanca", "genres" : [ "Drama", "Romance", "War" ] }
+> db.movies.aggregate( [
+...    { $unwind: "$genres" },
+...    {
+...      $group: {
+...        _id: "$genres",
+...        genreCount: { $count: { } }
+...      }
+...    },
+...    { $sort: { "genreCount": -1 } }
+... ] )
+assert: command failed: {
+	"ok" : 0,
+	"errmsg" : "unknown group operator '$count'",
+	"code" : 15952,
+	"codeName" : "Location15952"
+} : aggregate failed
+_getErrorWithCode@src/mongo/shell/utils.js:25:13
+doassert@src/mongo/shell/assert.js:16:14
+assert.commandWorked@src/mongo/shell/assert.js:403:5
+DB.prototype._runAggregate@src/mongo/shell/db.js:260:9
+DBCollection.prototype.aggregate@src/mongo/shell/collection.js:1212:12
+@(shell):1:1
+
+2021-10-28T11:59:56.193+0100 E QUERY    [thread1] Error: command failed: {
+	"ok" : 0,
+	"errmsg" : "unknown group operator '$count'",
+	"code" : 15952,
+	"codeName" : "Location15952"
+} : aggregate failed :
+_getErrorWithCode@src/mongo/shell/utils.js:25:13
+doassert@src/mongo/shell/assert.js:16:14
+assert.commandWorked@src/mongo/shell/assert.js:403:5
+DB.prototype._runAggregate@src/mongo/shell/db.js:260:9
+DBCollection.prototype.aggregate@src/mongo/shell/collection.js:1212:12
+@(shell):1:1
+> db.movies.aggregate( [
+...    { $unwind: "$genres" },
+...    {
+...      $group: {
+...        _id: "$genres",
+...        genreCount: { $count: { } }
+...      }
+...    },
+...    { $sort: { "genreCount": -1 } }
+... ] )
+assert: command failed: {
+	"ok" : 0,
+	"errmsg" : "unknown group operator '$count'",
+	"code" : 15952,
+	"codeName" : "Location15952"
+} : aggregate failed
+_getErrorWithCode@src/mongo/shell/utils.js:25:13
+doassert@src/mongo/shell/assert.js:16:14
+assert.commandWorked@src/mongo/shell/assert.js:403:5
+DB.prototype._runAggregate@src/mongo/shell/db.js:260:9
+DBCollection.prototype.aggregate@src/mongo/shell/collection.js:1212:12
+@(shell):1:1
+
+2021-10-28T12:05:18.926+0100 E QUERY    [thread1] Error: command failed: {
+	"ok" : 0,
+	"errmsg" : "unknown group operator '$count'",
+	"code" : 15952,
+	"codeName" : "Location15952"
+} : aggregate failed :
+_getErrorWithCode@src/mongo/shell/utils.js:25:13
+doassert@src/mongo/shell/assert.js:16:14
+assert.commandWorked@src/mongo/shell/assert.js:403:5
+DB.prototype._runAggregate@src/mongo/shell/db.js:260:9
+DBCollection.prototype.aggregate@src/mongo/shell/collection.js:1212:12
+@(shell):1:1
+> db.movies.find( { }, { "_id": 0, "title": 1, "genres": 1 } );
+{ "title" : "Titanic", "genres" : [ "Drama", "Romance" ] }
+{ "title" : "The Dark Knight", "genres" : [ "Action", "Crime", "Drama" ] }
+{ "title" : "Spirited Away", "genres" : [ "Animation", "Adventure", "Family" ] }
+{ "title" : "Casablanca", "genres" : [ "Drama", "Romance", "War" ] }
+> db.movies.find( { }, { "_id": 0, "title": 0, "genres": 0 } );
+{ "year" : 1997, "rated" : "PG-13", "languages" : [ "English", "French", "German", "Swedish", "Italian", "Russian" ], "released" : ISODate("1997-12-19T00:00:00Z"), "awards" : { "wins" : 127, "nominations" : 63, "text" : "Won 11 Oscars. Another 116 wins & 63 nominations." }, "cast" : [ "Leonardo DiCaprio", "Kate Winslet", "Billy Zane", "Kathy Bates" ], "directors" : [ "James Cameron" ] }
+{ "year" : 2008, "rated" : "PG-13", "languages" : [ "English", "Mandarin" ], "released" : ISODate("2008-07-18T00:00:00Z"), "awards" : { "wins" : 144, "nominations" : 106, "text" : "Won 2 Oscars. Another 142 wins & 106 nominations." }, "cast" : [ "Christian Bale", "Heath Ledger", "Aaron Eckhart", "Michael Caine" ], "directors" : [ "Christopher Nolan" ] }
+{ "year" : 2001, "rated" : "PG", "languages" : [ "Japanese" ], "released" : ISODate("2003-03-28T00:00:00Z"), "awards" : { "wins" : 52, "nominations" : 22, "text" : "Won 1 Oscar. Another 51 wins & 22 nominations." }, "cast" : [ "Rumi Hiiragi", "Miyu Irino", "Mari Natsuki", "Takashi Naitè" ], "directors" : [ "Hayao Miyazaki" ] }
+{ "rated" : "PG", "cast" : [ "Humphrey Bogart", "Ingrid Bergman", "Paul Henreid", "Claude Rains" ], "languages" : [ "English", "French", "German", "Italian" ], "released" : ISODate("1943-01-23T00:00:00Z"), "directors" : [ "Michael Curtiz" ], "awards" : { "wins" : 9, "nominations" : 6, "text" : "Won 3 Oscars. Another 6 wins & 6 nominations." }, "lastupdated" : "2015-09-04 00:22:54.600000000", "year" : 1942 }
+> db.movies.aggregate( [
+...    { $unwind: "$genres" },
+...    {
+...      $group: {
+...        _id: "$genres"
+...      }
+...    },
+...    { $sort: { "genreCount": -1 } }
+... ] )
+{ "_id" : "Family" }
+{ "_id" : "War" }
+{ "_id" : "Adventure" }
+{ "_id" : "Animation" }
+{ "_id" : "Crime" }
+{ "_id" : "Action" }
+{ "_id" : "Romance" }
+{ "_id" : "Drama" }
+> db.movies.aggregate( [
+...    { $unwind: "$genres" },
+...    {
+...      $group: {
+...        _id: "$genres",
+...        genreCount: { $count: { } }
+...      }
+...    },
+...    { $sort: { "genreCount": -1 } }
+... ] )
+assert: command failed: {
+	"ok" : 0,
+	"errmsg" : "unknown group operator '$count'",
+	"code" : 15952,
+	"codeName" : "Location15952"
+} : aggregate failed
+_getErrorWithCode@src/mongo/shell/utils.js:25:13
+doassert@src/mongo/shell/assert.js:16:14
+assert.commandWorked@src/mongo/shell/assert.js:403:5
+DB.prototype._runAggregate@src/mongo/shell/db.js:260:9
+DBCollection.prototype.aggregate@src/mongo/shell/collection.js:1212:12
+@(shell):1:1
+
+2021-10-28T12:13:08.626+0100 E QUERY    [thread1] Error: command failed: {
+	"ok" : 0,
+	"errmsg" : "unknown group operator '$count'",
+	"code" : 15952,
+	"codeName" : "Location15952"
+} : aggregate failed :
+_getErrorWithCode@src/mongo/shell/utils.js:25:13
+doassert@src/mongo/shell/assert.js:16:14
+assert.commandWorked@src/mongo/shell/assert.js:403:5
+DB.prototype._runAggregate@src/mongo/shell/db.js:260:9
+DBCollection.prototype.aggregate@src/mongo/shell/collection.js:1212:12
+@(shell):1:1
+> db.movies.aggregate( [
+...    { $unwind: "$genres" },
+...    {
+...      $group: {
+...        _id: "$genres",
+...        genreCount: { $count: {} }
+...      }
+...    },
+...    { $sort: { "genreCount": -1 } }
+... ] )
+assert: command failed: {
+	"ok" : 0,
+	"errmsg" : "unknown group operator '$count'",
+	"code" : 15952,
+	"codeName" : "Location15952"
+} : aggregate failed
+_getErrorWithCode@src/mongo/shell/utils.js:25:13
+doassert@src/mongo/shell/assert.js:16:14
+assert.commandWorked@src/mongo/shell/assert.js:403:5
+DB.prototype._runAggregate@src/mongo/shell/db.js:260:9
+DBCollection.prototype.aggregate@src/mongo/shell/collection.js:1212:12
+@(shell):1:1
+
+2021-10-28T12:21:00.571+0100 E QUERY    [thread1] Error: command failed: {
+	"ok" : 0,
+	"errmsg" : "unknown group operator '$count'",
+	"code" : 15952,
+	"codeName" : "Location15952"
+} : aggregate failed :
+_getErrorWithCode@src/mongo/shell/utils.js:25:13
+doassert@src/mongo/shell/assert.js:16:14
+assert.commandWorked@src/mongo/shell/assert.js:403:5
+DB.prototype._runAggregate@src/mongo/shell/db.js:260:9
+DBCollection.prototype.aggregate@src/mongo/shell/collection.js:1212:12
+@(shell):1:1
+> show dbs
+admin     0.000GB
+config    0.000GB
+examples  0.000GB
+local     0.000GB
+

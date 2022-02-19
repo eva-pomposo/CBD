@@ -1,0 +1,228 @@
+CREATE KEYSPACE cbd_3_4 WITH replication = {'class': 'SimpleStrategy', 'replication_factor': 3};
+
+USE cbd_3_4;
+
+CREATE TABLE User(
+    username text PRIMARY KEY,
+    fname text,
+    lname text,
+    email text,
+    );
+
+CREATE TABLE Album_Author(
+    id int,
+    name text,
+    musics list<text>,
+    nameMusic_duration map<text, int>,
+    releaseDate timestamp,
+    author_username text,
+    PRIMARY KEY(author_username, releaseDate, id)
+) WITH CLUSTERING ORDER BY (releaseDate DESC);
+
+CREATE TABLE Album(
+    id int,
+    name text,
+    musics list<text>,
+    nameMusic_duration map<text, int>,
+    releaseDate timestamp,
+    author_username text,
+    PRIMARY KEY(name, releaseDate, id)
+) WITH CLUSTERING ORDER BY (releaseDate DESC);
+
+CREATE TABLE Music( 
+    id int,
+    name text,
+    artists_usernames set<text>,
+    album_id int,   
+    PRIMARY KEY(album_id, name, id)
+    );
+
+INSERT INTO User (username, fname, email, lname) VALUES ('evapomposo', 'Eva', 'evapomposo@ua.pt', 'Bartolomeu');
+INSERT INTO User (username, fname, email, lname) VALUES ('marianarosa', 'Mariana', 'marianarosa@ua.pt', 'Rosa');
+INSERT INTO User (username, fname, email, lname) VALUES ('pedrosobral', 'Pedro', 'pedrosobral@ua.pt', 'Sobral');
+INSERT INTO User (username, fname, email, lname) VALUES ('danif', 'Dani', 'danif@ua.pt', 'Figueiredo');
+INSERT INTO User (username, fname, email, lname) VALUES ('andrefreixo', 'Andre', 'andrefreixo@ua.pt', 'Freixo');
+INSERT INTO User (username, fname, email, lname) VALUES ('filipefreixo', 'Filipe', 'filipefreixo@ua.pt', 'Sequeira');
+INSERT INTO User (username, fname, email, lname) VALUES ('martaf', 'Marta', 'martaf@ua.pt', 'Fradique');
+INSERT INTO User (username, fname, email, lname) VALUES ('ana', 'Ana', 'ana@ua.pt', 'Alexandre');
+INSERT INTO User (username, fname, email, lname) VALUES ('vera', 'Vera', 'vera@ua.pt', 'Silva');
+INSERT INTO User (username, fname, email, lname) VALUES ('filipa', 'Filipa', 'filipa@ua.pt', 'Costa');
+INSERT INTO User (username, fname, email, lname) VALUES ('arturito', 'Artur', 'artur@ua.pt', 'Romao');
+INSERT INTO User (username, fname, email, lname) VALUES ('ricardo', 'Ricardo', 'ricardo@ua.pt', 'Rodriguez');
+INSERT INTO User (username, fname, email, lname) VALUES ('joao', 'Joao', 'joao@ua.pt', 'Reis');
+INSERT INTO User (username, fname, email, lname) VALUES ('bernas', 'Joao', 'bernas@ua.pt', 'Bernulio');
+
+INSERT INTO Album_Author (id, name, musics, nameMusic_duration, releaseDate, author_username) VALUES (1, 'Kisses', ['Banana', 'Onda diferente', 'Atencion'], {'Banana': 220, 'Onda diferente': 225, 'Atencion': 210}, '2021-11-30', 'evapomposo');
+INSERT INTO Album_Author (id, name, musics, nameMusic_duration, releaseDate, author_username) VALUES (2, 'Bang', ['Deixa ele sofrer', 'Cravo e canela'], {'Deixa ele sofrer': 200, 'Cravo e canela': 215}, '2021-11-31', 'marianarosa');
+INSERT INTO Album_Author (id, name, musics, nameMusic_duration, releaseDate, author_username) VALUES (3, 'Boderline', ['The Less I know the Better'], {'The Less I know the Better': 230}, '2021-12-01', 'pedrosobral');
+INSERT INTO Album_Author (id, name, musics, nameMusic_duration, releaseDate, author_username) VALUES (4, 'Ngana Zambi', ['300', 'Depois da chuva', 'Devia ir'], {'300': 195, 'Depois da chuva': 198, 'Devia ir': 199}, '2021-12-02', 'danif');
+INSERT INTO Album_Author (id, name, musics, nameMusic_duration, releaseDate, author_username) VALUES (5, 'Bon Jovi', ['Runaway', 'Come Back'], {'Runaway': 206, 'Come Back': 209}, '2021-12-03', 'andrefreixo');
+INSERT INTO Album_Author (id, name, musics, nameMusic_duration, releaseDate, author_username) VALUES (6, 'Live from red rocks', ['Far Away', 'Too Bad'], {'Far Away': 231, 'Too Bad': 224}, '2021-12-04', 'filipefreixo');
+INSERT INTO Album_Author (id, name, musics, nameMusic_duration, releaseDate, author_username) VALUES (7, 'Nevermind', ['Smells Like Teen Spirit', 'In Bloom'], {'Smells Like Teen Spirit': 196, 'In Bloom': 223}, '2021-12-05', 'martaf');
+INSERT INTO Album_Author (id, name, musics, nameMusic_duration, releaseDate, author_username) VALUES (8, 'Bohemian Rhapsody', ['Bohemian Rhapsody', 'Doing All Right'], {'Bohemian Rhapsody': 220, 'Doing All Right': 224}, '2021-12-06', 'evapomposo');
+INSERT INTO Album_Author (id, name, musics, nameMusic_duration, releaseDate, author_username) VALUES (9, 'AM', ['Do I Wanna Know?', 'R U Mine?'], {'Do I Wanna Know?': 185, 'R U Mine?': 189}, '2021-12-07', 'marianarosa');
+INSERT INTO Album_Author (id, name, musics, nameMusic_duration, releaseDate, author_username) VALUES (10, 'Dark Lane Demo Tapes', ['Deep Pockets', 'When To say when'], {'Deep Pockets': 223, 'When To say when': 237}, '2021-12-08', 'arturito');
+INSERT INTO Album_Author (id, name, musics, nameMusic_duration, releaseDate, author_username) VALUES (11, 'You are forgiven', ['Também Sonhar', 'FAM'], {'Também Sonhar': 189, 'FAM': 222}, '2021-12-09', 'ricardo');
+INSERT INTO Album_Author (id, name, musics, nameMusic_duration, releaseDate, author_username) VALUES (12, 'Evil Mary', ['Gipsy Lover'], {'Gipsy Lover': 226}, '2021-12-10', 'danif');
+
+INSERT INTO Album (id, name, musics, nameMusic_duration, releaseDate, author_username) VALUES (1, 'Kisses', ['Banana', 'Onda diferente', 'Atencion'], {'Banana': 220, 'Onda diferente': 225, 'Atencion': 210}, '2021-11-30', 'evapomposo');
+INSERT INTO Album (id, name, musics, nameMusic_duration, releaseDate, author_username) VALUES (2, 'Bang', ['Deixa ele sofrer', 'Cravo e canela'], {'Deixa ele sofrer': 200, 'Cravo e canela': 215}, '2021-11-31', 'marianarosa');
+INSERT INTO Album (id, name, musics, nameMusic_duration, releaseDate, author_username) VALUES (3, 'Boderline', ['The Less I know the Better'], {'The Less I know the Better': 230}, '2021-12-01', 'pedrosobral');
+INSERT INTO Album (id, name, musics, nameMusic_duration, releaseDate, author_username) VALUES (4, 'Ngana Zambi', ['300', 'Depois da chuva', 'Devia ir'], {'300': 195, 'Depois da chuva': 198, 'Devia ir': 199}, '2021-12-02', 'danif');
+INSERT INTO Album (id, name, musics, nameMusic_duration, releaseDate, author_username) VALUES (5, 'Bon Jovi', ['Runaway', 'Come Back'], {'Runaway': 206, 'Come Back': 209}, '2021-12-03', 'andrefreixo');
+INSERT INTO Album (id, name, musics, nameMusic_duration, releaseDate, author_username) VALUES (6, 'Live from red rocks', ['Far Away', 'Too Bad'], {'Far Away': 231, 'Too Bad': 224}, '2021-12-04', 'filipefreixo');
+INSERT INTO Album (id, name, musics, nameMusic_duration, releaseDate, author_username) VALUES (7, 'Nevermind', ['Smells Like Teen Spirit', 'In Bloom'], {'Smells Like Teen Spirit': 196, 'In Bloom': 223}, '2021-12-05', 'martaf');
+INSERT INTO Album (id, name, musics, nameMusic_duration, releaseDate, author_username) VALUES (8, 'Bohemian Rhapsody', ['Bohemian Rhapsody', 'Doing All Right'], {'Bohemian Rhapsody': 220, 'Doing All Right': 224}, '2021-12-06', 'evapomposo');
+INSERT INTO Album (id, name, musics, nameMusic_duration, releaseDate, author_username) VALUES (9, 'AM', ['Do I Wanna Know?', 'R U Mine?'], {'Do I Wanna Know?': 185, 'R U Mine?': 189}, '2021-12-07', 'marianarosa');
+INSERT INTO Album (id, name, musics, nameMusic_duration, releaseDate, author_username) VALUES (10, 'Dark Lane Demo Tapes', ['Deep Pockets', 'When To say when'], {'Deep Pockets': 223, 'When To say when': 237}, '2021-12-08', 'arturito');
+INSERT INTO Album (id, name, musics, nameMusic_duration, releaseDate, author_username) VALUES (11, 'You are forgiven', ['Também Sonhar', 'FAM'], {'Também Sonhar': 189, 'FAM': 222}, '2021-12-09', 'ricardo');
+INSERT INTO Album (id, name, musics, nameMusic_duration, releaseDate, author_username) VALUES (12, 'Evil Mary', ['Gipsy Lover'], {'Gipsy Lover': 226}, '2021-12-10', 'danif');
+
+INSERT INTO Music (id, name, album_id, artists_usernames) VALUES (1, 'Banana', 1, {'evapomposo', 'marianarosa'});
+INSERT INTO Music (id, name, album_id, artists_usernames) VALUES (2, 'Onda diferente', 1, {'evapomposo', 'pedrosobral'});
+INSERT INTO Music (id, name, album_id, artists_usernames) VALUES (3, 'Atencion', 1, {'evapomposo', 'danif'});
+INSERT INTO Music (id, name, album_id, artists_usernames) VALUES (4, 'Deixa ele sofrer', 2, {'marianarosa', 'andrefreixo'});
+INSERT INTO Music (id, name, album_id, artists_usernames) VALUES (5, 'Cravo e canela', 2, {'marianarosa', 'pedrosobral'});
+INSERT INTO Music (id, name, album_id, artists_usernames) VALUES (6, 'The Less I know the Better', 3, {'pedrosobral', 'danif'});
+INSERT INTO Music (id, name, album_id, artists_usernames) VALUES (7, '300', 4, {'danif', 'filipefreixo'});
+INSERT INTO Music (id, name, album_id, artists_usernames) VALUES (8, 'Depois da chuva', 4, {'danif', 'martaf'});
+INSERT INTO Music (id, name, album_id, artists_usernames) VALUES (9, 'Devia ir', 4, {'danif', 'ana'});
+INSERT INTO Music (id, name, album_id, artists_usernames) VALUES (10, 'Runaway', 5, {'andrefreixo', 'marianarosa'});
+INSERT INTO Music (id, name, album_id, artists_usernames) VALUES (11, 'Come Back', 5, {'andrefreixo', 'vera'});
+INSERT INTO Music (id, name, album_id, artists_usernames) VALUES (12, 'Far Away', 6, {'filipefreixo', 'filipa'});
+INSERT INTO Music (id, name, album_id, artists_usernames) VALUES (13, 'Too Bad', 6, {'filipefreixo', 'arturito'});
+INSERT INTO Music (id, name, album_id, artists_usernames) VALUES (14, 'Smells Like Teen Spirit', 7, {'martaf', 'ricardo'});
+INSERT INTO Music (id, name, album_id, artists_usernames) VALUES (15, 'In Bloom', 7, {'martaf', 'filipefreixo'});
+INSERT INTO Music (id, name, album_id, artists_usernames) VALUES (16, 'Bohemian Rhapsody', 8, {'evapomposo', 'ana'});
+INSERT INTO Music (id, name, album_id, artists_usernames) VALUES (17, 'Doing All Right', 8, {'evapomposo', 'arturito'});
+INSERT INTO Music (id, name, album_id, artists_usernames) VALUES (18, 'Do I Wanna Know?', 9, {'marianarosa', 'ricardo'});
+INSERT INTO Music (id, name, album_id, artists_usernames) VALUES (19, 'R U Mine?', 9, {'marianarosa'});
+INSERT INTO Music (id, name, album_id, artists_usernames) VALUES (20, 'Deep Pockets', 10, {'arturito', 'marianarosa'});
+INSERT INTO Music (id, name, album_id, artists_usernames) VALUES (21, 'When To say when', 10, {'arturito', 'marianarosa'});
+INSERT INTO Music (id, name, album_id, artists_usernames) VALUES (22, 'Também Sonhar', 11, {'ricardo', 'marianarosa'});
+INSERT INTO Music (id, name, album_id, artists_usernames) VALUES (23, 'FAM', 11, {'ricardo', 'arturito'});
+INSERT INTO Music (id, name, album_id, artists_usernames) VALUES (24, 'Gipsy Lover', 12, {'danif'});
+
+CREATE INDEX releaseDate_Album ON Album(releaseDate);
+CREATE INDEX releaseDate_Album_Author ON Album_Author(releaseDate);
+CREATE INDEX nameMusic_duration_idx ON Album (ENTRIES(nameMusic_duration));
+CREATE INDEX artists_usernames_idx ON Music (artists_usernames);
+CREATE INDEX user_idx ON User (email);
+CREATE INDEX user_idx ON Album (releaseDate);
+
+update User set lname = 'Pomposo' where username = 'evapomposo';
+update Album set author_username = 'martaf' where name = 'Evil Mary' and releaseDate = '2021-12-10' and id = 12;
+update Album_Author set name = 'Good Mary' where author_username = 'danif' and releaseDate = '2021-12-10' and id = 12;
+update Music set artists_usernames = {'andrefreixo', 'marianarosa', 'evapomposo'} where id = 10 and name = 'Runaway' and album_id = 5;
+update Music set artists_usernames = {'arturito'} where id = 20 and name = 'Deep Pockets' and album_id = 10;
+
+delete from Album where name = 'Evil Mary' and releaseDate = '2021-12-10' and id = 12;
+delete from Album_Author where author_username = 'danif' and releaseDate = '2021-12-10' and id = 12;
+delete from Music where id = 24 and name = 'Gipsy Lover' and album_id = 12;
+delete from User where username = 'bernas';
+delete from User where username = 'joao';
+
+1. Album criados pelo utilizador evapomposo antes do dia 2021-12-05:
+
+cqlsh:cbd_3_4> select * from Album_Author where author_username = 'evapomposo' and releaseDate < '2021-12-05';
+
+ author_username | releasedate                     | id | musics                                   | name   | namemusic_duration
+-----------------+---------------------------------+----+------------------------------------------+--------+---------------------------------------------------------
+      evapomposo | 2021-11-30 00:00:00.000000+0000 |  1 | ['Banana', 'Onda diferente', 'Atencion'] | Kisses | {'Atencion': 210, 'Banana': 220, 'Onda diferente': 225}
+
+(1 rows)
+
+2. Os últimos 5 albuns do utilizador evapomposo:
+
+cqlsh:cbd_3_4> select * from Album_Author where author_username = 'evapomposo' limit 5;
+
+ author_username | releasedate                     | id | musics                                   | name              | namemusic_duration
+-----------------+---------------------------------+----+------------------------------------------+-------------------+---------------------------------------------------------
+      evapomposo | 2021-12-06 00:00:00.000000+0000 |  8 | ['Bohemian Rhapsody', 'Doing All Right'] | Bohemian Rhapsody |      {'Bohemian Rhapsody': 220, 'Doing All Right': 224}
+      evapomposo | 2021-11-30 00:00:00.000000+0000 |  1 | ['Banana', 'Onda diferente', 'Atencion'] |            Kisses | {'Atencion': 210, 'Banana': 220, 'Onda diferente': 225}
+
+(2 rows)
+
+3. Albuns criados pelo utilizador evapomposo, no dia 2021-11-30 que contem a musica 'Banana':
+
+cqlsh:cbd_3_4> select * from Album_Author where author_username = 'evapomposo' and releaseDate = '2021-11-30' and musics contains 'Banana';
+
+ author_username | releasedate                     | id | musics                                   | name   | namemusic_duration
+-----------------+---------------------------------+----+------------------------------------------+--------+---------------------------------------------------------
+      evapomposo | 2021-11-30 00:00:00.000000+0000 |  1 | ['Banana', 'Onda diferente', 'Atencion'] | Kisses | {'Atencion': 210, 'Banana': 220, 'Onda diferente': 225}
+
+(1 rows)
+
+4. Albuns que tenham uma musica 'Banana' com duracao de 220:
+
+cqlsh:cbd_3_4> select * from Album where nameMusic_duration['Banana'] = 220;
+
+ name   | releasedate                     | id | author_username | musics                                   | namemusic_duration
+--------+---------------------------------+----+-----------------+------------------------------------------+---------------------------------------------------------
+ Kisses | 2021-11-30 00:00:00.000000+0000 |  1 |      evapomposo | ['Banana', 'Onda diferente', 'Atencion'] | {'Atencion': 210, 'Banana': 220, 'Onda diferente': 225}
+
+
+5. Musicas com o artista evapomposo:
+
+cqlsh:cbd_3_4> select * from Music where artists_usernames contains 'evapomposo';
+
+ name              | id | album_id | artists_usernames
+-------------------+----+----------+----------------------------------------------
+           Runaway | 10 |        5 | {'andrefreixo', 'evapomposo', 'marianarosa'}
+   Doing All Right | 17 |        8 |                   {'arturito', 'evapomposo'}
+ Bohemian Rhapsody | 16 |        8 |                        {'ana', 'evapomposo'}
+    Onda diferente |  2 |        1 |                {'evapomposo', 'pedrosobral'}
+          Atencion |  3 |        1 |                      {'danif', 'evapomposo'}
+            Banana |  1 |        1 |                {'evapomposo', 'marianarosa'}
+
+(6 rows)
+
+6. Selecione o user com o email 'artur@ua.pt:
+
+cqlsh:cbd_3_4> select * from User where email='artur@ua.pt';
+
+ username | email       | fname | lname
+----------+-------------+-------+-------
+ arturito | artur@ua.pt | Artur | Romao
+
+(1 rows)
+
+7. Numero de albuns criados por 'evapomposo':
+
+cqlsh:cbd_3_4> select count(*) as num_albums from album_author WHERE author_username = 'evapomposo';
+
+ num_albums
+------------
+          2
+
+(1 rows)
+
+8. Apresente de ordem alfabetica contraria as musicas do album com id 1:
+
+cqlsh:cbd_3_4> select name from Music where album_id = 1 order by name desc;
+
+ name
+----------------
+ Onda diferente
+         Banana
+       Atencion
+
+(3 rows)
+
+9. Numero de musicas do album com id 1:
+
+cqlsh:cbd_3_4> select count(*) from Music where album_id = 1;
+
+ count
+-------
+     3
+
+(1 rows)
+
+10. Liste todas os albuns criados no dia 2021-12-05:
+
+cqlsh:cbd_3_4> select * from Album where releaseDate = '2021-12-05';
+
+ name      | releasedate                     | id | author_username | musics                                  | namemusic_duration
+-----------+---------------------------------+----+-----------------+-----------------------------------------+---------------------------------------------------
+ Nevermind | 2021-12-05 00:00:00.000000+0000 |  7 |          martaf | ['Smells Like Teen Spirit', 'In Bloom'] | {'In Bloom': 223, 'Smells Like Teen Spirit': 196}

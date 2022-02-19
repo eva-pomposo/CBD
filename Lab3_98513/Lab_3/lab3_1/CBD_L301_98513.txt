@@ -1,0 +1,576 @@
+1. Creating a Keyspace using Cqlsh
+
+A keyspace in Cassandra is a namespace that defines data replication on nodes. A cluster contains one keyspace per node. Given below is the syntax for creating a keyspace using the statement CREATE KEYSPACE.
+
+Syntax: CREATE KEYSPACE <identifier> WITH <properties>
+
+-> Replication
+The replication option is to specify the Replica Placement strategy and the number of replicas wanted. All the replica placement strategies:
+
+* Simple Strategy : Specifies a simple replication factor for the cluster.
+* Network Topology Strategy : Using this option, you can set the replication factor for each data-center independently.
+* Old Network Topology Strategy : This is a legacy replication strategy.
+
+Example:
+Given below is an example of creating a KeySpace.
+
+* Here we are creating a KeySpace named cbd.
+* We are using the first replica placement strategy, i.e.., Simple Strategy.
+* And we are choosing the replication factor to 1 replica.
+
+Na linha de comandos (no programa cliente cqlsh) inserir o seguinte comando: 
+cqlsh> CREATE KEYSPACE cbd WITH replication = {'class':'SimpleStrategy', 'replication_factor' : 3};
+
+Verification: 
+You can verify whether the table is created or not using the command Describe. If you use this command over keyspaces, it will display all the keyspaces created as shown below.
+
+Comando:
+cqlsh> DESCRIBE keyspaces;
+
+Output:
+cbd     system_auth         system_schema  system_views         
+system  system_distributed  system_traces  system_virtual_schema
+
+-> Durable_writes
+By default, the durable_writes properties of a table is set to true, however it can be set to false. You cannot set this property to simplex strategy.
+
+Example:
+Given below is the example demonstrating the usage of durable writes property.
+
+Na linha de comandos (no programa cliente cqlsh) inserir o seguinte comando: 
+cqlsh> CREATE KEYSPACE test WITH REPLICATION = { 'class' : 'NetworkTopologyStrategy', 'datacenter1' : 3 } AND DURABLE_WRITES = false;
+
+Verification:
+You can verify whether the durable_writes property of test KeySpace was set to false by querying the System Keyspace. This query gives you all the KeySpaces along with their properties.
+
+Comando:
+SELECT * FROM system_schema.keyspaces;
+
+Output:
+ keyspace_name      | durable_writes | replication
+--------------------+----------------+---------------------------------------------------------------------------------------
+               test |          False | {'class': 'org.apache.cassandra.locator.NetworkTopologyStrategy', 'datacenter1': '3'}
+        system_auth |           True |   {'class': 'org.apache.cassandra.locator.SimpleStrategy', 'replication_factor': '1'}
+      system_schema |           True |                               {'class': 'org.apache.cassandra.locator.LocalStrategy'}
+ system_distributed |           True |   {'class': 'org.apache.cassandra.locator.SimpleStrategy', 'replication_factor': '3'}
+             system |           True |                               {'class': 'org.apache.cassandra.locator.LocalStrategy'}
+                cbd |           True |   {'class': 'org.apache.cassandra.locator.SimpleStrategy', 'replication_factor': '3'}
+      system_traces |           True |   {'class': 'org.apache.cassandra.locator.SimpleStrategy', 'replication_factor': '2'}
+
+(7 rows)
+
+-> Using a Keyspace
+You can use a created KeySpace using the keyword USE. Its syntax is as follows −
+
+Syntax: USE <identifier>
+
+Example: 
+In the following example, we are using the KeySpace cbd.
+
+Comando:
+use cbd;
+
+Output:
+cqlsh:cbd> 
+
+2. Altering a KeySpace
+
+ALTER KEYSPACE can be used to alter properties such as the number of replicas and the durable_writes of a KeySpace. Given below is the syntax of this command.
+
+Syntax: ALTER KEYSPACE <identifier> WITH <properties>
+
+Example 1:
+Given below is an example of altering a KeySpace.
+
+* Here we are altering a KeySpace named cbd.
+* We are changing the replication factor from 1 to 3.
+
+Na linha de comandos (no programa cliente cqlsh) inserir o seguinte comando: 
+cqlsh> ALTER KEYSPACE cbd WITH replication = {'class':'SimpleStrategy', 'replication_factor' : 3};
+
+Example 2
+Given below is an example of altering Durable_writes.
+
+* Here we are altering a KeySpace named test.
+* Alter the durable_writes for true.
+
+Na linha de comandos (no programa cliente cqlsh) inserir o seguinte comando: 
+cqlsh> ALTER KEYSPACE test WITH replication = {'class':'NetworkTopologyStrategy', 'datacenter1' : 3} AND DURABLE_WRITES = true;
+
+Verify the properties of KeySpaces:
+
+Comando:
+cqlsh> SELECT * FROM system_schema.keyspaces;
+
+Output:
+ keyspace_name      | durable_writes | replication
+--------------------+----------------+---------------------------------------------------------------------------------------
+               test |           True | {'class': 'org.apache.cassandra.locator.NetworkTopologyStrategy', 'datacenter1': '3'}
+        system_auth |           True |   {'class': 'org.apache.cassandra.locator.SimpleStrategy', 'replication_factor': '1'}
+      system_schema |           True |                               {'class': 'org.apache.cassandra.locator.LocalStrategy'}
+ system_distributed |           True |   {'class': 'org.apache.cassandra.locator.SimpleStrategy', 'replication_factor': '3'}
+             system |           True |                               {'class': 'org.apache.cassandra.locator.LocalStrategy'}
+                cbd |           True |   {'class': 'org.apache.cassandra.locator.SimpleStrategy', 'replication_factor': '3'}
+      system_traces |           True |   {'class': 'org.apache.cassandra.locator.SimpleStrategy', 'replication_factor': '2'}
+
+(7 rows)
+
+3. Dropping a Keyspace
+
+You can drop a KeySpace using the command DROP KEYSPACE. Given below is the syntax for dropping a KeySpace.
+
+Syntax: DROP KEYSPACE <identifier>
+
+Example:
+The following code deletes the keyspace test.
+
+Na linha de comandos (no programa cliente cqlsh) inserir o seguinte comando: 
+cqlsh> DROP KEYSPACE test;
+
+Verification:
+Verify the keyspaces using the command Describe and check whether the table is dropped as shown below.
+
+Comando:
+cqlsh> DESCRIBE keyspaces;
+
+Output:
+cbd     system_auth         system_schema  system_views         
+system  system_distributed  system_traces  system_virtual_schema
+
+3. Creating a Table
+
+You can create a table using the command CREATE TABLE. Given below is the syntax for creating a table.
+
+Syntax: CREATE (TABLE | COLUMNFAMILY) <tablename> ('<column-definition>' , '<column-definition>') (WITH <option> AND <option>)
+  
+-> Defining a Column
+You can define a column as shown below.
+
+column name1 data type,
+column name2 data type,
+
+example:
+
+age int,
+name text
+
+-> Primary Key
+The primary key is a column that is used to uniquely identify a row. Therefore,defining a primary key is mandatory while creating a table. A primary key is made of one or more columns of a table. You can define a primary key of a table as shown below.
+
+CREATE TABLE tablename(
+   column1 name datatype PRIMARYKEY,
+   column2 name data type,
+   column3 name data type.
+   )
+
+or
+
+CREATE TABLE tablename(
+   column1 name datatype PRIMARYKEY,
+   column2 name data type,
+   column3 name data type,
+   PRIMARY KEY (column1)
+   )
+
+Example:
+Given below is an example to create a table in Cassandra using cqlsh. Here we are −
+
+* Using the keyspace cbd
+* Creating a table named emp
+* It will have details such as employee name, id, city, salary, and phone number
+* Employee id is the primary key.
+
+Na linha de comandos (no programa cliente cqlsh) inserir o seguinte comando: 
+cqlsh> USE cbd;
+cqlsh:cbd> CREATE TABLE emp(
+   emp_id int PRIMARY KEY,
+   emp_name text,
+   emp_city text,
+   emp_sal varint,
+   emp_phone varint
+   );
+
+Verification:
+The select statement will give you the schema. Verify the table using the select statement as shown below.
+
+cqlsh:cbd> select * from emp;
+
+ emp_id | emp_city | emp_name | emp_phone | emp_sal
+--------+----------+----------+-----------+---------
+
+(0 rows)
+
+4. Altering a Table
+
+You can alter a table using the command ALTER TABLE. Given below is the syntax for creating a table.
+
+Syntax: ALTER (TABLE | COLUMNFAMILY) <tablename> <instruction>
+
+Using ALTER command, you can perform the following operations −
+* Add a column
+* Drop a column
+
+-> Adding a Column
+Using ALTER command, you can add a column to a table. While adding columns, you have to take care that the column name is not conflicting with the existing column names and that the table is not defined with compact storage option. Given below is the syntax to add a column to a table.
+
+ALTER TABLE table name
+ADD  new column datatype;
+
+Example:
+cqlsh:cbd> ALTER TABLE emp ADD emp_email text;
+cqlsh:cbd> select * from emp;
+
+ emp_id | emp_city | emp_email | emp_name | emp_phone | emp_sal
+--------+----------+-----------+----------+-----------+---------
+
+(0 rows)
+
+-> Dropping a Column
+Using ALTER command, you can delete a column from a table. Before dropping a column from a table, check that the table is not defined with compact storage option. Given below is the syntax to delete a column from a table using ALTER command.
+
+ALTER table name
+DROP column name;
+
+Example:
+cqlsh:cbd> ALTER TABLE emp DROP emp_email;
+cqlsh:cbd> select * from emp;
+
+ emp_id | emp_city | emp_name | emp_phone | emp_sal
+--------+----------+----------+-----------+---------
+
+(0 rows)
+
+5. Dropping a Table
+You can drop a table using the command Drop Table. Its syntax is as follows −
+
+Syntax: DROP TABLE <tablename>
+
+Example:
+cqlsh:cbd> DROP TABLE emp;
+cqlsh:cbd> DESCRIBE COLUMNFAMILIES;
+
+6. Truncating a Table
+You can truncate a table using the TRUNCATE command. When you truncate a table, all the rows of the table are deleted permanently. Given below is the syntax of this command.
+
+Syntax: TRUNCATE <tablename>
+
+Example:
+cqlsh:cbd> CREATE TABLE emp(
+   emp_id int PRIMARY KEY,
+   emp_name text,
+   emp_city text,
+   emp_sal varint,
+   emp_phone varint
+   );
+cqlsh:cbd>INSERT INTO emp (emp_id, emp_name, emp_city, emp_sal, emp_phone) VALUES(1,'ram', 'Hyderabad', 50000, 9848022338);
+cqlsh:cbd> select * from emp ;
+
+emp_id | emp_city  | emp_name | emp_phone  | emp_sal
+--------+-----------+----------+------------+---------
+      1 | Hyderabad |      ram | 9848022338 |   50000
+
+(1 rows)
+
+(1 rows)
+cqlsh:cbd> TRUNCATE emp;
+cqlsh:cbd> select * from emp ;
+
+emp_id | emp_city | emp_name | emp_phone | emp_sal
+--------+----------+----------+-----------+---------
+
+
+7. Creating an Index using Cqlsh
+You can create an index in Cassandra using the command CREATE INDEX.
+
+Syntax: CREATE INDEX <identifier> ON <tablename>
+
+Example:
+cqlsh:cbd> CREATE INDEX name ON emp (emp_name);
+
+8. Dropping an Index
+You can drop an index using the command DROP INDEX. 
+
+Syntax: DROP INDEX <identifier>
+
+Example:
+cqlsh:cbd> drop index name;
+
+8.Using Batch Statements
+Using BATCH, you can execute multiple modification statements (insert, update, delete) simultaneiously. Its syntax is as follows −
+
+Syntax: BEGIN BATCH
+<insert-stmt>/ <update-stmt>/ <delete-stmt>
+APPLY BATCH
+
+Example:BEGIN BATCH
+INSERT INTO emp (emp_id, emp_name, emp_city, emp_sal, emp_phone) VALUES(1,'ram', 'Hyderabad', 50000, 9848022338);
+UPDATE emp SET emp_sal = 60000 WHERE emp_id =1;
+DELETE emp_city FROM emp WHERE emp_id = 1;
+APPLY BATCH;
+
+9.Creating Data in a Table
+You can insert data into the columns of a row in a table using the command INSERT. Given below is the syntax for creating data in a table.
+
+Syntax: INSERT INTO <tablename>
+   (<column1 name>, <column2 name>....)
+   VALUES (<value1>, <value2>....)
+   USING <option>
+
+Example:
+cqlsh:cbd> INSERT INTO emp (emp_id, emp_name, emp_city,
+       ...    emp_phone, emp_sal) VALUES(2,'robin', 'Hyderabad', 9848022339, 40000);
+cqlsh:cbd>  INSERT INTO emp (emp_id, emp_name, emp_city,
+       ...    emp_phone, emp_sal) VALUES(3,'rahman', 'Chennai', 9848022330, 45000);
+cqlsh:cbd> select * from emp;
+
+ emp_id | emp_city  | emp_name | emp_phone  | emp_sal
+--------+-----------+----------+------------+---------
+      2 | Hyderabad |    robin | 9848022339 |   40000
+      3 |   Chennai |   rahman | 9848022330 |   45000
+
+(2 rows)
+
+10.Updating Data in a Table
+UPDATE is the command used to update data in a table. The following keywords are used while updating data in a table:
+
+* Where − This clause is used to select the row to be updated.
+* Set − Set the value using this keyword.
+* Must − Includes all the columns composing the primary key.
+
+While updating rows, if a given row is unavailable, then UPDATE creates a fresh row. Given below is the syntax of UPDATE command −
+
+UPDATE <tablename>
+   SET <column name> = <new value>
+   <column name> = <value>....
+   WHERE <condition>
+
+Example:
+cqlsh:cbd>  UPDATE emp SET emp_city='Delhi',emp_sal=50000
+       ...    WHERE emp_id=2;
+cqlsh:cbd> select * from emp;
+
+ emp_id | emp_city | emp_name | emp_phone  | emp_sal
+--------+----------+----------+------------+---------
+      2 |    Delhi |    robin | 9848022339 |   50000
+      3 |  Chennai |   rahman | 9848022330 |   45000
+
+(2 rows)
+
+11.Reading Data using Select Clause
+SELECT clause is used to read data from a table in Cassandra. Using this clause, you can read a whole table, a single column, or a particular cell. Given below is the syntax of SELECT clause.
+
+Syntax: SELECT FROM <tablename>
+
+Example:
+cqlsh:cbd> select * from emp;
+
+ emp_id | emp_city | emp_name | emp_phone  | emp_sal
+--------+----------+----------+------------+---------
+      2 |    Delhi |    robin | 9848022339 |   50000
+      3 |  Chennai |   rahman | 9848022330 |   45000
+
+(2 rows)
+
+-> Reading Required Columns
+The following example shows how to read a particular column in a table:
+
+cqlsh:cbd>  SELECT emp_name, emp_sal from emp;
+
+ emp_name | emp_sal
+----------+---------
+    robin |   50000
+   rahman |   45000
+
+-> Where Clause
+Using WHERE clause, you can put a constraint on the required columns. Its syntax is as follows −
+
+Syntax:SELECT FROM <table name> WHERE <condition>;
+
+Note − A WHERE clause can be used only on the columns that are a part of primary key or have a secondary index on them.
+
+In the following example, we are reading the details of an employee whose salary is 50000. First of all, set secondary index to the column emp_sal.
+
+Example:
+cqlsh:cbd> CREATE INDEX ON emp(emp_sal);
+cqlsh:cbd> SELECT * FROM emp WHERE emp_sal=50000;
+
+ emp_id | emp_city | emp_name | emp_phone  | emp_sal
+--------+----------+----------+------------+---------
+      2 |    Delhi |    robin | 9848022339 |   50000
+
+(1 rows)
+
+12.Deleting Datafrom a Table
+You can delete data from a table using the command DELETE. Its syntax is as follows −
+
+Syntax: DELETE FROM <identifier> WHERE <condition>;
+
+Example:
+cqlsh:cbd> DELETE emp_sal FROM emp WHERE emp_id=3;
+cqlsh:cbd> select * from emp;
+
+ emp_id | emp_city | emp_name | emp_phone  | emp_sal
+--------+----------+----------+------------+---------
+      2 |    Delhi |    robin | 9848022339 |   50000
+      3 |  Chennai |   rahman | 9848022330 |    null
+
+(2 rows)
+
+-> Deleting an Entire Row
+The following command deletes an entire row from a table.
+
+cqlsh:cbd>  DELETE FROM emp WHERE emp_id=3;
+cqlsh:cbd> select * from emp;
+
+ emp_id | emp_city | emp_name | emp_phone  | emp_sal
+--------+----------+----------+------------+---------
+      2 |    Delhi |    robin | 9848022339 |   50000
+
+(1 rows)
+
+13. Cassandra - CQL Datatypes
+CQL provides a rich set of built-in data types, including collection types. Along with these data types, users can also create their own custom data types. 
+
+-> Cassandra - CQL Collections
+CQL provides the facility of using Collection data types. Using these Collection types, you can store multiple values in a single variable.
+
+List:
+A list is a collection of one or more ordered elements.
+List is used in the cases where
+* the order of the elements is to be maintained, and
+* a value is to be stored multiple times.
+
+You can get the values of a list data type using the index of the elements in the list.
+
+Creating a Table with List:
+Given below is an example to create a sample table with two columns, name and email. To store multiple emails, we are using list.
+
+cqlsh:cbd> CREATE TABLE data(name text PRIMARY KEY, email list<text>);
+   cqlsh:cbd> INSERT INTO data(name, email) VALUES ('ramu',
+          ... ['abc@gmail.com','cba@yahoo.com'])
+          ... ;
+   cqlsh:cbd> UPDATE data
+          ... SET email = email +['xyz@tutorialspoint.com']
+          ... where name = 'ramu';
+   cqlsh:cbd>  SELECT * FROM data;
+   
+    name | email
+   ------+--------------------------------------------------------------
+    ramu | ['abc@gmail.com', 'cba@yahoo.com', 'xyz@tutorialspoint.com']
+   
+   (1 rows)
+
+Set:
+Set is a data type that is used to store a group of elements. The elements of a set will be returned in a sorted order.
+
+Creating a Table with Set:
+
+cqlsh:cbd> CREATE TABLE data2 (name text PRIMARY KEY, phone set<varint>);
+   cqlsh:cbd> INSERT INTO data2(name, phone)VALUES ('rahman',    {9848022338,9848022339});
+   cqlsh:cbd> UPDATE data2
+          ... SET phone = phone + {9848022330}
+          ... where name = 'rahman';
+   cqlsh:cbd> SELECT * FROM data2;
+   
+    name   | phone
+   --------+--------------------------------------
+    rahman | {9848022330, 9848022338, 9848022339}
+   
+   (1 rows)
+
+Map:
+Map is a data type that is used to store a key-value pair of elements.
+
+Creating a Table with Map:
+cqlsh:cbd> CREATE TABLE data3 (name text PRIMARY KEY, address map<text, text>);
+cqlsh:cbd>  INSERT INTO data3 (name, address)    VALUES ('robin', {'home' : 'hyderabad' , 'office' : 'Delhi' } );
+cqlsh:cbd> UPDATE data3
+       ... SET address = address+{'office':'mumbai'}
+       ... WHERE name = 'robin';
+cqlsh:cbd> select * from data3;
+
+ name  | address
+-------+-------------------------------------------
+ robin | {'home': 'hyderabad', 'office': 'mumbai'}
+
+(1 rows)
+
+14. Cassandra - CQL User Defined Datatypes
+CQL provides the facility of creating and using user-defined data types. You can create a data type to handle multiple fields.
+
+-> Creating a User-defined Data Type:
+The command CREATE TYPE is used to create a user-defined data types.
+
+Syntax: CREATE TYPE <keyspace name>. <data typename> ( variable1, variable2)
+
+Example:
+cqlsh:cbd> CREATE TYPE card_details (
+       ... num int,
+       ... pin int,
+       ... name text,
+       ... cvv int,
+       ... phone set<int>
+       ... );
+cqlsh:cbd>  DESCRIBE TYPE card_details
+
+CREATE TYPE cbd.card_details (
+    num int,
+    pin int,
+    name text,
+    cvv int,
+    phone set<int>
+);
+cqlsh:cbd> 
+
+-> Altering a User-defined Data Type:
+ALTER TYPE − command is used to alter an existing data type. Using ALTER, you can add a new field or rename an existing field.
+
+
+* Adding a Field to a Type:
+
+Syntax: ALTER TYPE typename
+ADD field_name field_type;
+
+Example:
+cqlsh:cbd>  ALTER TYPE card_details ADD email text;
+cqlsh:cbd> describe type card_details;
+
+CREATE TYPE cbd.card_details (
+    num int,
+    pin int,
+    name text,
+    cvv int,
+    phone set<int>,
+    email text
+);
+cqlsh:cbd> 
+
+* Renaming a Field in a Type:
+
+Syntax: ALTER TYPE typename
+RENAME existing_name TO new_name;
+
+Example:
+cqlsh:cbd> ALTER TYPE card_details RENAME email TO mail;
+cqlsh:cbd> describe type card_details;
+
+CREATE TYPE cbd.card_details (
+    num int,
+    pin int,
+    name text,
+    cvv int,
+    phone set<int>,
+    mail text
+);
+
+-> Deleting a User-defined Data Type
+DROP TYPE is the command used to delete a user-defined data type. Given below is an example to delete a user-defined data type.
+
+Example:
+cqlsh:cbd> DESCRIBE TYPES;
+
+card_details
+
+cqlsh:cbd> drop type card_details;
+cqlsh:cbd> DESCRIBE TYPES;
+

@@ -1,0 +1,12 @@
+  {"video_id": 5, "author_username": "marianarosa", "id": 6, "momenttime_occurs_inthevideo": 78, "time_record": "2021-12-18 19:57:30.151Z", "type": "stop"}
+ {"video_id": 1, "author_username": "andrefreixo", "id": 3, "momenttime_occurs_inthevideo": 568, "time_record": "2021-12-18 19:57:30.144Z", "type": "stop"}
+  {"video_id": 1, "author_username": "evapomposo", "id": 10, "momenttime_occurs_inthevideo": 51, "time_record": "2021-12-18 19:57:30.162Z", "type": "play"}
+ {"video_id": 1, "author_username": "pedrosobral", "id": 2, "momenttime_occurs_inthevideo": 45, "time_record": "2021-12-18 19:57:30.141Z", "type": "pause"}
+ {"video_id": 8, "author_username": "filipefreixo", "id": 9, "momenttime_occurs_inthevideo": 88, "time_record": "2021-12-18 19:57:30.159Z", "type": "stop"}
+       {"video_id": 2, "author_username": "martaf", "id": 1, "momenttime_occurs_inthevideo": 37, "time_record": "2021-12-18 19:57:30.137Z", "type": "play"}
+         {"video_id": 4, "author_username": "ana", "id": 4, "momenttime_occurs_inthevideo": 106, "time_record": "2021-12-18 19:57:30.147Z", "type": "play"}
+      {"video_id": 7, "author_username": "filipa", "id": 8, "momenttime_occurs_inthevideo": 15, "time_record": "2021-12-18 19:57:30.156Z", "type": "pause"}
+      {"video_id": 9, "author_username": "danif", "id": 5, "momenttime_occurs_inthevideo": 324, "time_record": "2021-12-18 19:57:30.149Z", "type": "pause"}
+         {"video_id": 3, "author_username": "vera", "id": 7, "momenttime_occurs_inthevideo": 90, "time_record": "2021-12-18 19:57:30.153Z", "type": "play"}
+
+(10 rows)

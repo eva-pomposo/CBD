@@ -1,0 +1,82 @@
+1. Os últimos 3 comentários introduzidos para um vídeo; 
+
+cqlsh:cbd_3_2> select * from Comment_Video where video_id=1 Limit 3;
+
+ video_id | moment_time                     | id | author_username | comment
+----------+---------------------------------+----+-----------------+------------------------------------
+        1 | 2021-12-04 00:00:00.000000+0000 |  8 |     marianarosa |  ALEUIA! Um tutorial em condicoes.
+        1 | 2021-12-01 00:00:00.000000+0000 |  3 |            vera | Que tutorial fantastico. Obrigada!
+        1 | 2021-12-01 00:00:00.000000+0000 |  4 |          filipa |                Nao percebi nada...
+
+(3 rows)
+
+2. Lista das tags de determinado vídeo; 
+
+cqlsh:cbd_3_2> select tags from Video_idVideo where id = 2;
+
+ tags
+------------------------
+ {'University', 'Vlog'}
+
+(1 rows)
+
+3. Todos os vídeos com a tag Aveiro; 
+
+cqlsh:cbd_3_2> select video_id from Tag_Video where name = 'Aveiro';
+
+ video_id
+----------
+
+(0 rows)
+
+4. Os últimos 5 eventos de determinado vídeo realizados por um utilizador
+
+cqlsh:cbd_3_2> select * from Event_Video where video_id = 2 and author_username = 'martaf' limit 5;
+
+ video_id | author_username | id | momenttime_occurs_inthevideo | time_record                     | type
+----------+-----------------+----+------------------------------+---------------------------------+------
+        2 |          martaf |  1 |                           37 | 2021-12-16 12:51:11.909000+0000 | play
+
+(1 rows)
+
+
+5. Vídeos partilhados por determinado utilizador (maria1987, por exemplo) num determinado período de tempo (Agosto de 2017, por exemplo); 
+
+cqlsh:cbd_3_2> select * from Video_author where author_username = 'evapomposo' and upload_time_stamp < '2021-12-20 19:57:29';
+
+ author_username | upload_time_stamp               | id | description                                       | followers_usernames           | name                     | tags
+-----------------+---------------------------------+----+---------------------------------------------------+-------------------------------+--------------------------+------------------------
+      evapomposo | 2021-12-18 19:57:29.822000+0000 |  1 |                                Tutorial de react. | {'evapomposo', 'pedrosobral'} |       React in 5 minutes |        {'Programming'}
+      evapomposo | 2021-12-18 19:57:29.896000+0000 |  8 |               As minhas compras para este inverno |                    {'filipa'} |  TRY ON HAUL - Zara, H&M |               {'Moda'}
+      evapomposo | 2021-12-18 19:57:29.921000+0000 | 10 | Prepara-te para o filme mais romantico de sempre. |           {'danif', 'martaf'} | Trailler Romeu e Julieta | {'Romantic', 'TVShow'}
+
+(3 rows)
+
+6. Os últimos 10 vídeos, ordenado inversamente pela data da partilhada; 
+Nao é possivel efetuar esta pesquisa.
+Primeiramente nao dá para executar esta query, visto que nao há nehuma clustering key da data que determina a sua ordem inversa.
+Apesar disso, existe outra maneira de ordenar a data. Mas para isso a query devia ter a clausula 'where', o que nao possui com base no que é pedido.
+
+7. Todos os seguidores (followers) de determinado vídeo;
+
+cqlsh:cbd_3_2> select followers_usernames from Video_idVideo where id = 1;
+
+ followers_usernames
+-------------------------------
+ {'evapomposo', 'pedrosobral'}
+
+(1 rows)
+
+8. Todos os comentários (dos vídeos) que determinado utilizador está a seguir (following); 
+Nao é possivel efetuar esta pesquisa somente com uma query, seria necessario realizar um join.
+Outra maneira seria, pesquisar os videos que um determinado utilizador segue, e depois com esses videos pesquisar todos os seus comentários.
+
+9. Os 5 vídeos com maior rating
+Nao é possivel efetuar esta pesquisa, pelas mesmas razoes que na questao 6.
+
+10. Uma query que retorne todos os vídeos e que mostre claramente a forma pela qual estão ordenados;
+Nao é possivel efetuar esta pesquisa, pelas mesmas razoes que na questao 6.
+
+11. Lista com as Tags existentes e o número de vídeos catalogados com cada uma delas; 
+Nao é possivel efetuar esta pesquisa somente com uma query.
+Para obter esta pesquisa, seria necessario para cada Tag realizar uma query para determinar o numero de videos da Tag em questao, e só depois listar os resultados todos.

@@ -1,0 +1,43 @@
+7. Permitir a pesquisa de todos os vídeos de determinado autor; 
+
+cqlsh:cbd_3_2> select * from Video_author where author_username='evapomposo';
+
+ author_username | id | upload_time_stamp               | description                                       | followers_usernames           | name                     | tags
+-----------------+----+---------------------------------+---------------------------------------------------+-------------------------------+--------------------------+------------------------
+      evapomposo |  1 | 2021-12-18 19:35:36.187000+0000 |                                Tutorial de react. | {'evapomposo', 'pedrosobral'} |       React in 5 minutes |        {'Programming'}
+      evapomposo |  8 | 2021-12-18 19:35:36.274000+0000 |               As minhas compras para este inverno |                    {'filipa'} |  TRY ON HAUL - Zara, H&M |               {'Moda'}
+      evapomposo | 10 | 2021-12-18 19:35:36.310000+0000 | Prepara-te para o filme mais romantico de sempre. |           {'danif', 'martaf'} | Trailler Romeu e Julieta | {'Romantic', 'TVShow'}
+
+(3 rows)
+
+8. Permitir a pesquisa de comentários por utilizador, ordenado inversamente pela data;
+
+cqlsh:cbd_3_2> select * from Comment_User where author_username='evapomposo';
+
+ author_username | moment_time                     | id | comment                              | video_id
+-----------------+---------------------------------+----+--------------------------------------+----------
+      evapomposo | 2021-12-03 00:00:00.000000+0000 |  6 |          Isto é tudo menos fácil -_- |        7
+      evapomposo | 2021-11-30 00:00:00.000000+0000 |  1 | Ansiosa para ir para a universidade. |        2
+
+(2 rows)
+
+9. Permitir a pesquisa de comentários por vídeos, ordenado inversamente pela data;
+
+cqlsh:cbd_3_2>  select * from Comment_Video where video_id=1;
+
+ video_id | moment_time                     | id | author_username | comment
+----------+---------------------------------+----+-----------------+------------------------------------
+        1 | 2021-12-04 00:00:00.000000+0000 |  8 |     marianarosa |  ALEUIA! Um tutorial em condicoes.
+        1 | 2021-12-01 00:00:00.000000+0000 |  3 |            vera | Que tutorial fantastico. Obrigada!
+        1 | 2021-12-01 00:00:00.000000+0000 |  4 |          filipa |                Nao percebi nada...
+
+(3 rows)
+
+10. Permitir a pesquisa do rating médio de um vídeo e quantas vezes foi votado;
+cqlsh:cbd_3_2> select avg(rating) as avg_rating, count(rating) as num_votes, video_id from Rating where video_id=1;
+
+ avg_rating | num_votes | video_id
+------------+-----------+----------
+          3 |         2 |        1
+
+(1 rows)

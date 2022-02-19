@@ -1,0 +1,21 @@
+            {"name": "University", "id": 3, "video_id": 2}
+                {"name": "Comedy", "id": 5, "video_id": 3}
+            {"name": "Romantic", "id": 19, "video_id": 10}
+                {"name": "TVShow", "id": 4, "video_id": 3}
+              {"name": "TVShow", "id": 18, "video_id": 10}
+                  {"name": "Vlog", "id": 2, "video_id": 2}
+                 {"name": "Vlog", "id": 16, "video_id": 9}
+              {"name": "Angular", "id": 11, "video_id": 6}
+                 {"name": "Moda", "id": 13, "video_id": 7}
+                 {"name": "Moda", "id": 15, "video_id": 8}
+               {"name": "Makeup", "id": 12, "video_id": 7}
+                 {"name": "Music", "id": 6, "video_id": 4}
+                 {"name": "Music", "id": 8, "video_id": 5}
+                   {"name": "Pop", "id": 7, "video_id": 4}
+             {"name": "Vacation", "id": 17, "video_id": 9}
+ {"name": "Transformaçao visual", "id": 14, "video_id": 7}
+           {"name": "Programming", "id": 1, "video_id": 1}
+          {"name": "Programming", "id": 10, "video_id": 6}
+                  {"name": "2000", "id": 9, "video_id": 5}
+
+(19 rows)
